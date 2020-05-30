@@ -1,0 +1,484 @@
+{
+	"breakfast": {
+		"Apr 27 2020": [
+			"Corn Flakes ",
+			"Fried Egg",
+			"Vermicelli Upma",
+			"Tomato Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"Apr 28 2020": [
+			"Honey Flakes",
+			"Boiled Egg",
+			"Plain Paratha",
+			"Bhaji",
+			"Bread, Butter, Jam ",
+			"Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"Apr 29 2020": [
+			"Muesli",
+			"Omelette",
+			"Peanut Masala Poha*",
+			"Mint Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"Apr 30 2020": [
+			"Bournvita",
+			"Corn Flakes ",
+			"Fried Egg",
+			"Idli, Sambhar",
+			"Coconut Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"May 01 2020": [
+			"Chocos",
+			"Egg Bhurji",
+			"Stuffed Paratha",
+			"Pickle, Curd",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"May 02 2020": [
+			"Corn Flakes ",
+			"Boiled Egg",
+			"Pav",
+			"Bhaji",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"May 03 2020": [
+			"Muesli",
+			"Omelette",
+			"Cutlet",
+			"Tomato Ketchup",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge",
+			"Bournvita"
+		],
+		"May 11 2020": [
+			"Corn Flakes ",
+			"Fried Egg",
+			"Idli, Sambhar",
+			"Coconut Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 12 2020": [
+			"Muesli",
+			"Boiled Egg",
+			"Paratha",
+			"Bhaji",
+			"Bread, Butter, Jam ",
+			"Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 13 2020": [
+			"Honey Flakes",
+			"Omelette",
+			"Peanut Masala Poha*",
+			"Mint Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 14 2020": [
+			"Corn Flakes ",
+			"Boiled Egg",
+			"Stuffed Paratha",
+			"Pickle, Curd",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 15 2020": [
+			"Muesli",
+			"Fried Egg",
+			"Chole",
+			"Kulcha",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 16 2020": [
+			"Honey Flakes",
+			"Egg Bhurji",
+			"Vermicelli Upma",
+			"Tomato Chutney",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 17 2020": [
+			"Corn Flakes ",
+			"Omelette",
+			"Pav ",
+			"Bhaji",
+			"Bread, Butter, Jam ",
+			" Banana",
+			"Milk- Hot & Cold, Tea",
+			"Coffee, Porridge"
+		],
+		"May 18 2020": [
+			"Dishes Marked With Asterisk And Bold Contains Peanuts. Users Allergic To Peanuts Must Avoid It."
+		]
+	},
+	"lunch": {
+		"Apr 27 2020": [
+			"Green Salad",
+			"Chicken Do Pyaza",
+			" Paneer Do Pyaza",
+			"Green Moong Dal",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad"
+		],
+		"Apr 28 2020": [
+			"Green Salad",
+			"Nimboo Pani",
+			"Homestyle Macaroni",
+			"Malai Kofta Curry",
+			"Chole",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad",
+			"Pastry"
+		],
+		"Apr 29 2020": [
+			"Green Salad",
+			"Homestyle Chicken",
+			"Matar Paneer",
+			"Red Malka Dal",
+			"Steam Rice",
+			"Tawa Roti",
+			" Achar, Papad"
+		],
+		"Apr 30 2020": [
+			"Green Salad",
+			"Homestyle Macaroni",
+			"Kala Chana Masala",
+			"Sindhi Kadhi",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad",
+			"Ice Cream"
+		],
+		"May 01 2020": [
+			"Green Salad",
+			"Aam Panna",
+			"Baingan Bharta",
+			"Tinda Masala",
+			" Dal Hariyali",
+			"Plain Rice",
+			"Tawa Roti ",
+			"Achar, Papad"
+		],
+		"May 02 2020": [
+			"Sprouts Salad",
+			"Karela Do Pyaza",
+			"Aloo Soya Matar",
+			"Rajma",
+			"Plain Rice",
+			"Tawa Roti ",
+			" Achar, Papad",
+			"Fruit Custard"
+		],
+		"May 03 2020": [
+			"Green Salad",
+			"Khatta Meetha Petha",
+			"Chole",
+			"Bhature",
+			"Plain Rice",
+			"Masala Chaach",
+			"Achar, Papad"
+		],
+		"May 11 2020": [
+			"Green Salad",
+			"Chicken Curry",
+			" Paneer Do Pyaza",
+			"Moong Dal",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad"
+		],
+		"May 12 2020": [
+			"Green Salad",
+			"Homestyle Macaroni",
+			"Methi Matar Malai",
+			"Rajma",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad",
+			"Suzi Halwa"
+		],
+		"May 13 2020": [
+			"Kachumber Salad",
+			"Chicken Seekh Curry",
+			"Kadai Paneer",
+			"Hyderabadi Dal",
+			"Plain Rice",
+			"Tawa Roti ",
+			" Achar, Papad"
+		],
+		"May 14 2020": [
+			"Green Salad",
+			"Bhindi Do Pyaza",
+			"Ghiya Chana Masala",
+			"Kadhi Pakoda",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar, Papad",
+			"Gulab Jamun"
+		],
+		"May 15 2020": [
+			"Green Salad",
+			"Cabbage Masala",
+			"Soya Wadi Matar",
+			"Mix Dal",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar "
+		],
+		"May 16 2020": [
+			"Sprouts Salad",
+			"Alfredo Pasta",
+			"Makhana Korma",
+			"Dal Makhani",
+			"Plain Rice",
+			"Tawa Roti ",
+			" Achar, Papad",
+			"Trifle Fruit Pudding"
+		],
+		"May 17 2020": [
+			"Green Salad",
+			"Masala Aloo",
+			"Amritsari Chole",
+			"Poori",
+			"Plain Rice",
+			"Masala Chaach",
+			"Achar, Papad"
+		]
+	},
+	"snacks": {
+		"Apr 27 2020": [
+			"Banana Cake",
+			"Tea, Coffee"
+		],
+		"Apr 28 2020": [
+			"Samosa",
+			"Banana Sake"
+		],
+		"Apr 29 2020": [
+			"Marble Cake",
+			"Nimboo Pani"
+		],
+		"Apr 30 2020": [
+			"French Heart",
+			"Tea, Coffee"
+		],
+		"May 01 2020": [
+			"Chocolate Doughnuts",
+			"Tea, Coffee"
+		],
+		"May 02 2020": [
+			"Pizza",
+			"Cold Coffee"
+		],
+		"May 03 2020": [
+			"Brownie",
+			"Tea, Coffee"
+		],
+		"May 11 2020": [
+			"French Heart",
+			"Tea, Coffee"
+		],
+		"May 12 2020": [
+			"Pizza",
+			"Cold Coffee"
+		],
+		"May 13 2020": [
+			"Bread Pakoda",
+			"Tea, Coffee"
+		],
+		"May 14 2020": [
+			"Swiss Roll",
+			"Tea, Coffee"
+		],
+		"May 15 2020": [
+			"Brownie",
+			"Lemon Water"
+		],
+		"May 16 2020": [
+			"French Fries",
+			"Tea, Coffee"
+		],
+		"May 17 2020": [
+			"Maggi",
+			"Tea, Coffee"
+		]
+	},
+	"dinner": {
+		"Apr 27 2020": [
+			"Green Salad",
+			"Jeera Aloo",
+			"Gobi Masala",
+			"Yellow Dal Tadka",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar ",
+			"Gulab Jamun"
+		],
+		"Apr 28 2020": [
+			"Green Salad",
+			"Cabbage Aloo",
+			"Soya Matar",
+			"Dal Baltik",
+			"Plain Rice",
+			"Tawa Roti ",
+			"Achar "
+		],
+		"Apr 29 2020": [
+			"Green Salad",
+			"Pasta Alfredo",
+			"Vegetable Manchurian",
+			"Dal Baltic",
+			"Fried Rice",
+			"Tawa Roti",
+			" Achar ",
+			"Seviyan Kheer"
+		],
+		"Apr 30 2020": [
+			"Green Salad",
+			"Tamatari Aloo",
+			"Soya Chaap Masala",
+			"Dal Tadka",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar "
+		],
+		"May 01 2020": [
+			"Green Salad",
+			"Curd",
+			"Ghiya Chana Masala",
+			"Dal Bukhara",
+			"Plain Rice",
+			"Tawa Roti ",
+			" Achar ",
+			"Besan Burfi"
+		],
+		"May 02 2020": [
+			"Kachumber Salad",
+			"Chicken Biryani",
+			"Paneer Biryani",
+			"Burani Raita",
+			"Hyderabadi Dal",
+			"Tawa Roti ",
+			" Achar"
+		],
+		"May 03 2020": [
+			"Kachumber Salad",
+			"Masala Chana",
+			"Shaam Savera",
+			"Dal Makhani",
+			"Plain Rice",
+			"Tawa Roti",
+			"Achar",
+			"Chocolate Pudding"
+		],
+		"May 11 2020": [
+			"Green Salad",
+			"Aloo Capsicum",
+			"Malai Kofta Curry",
+			"Black Malka Dal",
+			"Plain Rice",
+			"Tawa Roti",
+			" Achar ",
+			"Kesariya Halwa"
+		],
+		"May 12 2020": [
+			"Green Salad",
+			"Jeera Aloo",
+			"Ghiya Kofta Curry",
+			"Dal Maharani",
+			"Plain Rice",
+			"Tawa Roti ",
+			"Achar "
+		],
+		"May 13 2020": [
+			"Green Salad",
+			"Stuffed Capsicum",
+			"Palak Corn Masala",
+			"Dal Panchmela",
+			"Rice",
+			"Tawa Roti",
+			" Achar ",
+			"Besan Burfi"
+		],
+		"May 14 2020": [
+			"Green Salad",
+			"Curd",
+			"Aloo Tamatari",
+			"Red Malka Dal",
+			"Plain Rice",
+			"Tawa Roti ",
+			"Achar, Papad"
+		],
+		"May 15 2020": [
+			"Green Salad",
+			"Homestyle Macaroni",
+			"Turai Chana Masala",
+			"Dal Bukhara",
+			"Plain Rice",
+			"Tawa Roti ",
+			" Achar ",
+			"Pastry"
+		],
+		"May 16 2020": [
+			"Green Salad",
+			"Butter Chicken",
+			"Paneer Lababdar",
+			"Rice",
+			"Dal Tadka",
+			"Tawa Roti",
+			" Achar"
+		],
+		"May 17 2020": [
+			"Kachumber Salad",
+			"Pasta",
+			"Navratan Korma",
+			"Yellow Dal Tadka",
+			"Plain Rice",
+			"Tawa Roti",
+			"Achar",
+			"Sabudana Kheer"
+		]
+	}
+}

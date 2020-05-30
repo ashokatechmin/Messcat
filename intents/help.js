@@ -1,0 +1,1 @@
+module.exports = require ("WhatsAppInfoBot/Example/intents/help.js")

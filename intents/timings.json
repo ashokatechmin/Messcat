@@ -1,0 +1,38 @@
+{
+    "keywords": ["timings","time","when","schedule", "schedul","open","close"],
+    "answer": "*<entity:key> timings are:*\n <entity:value>",
+    "entities": {
+        "hot water": "Mon-Fri: 07:00AM-10:00AM, 07:00PM-10:00PM\nSat-Sun: 08:00AM-11:00AM, 08:00PM-11:00PM",
+        "mail room": {
+            "alternates": ["mailroom"],
+            "value": "11:00AM-01:00PM, 04:30PM-06:30PM"
+        },
+        "piano room": "6:00AM-12:00AM",
+        "lunch": "12:15PM-02:30PM",
+        "breakfast": "08:00AM-10:30AM",
+        "snacks": "04:45PM-06:15PM",
+        "dinner": "07:30PM-10:15PM",
+        "laundry": "dropoff: Mon & Thu 08:00AM-02:00PM\npickup: Wed & Sat 04:30PM-06:00PM",
+        "tuck shop": "10:00AM-12:00AM",
+        "dosai": "12:00AM-12:00PM",
+        "amul": "11:00AM-11:00PM",
+        "dhaba": "02:00PM-04:00AM",
+        "cross access": {
+            "alternates": ["cross residence", "sex"],
+            "value": "08:00AM-12:30AM"
+        },
+        "salon": {
+            "alternates": ["parlour", "parlor"],
+            "value": "11:00AM-7:00PM, closed on tuesdays"
+        },
+        "library": "all the time fren, except friday",
+        "document centre": "08:00AM-07:00PM, all days except Sunday",
+        "fuel zone": "10:00AM-02:00AM",
+        "asg": "shuts at 11:30PM"
+    },
+    "meta": {
+        "userFacingName": "timings",
+        "description": "Timings for facilities & vendors",
+        "examples": ["what time is hot water", "aye mate, when does fuel zone open", "tell me what time is hot water or i'll shoot you"]
+    }
+}
