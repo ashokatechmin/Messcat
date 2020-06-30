@@ -1,9 +1,9 @@
 data/auth_info.json
+*/.DS_Store
 .DS_Store
 node_modules/*
 package-lock.json
 
-node_modules/@types/node/constants.d.ts
 intents/creds.json
 intents/helpline.json
 auth/auth_info.json
