@@ -1,1 +1,1 @@
-module.exports = require ("WhatsAppInfoBot/Example/intents/help.js")
+module.exports = require ("@adiwajshing/whatsapp-info-bot/Example/intents/help.js")

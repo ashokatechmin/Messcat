@@ -21,6 +21,10 @@
             "alternates": ["cross residence", "sex"],
             "value": "08:00AM-12:30AM"
         },
+        "ashoka": {
+            "alternates": ["college", "university"],
+            "value": "Officially, college should re-open after mid-term break but who knows :("
+        },
         "salon": {
             "alternates": ["parlour", "parlor"],
             "value": "11:00AM-7:00PM, closed on tuesdays"

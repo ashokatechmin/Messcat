@@ -6,5 +6,8 @@
     ],
     "maxRequestsPerSecond": 0.33,
     "parsingFailedText": "Sorry fren, I couldn't understand '<input>'. Type 'help' to know what all I can do",
+    "delayMessage": "Apologies for the delay in responding",
+    "respondToPendingMessages": true,
+    "minimumDelayTriggerS": 120,
     "authFile": "./auth/auth_info.json"
 }

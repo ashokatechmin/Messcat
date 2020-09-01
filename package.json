@@ -1,5 +1,5 @@
 {
-  "name": "Messcat",
+  "name": "messcat",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -11,7 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "WhatsAppInfoBot": "github:adiwajshing/WhatsappInfoBot",
+    "@adiwajshing/whatsapp-info-bot": "github:adiwajshing/WhatsappInfoBot",
     "node-fetch": "^2.6.0",
     "pdf.js-extract": "^0.1.4"
   }

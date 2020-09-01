@@ -10,7 +10,4 @@ ADD *.js /
 ADD *.json /
 ADD intents/* /intents/
 
-EXPOSE 80
-EXPOSE 443
-
 CMD [ "npm", "start" ]
