@@ -1,6 +1,6 @@
 FROM node:14-alpine
 
-RUN apt-get update
+RUN apk update
 RUN apk add --no-cache git yarn
 
 ADD package.json /
