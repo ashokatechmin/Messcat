@@ -64,7 +64,7 @@ module.exports = class {
             `Active cases: ${ formatted(data.active) }\n` +
             `Confirmed cases: ${ formatted(data.confirmed) }\n` +
             `Deaths: ${ formatted(data.deaths) }\n` +
-            `New cases: ${ formatted(data.deltaconfirmed) }\n` +
+            `Cases today: ${ formatted(data.deltaconfirmed) }\n` +
             `Recovery rate (active/confirmed): ${recovery}%\n` + 
             `Death rate (deaths/confirmed): ${death}%\n`
         })
