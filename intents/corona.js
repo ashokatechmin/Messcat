@@ -73,16 +73,18 @@ module.exports = class {
         console.log(states.length)
         var res = ""
         var space = "\n"+"\n"
+        
         for(let i = 0; i < states.length ; i++){
             
-
+            var recovery = ((this.dict.recovered[states[i]])/(this.dict.confirmed[states[i]])*100)
+            recovery = recovery.toFixed(2)
             if (i === (states.length-1)){space = ""}
 
             res = res + "Covid-19 Statistics in " + states[i] + ": \n" +
             "Active Cases: " + this.dict.active[states[i]] + "\n" +
             "Total Cases: " + this.dict.confirmed[states[i]] + "\n" +
             "Recovered Cases: " + this.dict.recovered[states[i]] + "\n" +                
-            "Recovery Rate: " + (((this.dict.recovered[states[i]])/(this.dict.confirmed[states[i]])*100)) + "\n" +
+            "Recovery Rate: " + recovery + "\n" +
             "Total Deaths: " + + this.dict.deaths[states[i]] + space
         }
 
