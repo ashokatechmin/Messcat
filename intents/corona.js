@@ -10,7 +10,7 @@ module.exports = class {
             description: "Coronavirus statistics at the tip of your finger",
             examples: ["corona in maharashtra", "coronavirus", "dinner tomorrow"]
         }
-
+        this.fetchData ()
         setInterval(() => {
             this.fetchData ()
         }, 36000000);
@@ -70,13 +70,31 @@ module.exports = class {
         /*console.log(states)
         console.log(this.dict.active[states])
         console.log(this.dict.confirmed[states])*/
+        console.log(states.length)
+        var res = ""
+        var space = "\n"+"\n"
+        for(let i = 0; i < states.length ; i++){
+            
+
+            if (i === (states.length-1)){space = ""}
+
+            res = res + "Covid-19 Statistics in " + states[i] + ": \n" +
+            "Active Cases: " + this.dict.active[states[i]] + "\n" +
+            "Total Cases: " + this.dict.confirmed[states[i]] + "\n" +
+            "Recovered Cases: " + this.dict.recovered[states[i]] + "\n" +                
+            "Recovery Rate: " + (((this.dict.recovered[states[i]])/(this.dict.confirmed[states[i]])*100)) + "\n" +
+            "Total Deaths: " + + this.dict.deaths[states[i]] + space
+        }
 
         return (
-            "Covid-19 Statistics in " + states + ": \n" +
-            "Active Cases: " + this.dict.active[states] + "\n" +
-            "Total Cases: " + this.dict.confirmed[states] + "\n" +
-            "Recovered Cases: " + this.dict.recovered[states] + "\n" +
-            "Total Deaths: " + + this.dict.deaths[states]
+            res
         )
     }
 }
+
+
+/*"Covid-19 Statistics in " + states + ": \n" +
+            "Active Cases: " + this.dict.active[states] + "\n" +
+            "Total Cases: " + this.dict.confirmed[states] + "\n" +
+            "Recovered Cases: " + this.dict.recovered[states] + "\n" +
+            "Total Deaths: " + + this.dict.deaths[states]*/
