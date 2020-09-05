@@ -1,8 +1,10 @@
+// from: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Intl/NumberFormat
+const formatted = n => new Intl.NumberFormat('en-IN', { maximumSignificantDigits: 3 }).format(+n)
 
 module.exports = class {
     constructor (processor) {
         this.processor = processor
-        this.keywords = ["corona", "covid", "covid-19"]
+        this.keywords = ["corona", "covid", "covid-19", "covid19"]
         this.entities = {}
         this.dict = {}
         this.meta = {
@@ -11,53 +13,32 @@ module.exports = class {
             examples: ["corona in maharashtra", "coronavirus", "dinner tomorrow"]
         }
         this.fetchData ()
-        setInterval(() => {
-            this.fetchData ()
-        }, 36000000);
-
+        setInterval(() => this.fetchData (), 60*60*1000); // fetch on the hour
     }
-
-    
     async fetchData () {
         const fetch = require("node-fetch")
         let API_URL = "https://api.covid19india.org/data.json"
         try {
             const response = await fetch (API_URL)
             const data = await response.json()
-            //console.log(data.statewise[0].active)
+            
+            console.log ('fetched corona data for ' + data.statewise.length + ' states/districts')
+            
+            this.dict = {}
 
-            
-            
-            const states = {}
-            const active = {}
-            const confirmed = {}
-            const deaths = {}
-            const recovered = {}
+            const entities = {}
 
             for (let item of data.statewise){
-                states [item.state.toLowerCase()] = "";
-                active [item.state.toLowerCase()] = item.active;
-                confirmed [item.state.toLowerCase()] = item.confirmed;
-                deaths [item.state.toLowerCase()] = item.deaths;
-                recovered [item.state.toLowerCase()] = item.recovered;
+                entities [item.state.toLowerCase()] = "";
+                this.dict[item.state.toLowerCase()] = item
             }
-            /*console.log(state)
-            console.log(active)
-            console.log(confirmed)
-            console.log(deaths)
-            console.log(recovered)*/
-            //console.log("fetching")
-
-            this.dict = {states, active, confirmed, deaths, recovered}
-            //console.log(this.dict)
-            
-        
-            this.processor.updateEntities (
-                "corona", states
-            )
-
+            entities["total"] = { // add alternate for total
+                alternates: ["india"],
+                value: ""
+            }
+            this.processor.updateEntities ("corona", entities)
         } catch (error) {
-            console.log(error)
+            console.error(`error in fetching corona data: ${error}`)
         }
         
     }
@@ -67,36 +48,26 @@ module.exports = class {
      * @param {string} user 
      */
     answer (states) {
-        /*console.log(states)
-        console.log(this.dict.active[states])
-        console.log(this.dict.confirmed[states])*/
-        console.log(states.length)
-        var res = ""
-        var space = "\n"+"\n"
-        
-        for(let i = 0; i < states.length ; i++){
+        states.forEach (s => {
+            // throw an error if the given state cannot be found
+            if(!this.dict[s]) throw new Error (`Sorry I don't have data for '${s}'`)
+        }) 
+        if (states.length === 0) states = [ "total" ] // if no state is provided, default is "total"
+
+        return states.map (stateName => {
+            const data = this.dict[stateName]
+            const recovery = ((data.recovered/data.confirmed)*100).toFixed(2)
+            const death = ((data.deaths/data.confirmed)*100).toFixed(2)
+            const date = data.lastupdatedtime.slice(0, -3) // slice off seconds
             
-            var recovery = ((this.dict.recovered[states[i]])/(this.dict.confirmed[states[i]])*100)
-            recovery = recovery.toFixed(2)
-            if (i === (states.length-1)){space = ""}
-
-            res = res + "Covid-19 Statistics in " + states[i] + ": \n" +
-            "Active Cases: " + this.dict.active[states[i]] + "\n" +
-            "Total Cases: " + this.dict.confirmed[states[i]] + "\n" +
-            "Recovered Cases: " + this.dict.recovered[states[i]] + "\n" +                
-            "Recovery Rate: " + recovery + "\n" +
-            "Total Deaths: " + + this.dict.deaths[states[i]] + space
-        }
-
-        return (
-            res
-        )
+            return `Covid-19 data (${stateName}) as of ${date}:\n` +
+            `Active cases: ${ formatted(data.active) }\n` +
+            `Confirmed cases: ${ formatted(data.confirmed) }\n` +
+            `Deaths: ${ formatted(data.deaths) }\n` +
+            `New cases: ${ formatted(data.deltaconfirmed) }\n` +
+            `Recovery rate (active/confirmed): ${recovery}%\n` + 
+            `Death rate (deaths/confirmed): ${death}%\n`
+        })
+        .join ("\n\n")
     }
 }
-
-
-/*"Covid-19 Statistics in " + states + ": \n" +
-            "Active Cases: " + this.dict.active[states] + "\n" +
-            "Total Cases: " + this.dict.confirmed[states] + "\n" +
-            "Recovered Cases: " + this.dict.recovered[states] + "\n" +
-            "Total Deaths: " + + this.dict.deaths[states]*/
