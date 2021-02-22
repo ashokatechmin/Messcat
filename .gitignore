@@ -1,7 +1,4 @@
-data/auth_info.json
 */.DS_Store
 .DS_Store
 node_modules/*
-package-lock.json
-auth/auth_info.json
-secret_intents/*
+.env

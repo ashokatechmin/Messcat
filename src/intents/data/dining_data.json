@@ -1,0 +1,264 @@
+{
+	"breakfast": {
+		"timings": "08:00 AM - 10:30 AM",
+		"Feb 22 2021": [
+			"corn flakes",
+			"boiled egg",
+			"idli sambar",
+			"coconut chutney",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 23 2021": [
+			"chocos",
+			"scramble egg",
+			"pancake",
+			"honey",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 24 2021": [
+			"muesli",
+			"masala omelette",
+			"vegetable poha",
+			"mint chutney",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 25 2021": [
+			"corn flakes",
+			"boiled egg",
+			"plain paratha",
+			"aloo bhaji",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 26 2021": [
+			"chocos",
+			"masala omelette",
+			"vada sambar",
+			"tomato chutney",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 27 2021": [
+			"muesli",
+			"egg bhurji",
+			"matar",
+			"kulcha",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Feb 28 2021": [
+			"chocos",
+			"fried egg",
+			"hash brown potato",
+			"baked beans",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		]
+	},
+	"lunch": {
+		"timings": "12:15 PM - 02:30 PM",
+		"Feb 22 2021": [
+			"green salad",
+			"laccha onion",
+			"homestyle chicken",
+			"shahi paneer",
+			"red malka dal",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 23 2021": [
+			"green salad",
+			"russian salad",
+			"soya chaap masala",
+			"gobhi adraki",
+			"yellow dal tadka",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"coconut ladoo"
+		],
+		"Feb 24 2021": [
+			"green salad",
+			"achari mooli",
+			"chicken chettinad",
+			"kadai paneer",
+			"black malka",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 25 2021": [
+			"green salad",
+			"chana chaat",
+			"sindhi kadhi",
+			"soya  matar",
+			"penne arrabiata",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"assorted pastry"
+		],
+		"Feb 26 2021": [
+			"green salad",
+			"sprouts salad",
+			"rajma masala",
+			"aloo tamatari",
+			"saute veg",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 27 2021": [
+			"green salad",
+			"three beans salad",
+			"amritsari choley",
+			"khatta meetha petha",
+			"masala chaas",
+			"plain rice",
+			"pori",
+			"jaggery, gooseberry, achar",
+			"suji halwa"
+		],
+		"Feb 28 2021": [
+			"green salad",
+			"mustard potato salad",
+			"mushroom matar",
+			"macaroni pasta",
+			"urad k i dal",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		]
+	},
+	"snacks": {
+		"timings": "04:45 PM - 06:15 PM",
+		"Feb 22 2021": [
+			"banana cake",
+			"tea, coffee"
+		],
+		"Feb 23 2021": [
+			"french heart",
+			"tea, coffee"
+		],
+		"Feb 24 2021": [
+			"burger",
+			"thandai"
+		],
+		"Feb 25 2021": [
+			"french fries",
+			"tea, coffee"
+		],
+		"Feb 26 2021": [
+			"veg puff",
+			"tea, coffee"
+		],
+		"Feb 27 2021": [
+			"brownie",
+			"tea, coffee"
+		],
+		"Feb 28 2021": [
+			"marble cake",
+			"tea, coffee"
+		]
+	},
+	"dinner": {
+		"timings": "07:30 PM - 10:15 PM",
+		"Feb 22 2021": [
+			"green salad",
+			"italian salad",
+			"malai kofta curry",
+			"aloo matar dry",
+			"dal panchmel",
+			"plain  rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"fruit custard"
+		],
+		"Feb 23 2021": [
+			"green salad",
+			"tossed salad",
+			"spaghetti aop",
+			"palak corn",
+			"dal makhani",
+			"jeera rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 24 2021": [
+			"green salad",
+			"macaroni pasta salad",
+			"lauki kofta curry",
+			"chauka matar",
+			"dal muradabadi",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"besan barfi"
+		],
+		"Feb 25 2021": [
+			"green salad",
+			"three bean salad",
+			"papad mangodi ki sabzi",
+			"tawa subz",
+			"dal hyderabadi",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 26 2021": [
+			"kimchi salad",
+			"hot n' sour soup",
+			"veg dumpling soya garlic sauce",
+			"veg hakka noodle",
+			"schezwan fried rice",
+			"chilli potato",
+			"ice cream"
+		],
+		"Feb 27 2021": [
+			"green salad",
+			"kachumber salad",
+			"chicken do pyaza",
+			"paneer makhani",
+			"moong dal",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Feb 28 2021": [
+			"green salad",
+			"tossed salad",
+			"sham savera",
+			"mix vegetable",
+			"urad ki dal",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"gulab jamun"
+		]
+	}
+}

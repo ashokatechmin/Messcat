@@ -1,5 +1,5 @@
 const PDFExtract = require('pdf.js-extract').PDFExtract
-const DateUtils = require('../DateUtils.js')
+const DateUtils = require('../utils/date-utils.js')
 
 const isWeekend = (day) => day % 6 === 0
 

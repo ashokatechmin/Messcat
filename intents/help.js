@@ -1,1 +1,0 @@
-module.exports = require ("@adiwajshing/whatsapp-info-bot/Example/computed_intents/help.js")
