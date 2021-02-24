@@ -20,7 +20,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
     - name: Install Serverless
-      run: yarn global add serverless
+      run: npm i -g serverless
 
     - name: Install Dependencies
       run: yarn
