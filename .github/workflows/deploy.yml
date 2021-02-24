@@ -23,7 +23,7 @@ jobs:
       run: npm i -g serverless
 
     - name: Install Dependencies
-      run: npm
+      run: npm i
 
     - name: Serverless AWS authentication
       run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
