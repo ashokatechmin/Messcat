@@ -3,4 +3,4 @@
 node_modules
 .env
 .serverless
-package-lock.json
+yarn.lock

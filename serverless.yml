@@ -5,10 +5,11 @@ useDotenv: true
 
 plugins:
   - serverless-offline
+  - serverless-dotenv-plugin
 
 provider:
   name: aws
-  runtime: nodejs12.x
+  runtime: nodejs14.x
   stage: production
   region: ap-south-1
   apiName: messcat
