@@ -6,17 +6,18 @@
   "scripts": {
     "test": "node src/intents --chat",
     "fetch:dining": "node src/utils/download-dining-menu",
-    "start": "serverless offline start --skipCacheInvalidation"
+    "start": "serverless offline start --skipCacheInvalidation",
+    "deploy": "sls deploy"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/whatsapp-info-bot": "link:../WhatsAppInfoBot",
+    "@adiwajshing/whatsapp-info-bot": "github:adiwajshing/WhatsAppInfoBot",
+    "@chatdaddy/authentication-utils": "github:chatdaddy/authentication-utils",
     "dotenv": "^8.2.0",
     "google-auth-library": "^7.0.2",
     "googleapis": "^67.1.0",
-    "node-cron": "^2.0.3",
     "node-fetch": "^2.6.1",
     "pdf.js-extract": "^0.1.4",
     "pdf2json": "^1.2.0"

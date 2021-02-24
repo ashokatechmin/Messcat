@@ -25,9 +25,15 @@
   resolved "https://registry.yarnpkg.com/@adiwajshing/keyed-db/-/keyed-db-0.2.4.tgz#2a09e88fce20b2672deb60a7750c5fe3ab0dfd99"
   integrity sha512-yprSnAtj80/VKuDqRcFFLDYltoNV8tChNwFfIgcf6PGD4sjzWIBgs08pRuTqGH5mk5wgL6PBRSsMCZqtZwzFEw==
 
-"@adiwajshing/whatsapp-info-bot@link:../WhatsAppInfoBot":
-  version "0.0.0"
-  uid ""
+"@adiwajshing/whatsapp-info-bot@github:adiwajshing/WhatsAppInfoBot":
+  version "2.0.0"
+  resolved "https://codeload.github.com/adiwajshing/WhatsAppInfoBot/tar.gz/8b69c2c44e3f5539f4b6661790f0e190bca684e4"
+  dependencies:
+    got "^11.8.1"
+    natural "^2.1.5"
+  optionalDependencies:
+    "@adiwajshing/baileys" "^3.4.0"
+    "@chatdaddy/authentication-utils" "git+https://github.com/chatdaddy/authentication-utils"
 
 "@babel/runtime@^7.7.2":
   version "7.12.1"
@@ -39,6 +45,15 @@
 "@chatdaddy/authentication-utils@git+https://github.com/chatdaddy/authentication-utils":
   version "0.1.0"
   resolved "git+https://github.com/chatdaddy/authentication-utils#012b4e14585b14ca50bbf66f969242d8c6965adf"
+  dependencies:
+    got "^11.5.1"
+    jsonwebtoken "^8.5.1"
+    node-cache "^5.1.2"
+
+"@chatdaddy/authentication-utils@github:chatdaddy/authentication-utils":
+  version "0.1.0"
+  uid "012b4e14585b14ca50bbf66f969242d8c6965adf"
+  resolved "https://codeload.github.com/chatdaddy/authentication-utils/tar.gz/012b4e14585b14ca50bbf66f969242d8c6965adf"
   dependencies:
     got "^11.5.1"
     jsonwebtoken "^8.5.1"
@@ -3534,14 +3549,6 @@ node-cache@^5.1.2:
   dependencies:
     clone "2.x"
 
-node-cron@^2.0.3:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/node-cron/-/node-cron-2.0.3.tgz#b9649784d0d6c00758410eef22fa54a10e3f602d"
-  integrity sha512-eJI+QitXlwcgiZwNNSRbqsjeZMp5shyajMR81RZCqeW0ZDEj4zU9tpd4nTh/1JsBiKbF8d08FCewiipDmVIYjg==
-  dependencies:
-    opencollective-postinstall "^2.0.0"
-    tz-offset "0.0.1"
-
 node-fetch@^2.3.0, node-fetch@^2.6.0, node-fetch@^2.6.1:
   version "2.6.1"
   resolved "https://registry.yarnpkg.com/node-fetch/-/node-fetch-2.6.1.tgz#045bd323631f76ed2e2b55573394416b639a0052"
@@ -3690,11 +3697,6 @@ onetime@^5.1.0:
   integrity sha512-kbpaSSGJTWdAY5KPVeMOKXSrPtr8C8C7wodJbcsd51jRnmD+GZu8Y0VoU6Dm5Z4vWr0Ig/1NKuWRKf7j5aaYSg==
   dependencies:
     mimic-fn "^2.1.0"
-
-opencollective-postinstall@^2.0.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/opencollective-postinstall/-/opencollective-postinstall-2.0.3.tgz#7a0fff978f6dbfa4d006238fbac98ed4198c3259"
-  integrity sha512-8AV/sCtuzUeTo8gQK5qDZzARrulB3egtLzFgteqB2tcT4Mw7B8Kt7JcDHmltjz6FOAHsvTevk70gZEbhM4ZS9Q==
 
 optimist@^0.6.1:
   version "0.6.1"
@@ -4844,11 +4846,6 @@ typedarray@^0.0.6:
   version "0.0.6"
   resolved "https://registry.yarnpkg.com/typedarray/-/typedarray-0.0.6.tgz#867ac74e3864187b1d3d47d996a78ec5c8830777"
   integrity sha1-hnrHTjhkGHsdPUfZlqeOxciDB3c=
-
-tz-offset@0.0.1:
-  version "0.0.1"
-  resolved "https://registry.yarnpkg.com/tz-offset/-/tz-offset-0.0.1.tgz#fef920257024d3583ed9072a767721a18bdb8a76"
-  integrity sha512-kMBmblijHJXyOpKzgDhKx9INYU4u4E1RPMB0HqmKSgWG8vEcf3exEfLh4FFfzd3xdQOw9EuIy/cP0akY6rHopQ==
 
 underscore@^1.9.1:
   version "1.11.0"

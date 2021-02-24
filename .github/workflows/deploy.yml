@@ -1,0 +1,35 @@
+name: Deploy to AWS
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [12.x]
+
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Node ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+          node-version: ${{ matrix.node-version }}
+
+    - name: Install Serverless
+      run: yarn global add serverless
+
+    - name: Install Dependencies
+      run: yarn
+
+    - name: Serverless AWS authentication
+      run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
+
+    - name: Copy production env
+      run: 'echo -e "${{secrets.ENV}}" > .env'
+
+    - name: Deploy Lambda functions
+      run: sls deploy
