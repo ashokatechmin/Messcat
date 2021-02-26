@@ -1,5 +1,12 @@
 {
-    "keywords": ["number", "contact", "e-mail", "email", "mail", "helpline"],
+    "keywords": [
+        "number",
+        "contact",
+        "e-mail",
+        "email",
+        "mail",
+        "helpline"
+    ],
     "answer": "<entity:key>'s contact:\n<entity:value>",
     "entities": {
         "maintenance": "Landline: 01302300429\nMobile: 8199977074",
@@ -12,11 +19,15 @@
         "transport": "Landline: 01302300201\nMobile: 8222930501",
         "catering": "Landline: 01302300666\nMobile: 9582113911",
         "food outlet": {
-            "alternates": ["catering and food outlet"],
+            "alternates": [
+                "catering and food outlet"
+            ],
             "value": "Landline: 01302300666\nMobile: 9582113911"
         },
         "jahangirpuri": {
-            "alternates": ["jahangirpuri guard"],
+            "alternates": [
+                "jahangirpuri guard"
+            ],
             "value": "8222930509"
         },
         "shuttle guard": "8222930509",
@@ -28,20 +39,23 @@
         "chicago pizza": "8396863518",
         "document centre": "Pawan Kumar: 7206106609",
         "salon": {
-            "alternates": ["parlour", "parlor"],
+            "alternates": [
+                "parlour",
+                "parlor"
+            ],
             "value": "9953058779\n9953935976"
         },
         "rh3 warden": "Thompson: 7011787382",
         "rh4 warden": "Roshan: 7082000589",
         "sunita bansal": "7082000403",
-
         "hor": {
-            "alternates": ["sg", "student government"],
-            "value":"Student Government: sg@ashoka.edu.in"
+            "alternates": [
+                "sg",
+                "student government"
+            ],
+            "value": "Student Government: sg@ashoka.edu.in"
         },
-
         "aniruddha jetha": "Aniruddha Jetha: aniruddha.jetha_ug21@ashoka.edu.in",
-
         "ashutosh sharma": "Ashutosh Sharma: ashutosh.sharma_ug22@ashoka.edu.in",
         "biplob kumar das": "Biplob Kumar Das: biplob.das_ug21@ashoka.edu.in",
         "harshit kumar": "Harshit Kumar: harshit.kumar_ug22@ashoka.edu.in",
@@ -52,64 +66,84 @@
         "sanjay sudarsan": "Sanjay Sudarsan: sanjay.sudarsan_ug22@ashoka.edu.in",
         "shweta siddhu": "Shweta Siddhu: shweta.siddhu_ug22@ashoka.edu.in",
         "varnika gangavalli": "Varnika Gangavalli: varnika.gangavalli_ug21@ashoka.edu.in",
-
-        "technology minister" :{
-            "alternates": ["tech", "tech minister"],
+        "technology minister": {
+            "alternates": [
+                "tech",
+                "tech minister"
+            ],
             "value": "Adhiraj Singh (Technology Minister): adhiraj.singh_ug21@ashoka.edu.in"
         },
-
-        "environment minister":{
-            "alternates": ["environmental minister", "env minister"],
+        "environment minister": {
+            "alternates": [
+                "environmental minister",
+                "env minister"
+            ],
             "value": "Anjali Dalmia (Environment Minister): anjali.dalmia_ug22@ashoka.edu.in"
         },
-
-        "finance minister":{
-            "alternates": ["fin minister"],
+        "finance minister": {
+            "alternates": [
+                "fin minister"
+            ],
             "value": "Arundhati Rajan (Finance Minister): arundhati.rajan_ug22@ashoka.edu.in"
         },
-
-        "minister for community well-being":{
-            "alternates": ["cwb minister", "minister for community well being"],
-            "value": "Bhavya Dixit (Minister for Community Well-Being): bhavya.dixit_ug21@ashoka.edu.in" 
+        "minister for community well-being": {
+            "alternates": [
+                "cwb minister",
+                "minister for community well being"
+            ],
+            "value": "Bhavya Dixit (Minister for Community Well-Being): bhavya.dixit_ug21@ashoka.edu.in"
         },
-
-        "cultural minister":{
-            "alternates": ["cul minister"],
+        "cultural minister": {
+            "alternates": [
+                "cul minister"
+            ],
             "value": "Harsha Mohan (Cultural Minister): harsha.potapragada_ug21@ashoka.edu.in"
         },
-
-        "academic affairs minister":{
-            "alternates": ["aa minister"],
+        "academic affairs minister": {
+            "alternates": [
+                "aa minister"
+            ],
             "value": "Pratiti (Academic Affairs Minister): pratiti_asp21@ashoka.edu.in"
         },
-
-        "campus life minister":{
-            "alternates": ["campus minister"],
+        "campus life minister": {
+            "alternates": [
+                "campus minister"
+            ],
             "value": "Rithupar Pathy (Campus Life Minister): rithupar.pathy_ug21@ashoka.edu.in"
         },
-
-        "parliamentary affairs minister":{
-            "alternates": ["pa minister"],
+        "parliamentary affairs minister": {
+            "alternates": [
+                "pa minister"
+            ],
             "value": "Sharanya Narayanan (Parliamentary Affairs Minister): sharanya.narayanan_ug22@ashoka.edu.in"
         },
-
-        "student government president":{
-            "alternates": ["sg president"],
+        "student government president": {
+            "alternates": [
+                "sg president"
+            ],
             "value": "Priavi Joshi (President): priavi.joshi_ug21@ashoka.edu.in"
         },
-
-        "leader of opposition":{
-            "alternates": ["sg lo", "lo"],
+        "leader of opposition": {
+            "alternates": [
+                "sg lo",
+                "lo"
+            ],
             "value": "Gaurav Nandan Tripathi (Leader of the Opposition): gaurav.tripathi_ug20@ashoka.edu.in"
-        },
-
-
-        "meta": {
-            "userFacingName": ["contact", "number", "numbers", "helpline"],
-            "description": "Helpline numbers",
-            "examples": ["what is the maintenance number", "rh3 warden contact", 
-                "number for thc", "dhaba"]
         }
+    },
+    "meta": {
+        "userFacingName": [
+            "contact",
+            "number",
+            "numbers",
+            "helpline"
+        ],
+        "description": "Helpline numbers",
+        "examples": [
+            "what is the maintenance number",
+            "rh3 warden contact",
+            "number for thc",
+            "dhaba"
+        ]
     }
-
 }
