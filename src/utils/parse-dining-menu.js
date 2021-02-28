@@ -4,6 +4,8 @@ const parseMessMenu = (messPdfFile) => {
 	const pdfParser = new PDFParser()
 	const mealOptions = [ 'breakfast', 'lunch', 'snacks', 'dinner' ]
 
+	console.log('loading from ', messPdfFile)
+
 	return new Promise((resolve, reject) => {
 		/**
 		 * @param {{ x: number, y: number, w: number, l: number }[]} hLines 
@@ -31,6 +33,7 @@ const parseMessMenu = (messPdfFile) => {
 		 */
 		const sliceIntoGrid = (hLines, vLines, texts) => {
 			const rows = sliceIntoRows(hLines, texts)
+			//fs.writeFileSync('./rows.json', JSON.stringify(rows))
 			vLines = [...vLines].sort(({ x: x0 }, { x: x1 }) => x0-x1).filter(item => item.l > 40)
 			const cells = rows.map(row => (
 				vLines.map((line, i) => {
@@ -48,7 +51,9 @@ const parseMessMenu = (messPdfFile) => {
 					return cols
 				})
 			))
-			return cells
+			return cells.filter(item => ( // filter empty rows
+				item.find(cell => !!cell.length)
+			))
 		}
 		const parseDate = (dateStr) => {
 			const months = [
@@ -69,25 +74,44 @@ const parseMessMenu = (messPdfFile) => {
 		)
 		const parseData = (pdfData) => {
 			const { formImage: { Pages: [page] } } = pdfData
-			const { VLines, HLines, Texts } = page
-			const grid = sliceIntoGrid(HLines, VLines, Texts)
 			
-			const [datesItem] = grid[1].find(item => item[0]?.includes('-'))
-			const [startDate, endDate] = datesItem.split('-')
+			let { VLines, HLines, Texts, Fills } = page
+			if(!HLines.length || !VLines.length) {
+				// make do with fills
+				// if lines are detected as fills
+				console.log('hlines/vlines missing')
+				if(!Fills.length) {
+
+					throw new Error('fills, hlines, vlines missing from menu -- cannot construct grid')
+				} 
+				HLines = Fills.filter(item => item.h < 1)
+				VLines = Fills.filter(item => item.w < 1).map(item => (
+					{ ...item, l: item.h }
+				))
+			}
+			const grid = sliceIntoGrid(HLines, VLines, Texts)
+			//fs.writeFileSync('./grid.json', JSON.stringify(grid))
+
+			const [datesItem] = grid[0].find(item => item[0]?.includes('-'))
+			const [startDate, endDate] = datesItem
+											.replace(/,/gi, ' ') // replace commas with space to make it easier to parse
+											.replace(/[\s]{2,}/gi, ' ') // replace extra spaces
+											.replace(' - ', '-') // remove space
+											.split('-')
 			const fullDateStr = startDate + ' ' + endDate.split(' ').slice(-1)[0]
 			const date = parseDate(fullDateStr)
 			
 			const data = {}
 			for(const meal of mealOptions) {
-				const idx = grid[2].findIndex(item => item[0]?.toLocaleLowerCase()?.trim() === meal)
-				// grid[2] => meal options
-				// grid[3] => meal timing
-				data[meal] = grid.slice(4, -1).reduce((data, value, i) => (
+				const idx = grid[1].findIndex(item => item[0]?.toLocaleLowerCase()?.trim() === meal)
+				// grid[1] => meal options
+				// grid[2] => meal timing
+				data[meal] = grid.slice(3, -1).reduce((data, value, i) => (
 					{ 
 						...data, 
 						[dateString(date, i)]: value[idx].map(item => item.toLocaleLowerCase().trim())
 					}
-				), { timings: grid[3][idx][0] })
+				), { timings: grid[2][idx][0] })
 			}
 			resolve(data)
 		}
