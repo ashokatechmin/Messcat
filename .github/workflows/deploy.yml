@@ -14,6 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
       with:
+        token: ${{secrets.GH_TOKEN}}
         submodules: recursive
 
     - name: Node ${{ matrix.node-version }}
