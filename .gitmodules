@@ -1,0 +1,3 @@
+[submodule "src/intents/messcat-secrets"]
+	path = src/intents/messcat-secrets
+	url = https://github.com/ashokatechmin/messcat-secrets

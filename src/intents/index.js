@@ -12,13 +12,17 @@ const create = async() => {
 		require('./helpline.json'),
 		require('./timings.json'),
 	]
+	const credsIntent = require('./messcat-secrets/creds.json')
+	if(credsIntent) intents.push(credsIntent)
+	else console.log('could not find creds intent')
+
 	intents.push(
 		helpIntent(intents)
 	)
 	return createLanguageProcessor(
 		intents,
 		{
-			parsingFailedText: "Sorry fren, I couldn't understand '<input>'. Type 'help' to know what all I can do"
+			parsingFailedText: "Sorry fren, I couldn't understand '{{input}}'. Type 'help' to know what all I can do"
 		}
 	)
 }

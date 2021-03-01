@@ -7,7 +7,7 @@
         "mail",
         "helpline"
     ],
-    "answer": "<entity:key>'s contact:\n<entity:value>",
+    "answer": "{{entity.key}}'s contact:\n{{entity.value}}",
     "entities": {
         "maintenance": "Landline: 01302300429\nMobile: 8199977074",
         "security": "Main gate 1:\n\tLandline: 01302300151\n\tMobile: 8199977071\nMain gate 2:\n\tLandline: 01302300152\n\tMobile: 8199977072",

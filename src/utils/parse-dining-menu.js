@@ -90,7 +90,6 @@ const parseMessMenu = (messPdfFile) => {
 				))
 			}
 			const grid = sliceIntoGrid(HLines, VLines, Texts)
-			//fs.writeFileSync('./grid.json', JSON.stringify(grid))
 
 			const [datesItem] = grid[0].find(item => item[0]?.includes('-'))
 			const [startDate, endDate] = datesItem

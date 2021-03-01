@@ -1,6 +1,6 @@
 {
     "keywords": ["timings","time","when","schedule", "schedul","open","close"],
-    "answer": "*<entity:key> timings are:*\n <entity:value>",
+    "answer": "*{{entity.key}} timings are:*\n {{entity.value}}",
     "entities": {
         "hot water": "Mon-Fri: 07:00AM-10:00AM, 07:00PM-10:00PM\nSat-Sun: 08:00AM-11:00AM, 08:00PM-11:00PM",
         "mail room": {
@@ -32,7 +32,8 @@
         "library": "all the time fren, except friday",
         "document centre": "08:00AM-07:00PM, all days except Sunday",
         "fuel zone": "10:00AM-02:00AM",
-        "asg": "shuts at 11:30PM"
+        "asg": "shuts at 11:30PM",
+        "gym": "24/7"
     },
     "meta": {
         "userFacingName": "timings",
