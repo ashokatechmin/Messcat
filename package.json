@@ -17,7 +17,7 @@
     "@chatdaddy/authentication-utils": "github:chatdaddy/authentication-utils",
     "dotenv": "^8.2.0",
     "google-auth-library": "^7.0.2",
-    "googleapis": "^67.1.0",
+    "googleapis": "^67.1.1",
     "mustache": "^4.1.0",
     "node-fetch": "^2.6.1",
     "pdf.js-extract": "^0.1.4",
