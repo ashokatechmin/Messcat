@@ -13,6 +13,8 @@ provider:
   stage: production
   region: ap-south-1
   apiName: messcat
+  memorySize: 256 # 256mb
+  timeout: 20 # 20s
   lambdaHashingVersion: 20201221
 
 functions:
