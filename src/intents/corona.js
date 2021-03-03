@@ -49,13 +49,13 @@ module.exports = async() => {
                 const date = data.lastupdatedtime.slice(0, -3) // slice off seconds
                 
                 return `Covid-19 data (${stateName}) as of ${date}:\n` +
-                    `Active cases: ${ formatted(data.active) }\n` +
-                    `Confirmed cases: ${ formatted(data.confirmed) }\n` +
-                    `Recovered cases: ${ formatted(data.recovered) }\n` +
-                    `Deaths: ${ formatted(data.deaths) }\n` +
-                    `Cases today: ${ formatted(data.deltaconfirmed) }\n` +
-                    `Recovery rate (active/confirmed): ${recovery}%\n` + 
-                    `Death rate (deaths/recovered): ${death}%\n`
+                    `Active cases: ${ formatted(data.active) } 😱\n` +
+                    `Confirmed cases: ${ formatted(data.confirmed) } 😱\n` +
+                    `Recovered cases: ${ formatted(data.recovered) } 😍\n` +
+                    `Deaths: ${ formatted(data.deaths) } 🙏\n` +
+                    `Cases today: ${ formatted(data.deltaconfirmed) } 🦠\n` +
+                    `Recovery rate (active/confirmed): ${recovery}% 🤞\n` + 
+                    `Death rate (deaths/recovered): ${death}% 🙏\n`
             })
             data.push (
                 `Data from: ${API_URL}`
