@@ -1,7 +1,7 @@
 {
 	"keywords": ["hi", "hii", "hiii", "hey", "heyy", "heyyy", "henlo", "hello", "yo", "whatsup", "wassup", "messcat", "aye", "ayee", "mate"],
 	"entities": {},
-	"answer": "Hello! Type 'help' to know what all I can do",
+	"answer": "Hello 🥰!\nType 'help' to know what all I can do",
 	"meta": {},
 	"isGreeting": true
 }

@@ -36,7 +36,7 @@
         "gym": "24/7"
     },
     "meta": {
-        "userFacingName": "timings",
+        "userFacingName": ["timings"],
         "description": "Timings for facilities & vendors",
         "examples": ["what time is hot water", "aye mate, when does fuel zone open", "tell me what time is hot water or i'll shoot you"]
     }

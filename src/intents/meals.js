@@ -42,7 +42,7 @@ module.exports = class {
      * @param {string[]} entities 
      * @param {string} user 
      */
-    answer (entities, user) {
+    answer (entities) {
         const isTomorrow = entities.indexOf ("tomorrow") 
         if (isTomorrow >= 0) {
             entities.splice (isTomorrow, 1)
@@ -75,7 +75,7 @@ module.exports = class {
 				if (arr) {
 					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ")) ).join("\n")
 				} else {
-					str = "Data not available :/"
+					str = "Data not available 😅"
 				}
 				return str.toTitleCase()
 			}
@@ -86,6 +86,6 @@ module.exports = class {
 	}
 	formattedString (mealOption, dateKey) {
 		const arr = this.mealsData[mealOption][dateKey]
-		return arr ? " " + arr.join("\n ").toTitleCase() : "Data not available :/"
+		return arr ? " " + arr.join("\n ").toTitleCase() : "Data not available 😅"
 	}
 }
