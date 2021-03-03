@@ -47,6 +47,9 @@ module.exports = class {
         if (isTomorrow >= 0) {
             entities.splice (isTomorrow, 1)
         }
+		if(!entities.length) {
+			throw new Error('Not sure what you mean. Type "help" to know what I can do')
+		}
         return entities.map ( entity => this.meals ({meal: entity, tomorrow: isTomorrow >= 0}) )
     }
     meals (options) {
@@ -62,7 +65,7 @@ module.exports = class {
 		} else {
 			const option = options.meal.toLowerCase()
 			if (!this.mealsData[option]) {
-				throw "Unknown Option: " + option + "; You can ask for " + mealOptions.join(", ")
+				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
 			}
 			if (option === "combo") {
 				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
