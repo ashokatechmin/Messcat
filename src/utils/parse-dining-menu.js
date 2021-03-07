@@ -1,5 +1,8 @@
 const PDFParser = require("pdf2json")
-
+/**
+ * Takes in path to the dining pdf and parses it
+ * @param {string} messPdfFile path to the mess pdf
+ */
 const parseMessMenu = (messPdfFile) => {
 	const pdfParser = new PDFParser()
 	const mealOptions = [ 'breakfast', 'lunch', 'snacks', 'dinner' ]
@@ -12,7 +15,9 @@ const parseMessMenu = (messPdfFile) => {
 		 * @param {{ x: number, y: number, sw: number, w: number, R: { T: string }[] }[]} texts 
 		 */
 		const sliceIntoRows = (hLines, texts) => {
+			// sort lines in ascending order of y position (top => bottom)
 			hLines = [...hLines].sort(({ y: y0 }, { y: y1 }) => y0-y1)
+			// find all pieces of text that fit into two lines
 			const rows = hLines.map((value, i) => {
 				const prevY = hLines[i-1]?.y || 0
 				const curY = value.y
@@ -33,8 +38,9 @@ const parseMessMenu = (messPdfFile) => {
 		 */
 		const sliceIntoGrid = (hLines, vLines, texts) => {
 			const rows = sliceIntoRows(hLines, texts)
-			//fs.writeFileSync('./rows.json', JSON.stringify(rows))
+			// sort lines in ascending order of x position (left => right)
 			vLines = [...vLines].sort(({ x: x0 }, { x: x1 }) => x0-x1).filter(item => item.l > 40)
+			// slice the rows into their respective cells
 			const cells = rows.map(row => (
 				vLines.map((line, i) => {
 					const prevX = vLines[i-1]?.x || 0
@@ -55,6 +61,7 @@ const parseMessMenu = (messPdfFile) => {
 				item.find(cell => !!cell.length)
 			))
 		}
+		/** parses a date. Eg. input 01 Aug 2020 */
 		const parseDate = (dateStr) => {
 			const months = [
 				'jan', 'feb', 'mar', 'apr', 'may', 'jun', 'jul', 'aug', 'sep', 'oct', 'nov', 'dec'
@@ -69,14 +76,17 @@ const parseMessMenu = (messPdfFile) => {
 			)
 			return date
 		}
+		/** nice little formatted date string offset by a few days */
 		const dateString = (date, offsetDays) => (
 			new Date(date.getTime() + offsetDays*24*60*60*1000).toString().slice(4, 15)
 		)
+		/** actually parse the pdf data */
 		const parseData = (pdfData) => {
+			// get the first page of the pdf
 			const { formImage: { Pages: [page] } } = pdfData
 			
 			let { VLines, HLines, Texts, Fills } = page
-			if(!HLines.length || !VLines.length) {
+			if(!HLines.length || !VLines.length) { // lines are probably fills here :/
 				// make do with fills
 				// if lines are detected as fills
 				console.log('hlines/vlines missing')
@@ -84,19 +94,21 @@ const parseMessMenu = (messPdfFile) => {
 
 					throw new Error('fills, hlines, vlines missing from menu -- cannot construct grid')
 				} 
-				HLines = Fills.filter(item => item.h < 1)
+				HLines = Fills.filter(item => item.h < 1) // lines are fills less than 1 unit thick
 				VLines = Fills.filter(item => item.w < 1).map(item => (
 					{ ...item, l: item.h }
 				))
 			}
+			// make the grid from the lines
 			const grid = sliceIntoGrid(HLines, VLines, Texts)
-
+			// find the date
 			const [datesItem] = grid[0].find(item => item[0]?.includes('-'))
 			const [startDate, endDate] = datesItem
 											.replace(/,/gi, ' ') // replace commas with space to make it easier to parse
 											.replace(/[\s]{2,}/gi, ' ') // replace extra spaces
 											.replace(' - ', '-') // remove space
 											.split('-')
+			// the full date
 			const fullDateStr = startDate + ' ' + endDate.split(' ').slice(-1)[0]
 			const date = parseDate(fullDateStr)
 			
