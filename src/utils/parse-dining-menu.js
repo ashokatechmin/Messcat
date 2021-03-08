@@ -1,4 +1,5 @@
 const PDFParser = require("pdf2json")
+
 /**
  * Takes in path to the dining pdf and parses it
  * @param {string} messPdfFile path to the mess pdf
@@ -105,6 +106,7 @@ const parseMessMenu = (messPdfFile) => {
 			const [datesItem] = grid[0].find(item => item[0]?.includes('-'))
 			const [startDate, endDate] = datesItem
 											.replace(/,/gi, ' ') // replace commas with space to make it easier to parse
+											.replace(/([A-Z]{1}(?![A-Z])(?!$))/g, ' $1') // add spaces if no spaces exist
 											.replace(/[\s]{2,}/gi, ' ') // replace extra spaces
 											.replace(' - ', '-') // remove space
 											.split('-')

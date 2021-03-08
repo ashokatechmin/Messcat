@@ -1,7 +1,73 @@
 {
 	"breakfast": {
 		"timings": "08:00 AM - 10:30 AM",
-		"lid Date": [
+		"Mar 08 2021": [
+			"corn flakes",
+			"scramble egg",
+			"uttapam sambar",
+			"coconut chutney",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 09 2021": [
+			"muesli",
+			"boiled egg",
+			"pan cake",
+			"honey,chocolate",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 10 2021": [
+			"corn flakes",
+			"masala omelette",
+			"veg poha",
+			"mint chutney",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 11 2021": [
+			"chocos",
+			"boiled egg",
+			"plain paratha",
+			"aloo bhaji",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 12 2021": [
+			"corn flakes",
+			"egg bhurji",
+			"hash brown potato",
+			"baked beans",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 13 2021": [
+			"muesli",
+			"fried egg",
+			"pao",
+			"bhaji",
+			"bread, butter, jam",
+			"banana, cut fruit",
+			"milk- hot & cold",
+			"tea & coffee",
+			"porridge, bournvita"
+		],
+		"Mar 14 2021": [
 			"corn flakes",
 			"masala omelette",
 			"vermicelli upma",
@@ -15,7 +81,70 @@
 	},
 	"lunch": {
 		"timings": "12:15 PM - 02:30 PM",
-		"lid Date": [
+		"Mar 08 2021": [
+			"green salad",
+			"laccha onion",
+			"homestyle chicken",
+			"paneer lababdar",
+			"dal makhani",
+			"mix raita",
+			"jeera rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 09 2021": [
+			"green salad",
+			"italian salad",
+			"fusilli pasta",
+			"chaara aloo hara pyaz",
+			"yellow dal tadka",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"boondi ladoo"
+		],
+		"Mar 10 2021": [
+			"green salad",
+			"lachha onion",
+			"chicken biryani",
+			"veg paneer biryani",
+			"red malka dal",
+			"burani raita",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 11 2021": [
+			"green salad",
+			"rajma masala",
+			"macaroni pasta",
+			"palak corn masala",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"chocolate fudge cake"
+		],
+		"Mar 12 2021": [
+			"green salad",
+			"sprouts salad",
+			"malai kofta curry",
+			"soya matar",
+			"dalpanchmel",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 13 2021": [
+			"green salad",
+			"laccha onion",
+			"amritsari choley",
+			"khatta meetha petha",
+			"masala chaach",
+			"jeera rice",
+			"lucchi",
+			"jaggery, gooseberry, achar",
+			"moong dal halwa"
+		],
+		"Mar 14 2021": [
 			"green salad",
 			"tossed salad",
 			"mushroom matar",
@@ -28,14 +157,96 @@
 	},
 	"snacks": {
 		"timings": "04:45 PM - 06:15 PM",
-		"lid Date": [
+		"Mar 08 2021": [
+			"veg nuggets",
+			"tea, coffee"
+		],
+		"Mar 09 2021": [
+			"pizza",
+			"tea, coffee"
+		],
+		"Mar 10 2021": [
+			"gol gappa",
+			"tea, coffee"
+		],
+		"Mar 11 2021": [
+			"cheese toast",
+			"banana shake"
+		],
+		"Mar 12 2021": [
+			"french fries",
+			"tea, coffee"
+		],
+		"Mar 13 2021": [
+			"banana cake slice",
+			"tea, coffee"
+		],
+		"Mar 14 2021": [
 			"french  heart",
 			"tea, coffee"
 		]
 	},
 	"dinner": {
 		"timings": "07:30 PM - 10:15 PM",
-		"lid Date": [
+		"Mar 08 2021": [
+			"green salad",
+			"kimchi salad",
+			"manchow soup",
+			"veg dumpling in soya garlic sauce",
+			"hakka noodles",
+			"thai curry",
+			"steamed rice",
+			"assorted ice cream"
+		],
+		"Mar 09 2021": [
+			"green salad",
+			"veg kofta curry",
+			"aloo gobhi adraki",
+			"dal muradabadi",
+			"jeera rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 10 2021": [
+			"green salad",
+			"soya chaap masala",
+			"cabbage matar",
+			"dal maharani",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar",
+			"assorted pastry"
+		],
+		"Mar 11 2021": [
+			"green salad",
+			"three bean salad",
+			"lauki chana ki  sabzi",
+			"dum aloo kashmiri",
+			"dal hyderabadi",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 12 2021": [
+			"green salad",
+			"subz panchmel",
+			"spaghetti aop",
+			"dal baltik",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 13 2021": [
+			"green salad",
+			"hawaian salad",
+			"spinach corn lasagne",
+			"aloo capsicum",
+			"black malka dal",
+			"plain rice",
+			"tawa roti",
+			"jaggery, gooseberry, achar"
+		],
+		"Mar 14 2021": [
 			"green salad",
 			"mustard potato salad",
 			"sev tamatar ki sabzi",
