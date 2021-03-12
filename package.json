@@ -6,7 +6,7 @@
   "scripts": {
     "test": "node src/intents --chat",
     "fetch:dining": "node src/utils/download-dining-menu",
-    "start": "serverless offline start --skipCacheInvalidation",
+    "start": "serverless offline start --httpPort 8000 --skipCacheInvalidation",
     "deploy": "sls deploy"
   },
   "keywords": [],
