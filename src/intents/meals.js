@@ -25,6 +25,13 @@ const OUTLET_MENUS = {
 			mimetype: 'application/pdf',
 			name: 'asg-menu.pdf'
 		}
+	},
+	'fuel zone': {
+		document: {
+			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/Iq9rMPglXt6VlkBbV3dtXfLftJQBsWw5IqKXgqXeWdg%3D',
+			mimetype: 'application/pdf',
+			name: 'fuel-zone-menu.pdf'
+		}
 	}
 }
 
@@ -46,7 +53,7 @@ module.exports = class {
         }
         this.meta = {
             userFacingName: ["mess", "menu"],
-            description: "The mess menu",
+            description: "The menu for the mess and other outlets",
             examples: [
 				"what's for lunch", 
 				"mess menu", 
