@@ -11,6 +11,10 @@ String.prototype.toTitleCase = function () {
 }
 
 const mealOptions = [ "breakfast", "lunch", "snacks", "dinner" ]
+const OUTLET_MENUS = {
+	'dhaba': 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/i6V%2FQ%2BJTK4%2FmeKV9puT1UczWmCVVQaCKpwR73bJXspk%3D',
+	'asg': 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/xCqevivWF7VTp0qTy%2FuPJjfbpsmAg6A5dSgHjjIZx0w%3D'
+}
 
 module.exports = class {
     constructor () {
@@ -22,7 +26,11 @@ module.exports = class {
             "snacks": "",
             "combo": {"alternates": ["combos", "tks"], "value": ""},
             "mess": "",
-            "tomorrow": ""
+            "tomorrow": "",
+			// add all outlet menu intents
+			...Object.keys(OUTLET_MENUS).reduce((dict, key) => ({
+				...dict, [key]: ''
+			}), { })
         }
         this.meta = {
             userFacingName: ["mess", "menu"],
@@ -50,7 +58,14 @@ module.exports = class {
 		if(!entities.length) {
 			throw new Error('Not sure what you mean. Type "help" to know what I can do')
 		}
-        return entities.map ( entity => this.meals ({meal: entity, tomorrow: isTomorrow >= 0}) )
+        return entities.map (entity => {
+			if(OUTLET_MENUS[entity]) {
+				return { image: { url: OUTLET_MENUS[entity] } }
+			}
+			return {
+				text: this.meals ({meal: entity, tomorrow: isTomorrow >= 0})
+			}
+		})
     }
     meals (options) {
 		let date = DateUtils.dateWithTimeZone(new Date(), 5.5)
