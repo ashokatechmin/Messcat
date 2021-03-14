@@ -12,8 +12,20 @@ String.prototype.toTitleCase = function () {
 
 const mealOptions = [ "breakfast", "lunch", "snacks", "dinner" ]
 const OUTLET_MENUS = {
-	'dhaba': 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/i6V%2FQ%2BJTK4%2FmeKV9puT1UczWmCVVQaCKpwR73bJXspk%3D',
-	'asg': 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/xCqevivWF7VTp0qTy%2FuPJjfbpsmAg6A5dSgHjjIZx0w%3D'
+	'dhaba': {
+		document: {
+			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/i6V%2FQ%2BJTK4%2FmeKV9puT1UczWmCVVQaCKpwR73bJXspk%3D',
+			mimetype: 'application/pdf',
+			name: 'dhaba-menu.pdf'
+		}
+	},
+	'asg': {
+		document: {
+			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/xCqevivWF7VTp0qTy%2FuPJjfbpsmAg6A5dSgHjjIZx0w%3D',
+			mimetype: 'application/pdf',
+			name: 'asg-menu.pdf'
+		}
+	}
 }
 
 module.exports = class {
@@ -40,7 +52,8 @@ module.exports = class {
 				"mess menu", 
 				"what's for dinner tomorrow", 
 				"abe useless, what is for dinner tomorrow",
-				"what 4 breakfast tomorrow"
+				"what 4 breakfast tomorrow",
+				"dhaba menu"
 			]
         }
         this.mealsData = MealsData
@@ -60,7 +73,7 @@ module.exports = class {
 		}
         return entities.map (entity => {
 			if(OUTLET_MENUS[entity]) {
-				return { image: { url: OUTLET_MENUS[entity] } }
+				return OUTLET_MENUS[entity]
 			}
 			return {
 				text: this.meals ({meal: entity, tomorrow: isTomorrow >= 0})
