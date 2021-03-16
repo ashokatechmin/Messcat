@@ -1,6 +1,6 @@
 const {promises: fs} = require('fs')
 const { fetchLatestDiningMenu } = require('./fetch-dining-menus')
-const { parseMessMenu } = require('./parse-dining-menu')
+const { parseMessMenu } = require('./parse-dining-xlsx')
 
 const download = async() => {
 	const { messMenuFilename } = await fetchLatestDiningMenu()

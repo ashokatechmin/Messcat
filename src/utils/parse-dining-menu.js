@@ -95,13 +95,14 @@ const parseMessMenu = (messPdfFile) => {
 
 					throw new Error('fills, hlines, vlines missing from menu -- cannot construct grid')
 				} 
-				HLines = Fills.filter(item => item.h < 1) // lines are fills less than 1 unit thick
-				VLines = Fills.filter(item => item.w < 1).map(item => (
+				HLines = Fills.filter(item => item.h <= 1) // lines are fills less than 1 unit thick
+				VLines = Fills.filter(item => item.w <= 1).map(item => (
 					{ ...item, l: item.h }
 				))
 			}
 			// make the grid from the lines
 			const grid = sliceIntoGrid(HLines, VLines, Texts)
+			
 			// find the date
 			const [datesItem] = grid[0].find(item => item[0]?.includes('-'))
 			const [startDate, endDate] = datesItem
