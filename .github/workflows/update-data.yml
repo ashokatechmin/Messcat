@@ -31,7 +31,7 @@ jobs:
     - name: Commit Changes
       uses: EndBug/add-and-commit@v4.4.0
       with:
-        add: 'src/intents/data/dining_data.json'
+        add: './src/intents/data/dining_data.json'
         author_name: 'Ashoka Tech Min'
         message: 'Update Dining Menu'
         ref: 'master'
