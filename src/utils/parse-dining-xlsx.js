@@ -4,6 +4,15 @@ const excelToJson = require('convert-excel-to-json')
  * @param {string} messPdfFile path to the mess xlsx
  */
 const parseMessMenu = (filename) => {
+	const DAYS_OF_WEEK = [
+		'monday',
+		'tuesday',
+		'wednesday',
+		'thursday',
+		'friday',
+		'saturday',
+		'sunday'
+	]
 	/** parses a date. Eg. input 01 Aug 2020 */
 	const parseDate = (dateStr) => {
 		const months = [
@@ -35,7 +44,7 @@ const parseMessMenu = (filename) => {
 		const data = {}
 		for(let i = mealsIdx+2;i < sheet.length;i++) {
 			const row = sheet[i]
-			if(row.A) currentOffset += 1 // increase offset when the first column has a value, eg "MONDAY", "TUESDAY"
+			if(row.A && DAYS_OF_WEEK.includes(row.A.toLocaleLowerCase())) currentOffset += 1 // increase offset when the first column has a value, eg "MONDAY", "TUESDAY"
 			if(!row[optionIdx]) continue // if no row, exit
 			if(currentOffset >= 7) break // break on more than a week's data
 
