@@ -1,4 +1,5 @@
 const excelToJson = require('convert-excel-to-json')
+const DateUtils = require('./date-utils')
 /**
  * Takes in path to the dining xlsx and parses it
  * @param {string} messPdfFile path to the mess xlsx
@@ -44,7 +45,8 @@ const parseMessMenu = (filename) => {
 		const data = {}
 		for(let i = mealsIdx+2;i < sheet.length;i++) {
 			const row = sheet[i]
-			if(row.A && DAYS_OF_WEEK.includes(row.A.toLocaleLowerCase())) currentOffset += 1 // increase offset when the first column has a value, eg "MONDAY", "TUESDAY"
+			const firstColumn = row.A?.replace(/\s/g, '')
+			if(firstColumn && DAYS_OF_WEEK.includes(firstColumn.toLocaleLowerCase())) currentOffset += 1 // increase offset when the first column has a value, eg "MONDAY", "TUESDAY"
 			if(!row[optionIdx]) continue // if no row, exit
 			if(currentOffset >= 7) break // break on more than a week's data
 
@@ -55,11 +57,33 @@ const parseMessMenu = (filename) => {
 		}
 		return { timings, ...data }
 	}
+	const getCombos = () => {
+		const obj = { }
+		const comboRows = comboSheet.slice(1).map(i => i.A)
+		let key
+		// start cursor from first row
+		for(const row of comboRows) {
+			if(row.toLocaleLowerCase().includes('combo')) {
+				key = row // identifying key
+				continue
+			}
+			obj[key] = obj[key] || []
+
+			obj[key].push(
+				row
+					.replace(/\n/g, ' ')
+					.replace(/[^a-z0-9\(\)\s]/gi, '')
+					.trim()
+			)
+		}
+		const weekKey = `wk_${DateUtils.weekOfYear(date)}`
+		return { [weekKey]: obj }
+	}
 	const mealOptions = [ 'breakfast', 'lunch', 'snacks', 'dinner' ]
 	const json = excelToJson({
 		sourceFile: filename,
 	})
-	const [sheet] = Object.values(json)
+	const [sheet, comboSheet] = Object.values(json)
 	// find the date
 	const datesItem = Object.values(sheet[0]).find(item => item?.includes('-'))
 	let [startDate, endDate] = datesItem
@@ -81,9 +105,14 @@ const parseMessMenu = (filename) => {
 	))
 	if(!mealsIdx) throw new Error('Did not find meals index')
 
-	return mealOptions.reduce((dict, option) => (
+	const menuJSON = mealOptions.reduce((dict, option) => (
 		{ ...dict, [option]: getMenu(option) }
 	), {})
+	// parse combo if there
+	if(comboSheet) {
+		menuJSON.combo = getCombos()
+	}
+	return menuJSON
 }
 module.exports = {
 	parseMessMenu

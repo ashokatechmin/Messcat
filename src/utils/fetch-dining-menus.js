@@ -9,7 +9,7 @@ const { join } = require('path')
  * which has the dining menu
  */
 
-const MENU_EMAIL_SUBJECT = 'Mess Menu'
+const MENU_EMAIL_SUBJECT = 'menu'
 const MENU_MIMETYPE = 'sheet'
 
 const auth = new google.auth.OAuth2(
@@ -25,7 +25,7 @@ const fetchLatestDiningMenu = async() => {
 			item.mimeType.includes(mimetype)
 		))
 		if(!diningMenu) {
-			throw new Error('')
+			throw new Error('Could not find menu')
 		}
 		const { data: { data } } = await gmail.users.messages.attachments.get({
 			userId: 'me',
@@ -51,7 +51,7 @@ const fetchLatestDiningMenu = async() => {
 		id: message.id, 
 	})
 	return {
-		messMenuFilename: await getAttachment('Dining Menu', MENU_MIMETYPE)
+		messMenuFilename: await getAttachment('Menu', MENU_MIMETYPE)
 	}
 }
 module.exports = {
