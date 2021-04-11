@@ -1,70 +1,70 @@
 {
 	"breakfast": {
 		"timings": "08:00 AM - 10:30 AM",
-		"Apr 05 2021": [
+		"Apr 12 2021": [
 			"CORNFLAKES",
-			"OMELETTE(E)",
-			"KHASTA POORI",
-			"TAMATAR ALOO KI SABZI (V)",
-			"BREAD, BUTTER (D), JAM",
-			"BANANA, CUT PINEAPPLE",
-			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
-			"PORRIDGE (D), BOURNVITA"
-		],
-		"Apr 06 2021": [
-			"CHOCOS",
-			"FRIED EGG (E)",
-			"MASALA PEANUT POHA (P)",
-			"MINT CHUTNEY (D)",
-			"BREAD, BUTTER (D), JAM",
-			"BANANA, GRAPES",
-			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
-			"PORRIDGE (D), BOURNVITA"
-		],
-		"Apr 07 2021": [
-			"CORN FLAKES",
-			"MASALA OMELETTE (E)",
-			"VERMICELLI UPMA (V)",
-			"TOMATO CHUTNEY (V)",
-			"BREAD, BUTTER (D), JAM",
-			"BANANA, CUT WATERMELON",
-			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
-			"PORRIDGE (D), BOURNVITA"
-		],
-		"Apr 08 2021": [
-			"MUESLI",
-			"EGG BHURJI (E)",
-			"SUJI UPMA (V)",
-			"TOMATO CHUTNEY (V)",
+			"SCRAMBLED EGG (E)",
+			"METHI PARATHA (V)",
+			"ALOO BHAJI (V)",
 			"BREAD, BUTTER (D), JAM",
 			"BANANA, CUT SARDA",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
 		],
-		"Apr 09 2021": [
-			"CORN FLAKES",
+		"Apr 13 2021": [
+			"CHOCOS",
 			"FRIED EGG (E)",
-			"PAO",
-			"BHAJI  (V)",
+			"VADA SAMBAR (V)",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, GRAPES",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 14 2021": [
+			"CORN FLAKES",
+			"MASALA OMELETTE (E)",
+			"MATAR (V)",
+			"KULCHA (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 15 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"PLAIN PARATHA (V)",
+			"KAALA CHANNA (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT PINEAPPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 16 2021": [
+			"CORN FLAKES",
+			"BOILED EGG (E)",
+			"BESAN CHILLA (V)",
+			"MINT CHUTNEY (D)",
 			"BREAD, BUTTER (D), JAM",
 			"BANANA, CUT PAPAYA",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
 		],
-		"Apr 10 2021": [
+		"Apr 17 2021": [
 			"CHOCOS",
-			"BOILED EGG (E)",
-			"STUFFED PARATHA (V)",
-			"CURD (D)",
+			"SCRAMBLED EGG (E)",
+			"PANCAKE (D)",
+			"HONEY, CHOCOLATE",
 			"BREAD, BUTTER (D), JAM",
 			"BANANA, MIX FRUIT",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
 		],
-		"Apr 11 2021": [
+		"Apr 18 2021": [
 			"MUESLI",
-			"EGG BHURJI  (E)",
-			"MOONG DAL CHILLA (V)",
+			"FRIED EGG (E)",
+			"MASALA PEANUT POHA (P)",
 			"MINT CHUTNEY (D)",
 			"BREAD, BUTTER (D), JAM",
 			"BANANA,CUT WATERMELON",
@@ -74,173 +74,191 @@
 	},
 	"lunch": {
 		"timings": "12:15 PM - 02:30 PM",
-		"Apr 04 2021": [
-			"(D) - CONTAINS DAIRY PRODUCT                           (E) - CONTAINS EGG                           (P) - CONTAINS PEANUT                           (V) - VEGAN PREPARATIONS                           (N) - NON-VEG"
+		"Apr 11 2021": [
+			"(D) - CONTAINS DAIRY PRODUCT                      (E) - CONTAINS EGG                           (P) - CONTAINS PEANUT                           (V) - VEGAN PREPARATIONS                           (N) - NON-VEG"
 		],
-		"Apr 05 2021": [
-			"GREEN SALAD, LACCHA ONION",
-			"CHICKEN DUMPUKHT (N)",
-			"SHAHI PANEER (D)",
-			"MOONG DAL (V)",
+		"Apr 12 2021": [
+			"GREEN SALAD, SIRKA ONION",
+			"AMRITSARI MURGH MAKHANI (N)",
+			"MATAR PANEER (V)",
+			"BLACK MALKA DAL (V)",
 			"PLAIN RICE",
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Apr 06 2021": [
-			"GREEN SALAD, COLESLAW SALAD (D)",
-			"PENNE ARRABIATA (D)",
-			"CHHAUKA MATAR (V)",
-			"DAL MAKHANI (V)",
+		"Apr 13 2021": [
+			"GREEN SALAD, AAM PANNA",
+			"SINDHI KADHI (D)",
+			"MAC'N' CHEESE PASTA (D)",
+			"BAINGAN ALOO (V)",
 			"PLAIN RICE",
-			"TAWA ROTI",
-			"JAGGERY, ACHAR"
-		],
-		"Apr 07 2021": [
-			"GREEN SALAD, LACCHA ONION",
-			"HANDI CHICKEN (N)",
-			"PALAK PANEER (D)",
-			"RED MALKA DAL (V)",
-			"ONION RICE",
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Apr 08 2021": [
-			"GREEN SALAD, RUSSIAN SALAD (D)",
-			"BAKED MAC 'N' CHEESE (D)",
-			"KAALE CHANE RASSEWALE (V)",
-			"MIX VEGETABLE (V)",
+		"Apr 14 2021": [
+			"GREEN SALAD, TANG",
+			"CHICKEN BIRYANI (N)",
+			"VEG PANEER BIRYANI (D)",
+			"MIRCH KA SALAN (V)",
+			"BURANI RAITA (D)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 15 2021": [
+			"GREEN SALAD, LACCHA ONION (V)",
+			"PAV (V)",
+			"BHAJI (V)",
+			"YELLOW DAL TADKA (V)",
 			"JEERA RICE",
 			"TAWA ROTI",
-			"JAGGERY, ACHAR, PAPAD"
-		],
-		"Apr 09 2021": [
-			"GREEN SALAD, HAWAIIAN SALAD (D)",
-			"KADHI PAKODA (D)",
-			"FUSILLI  ALFREDO (D)",
-			"ROSEMARY POTATO (V)",
-			"PLAIN RICE",
-			"TAWA ROTI",
-			"JAGGERY, ACHAR, PAPAD"
-		],
-		"Apr 10 2021": [
-			"GREEN SALAD,  ITALIAN SALAD (D)",
-			"VEGETABLE MORNAY (D)",
-			"SHAAM SAVERA (V)",
-			"DAL BUKHARA (V)",
-			"PLAIN RICE",
-			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD",
-			"PHIRNI (D)"
+			"SHAHI TUDKA WITH RABRI (D)"
 		],
-		"Apr 11 2021": [
-			"GREEN SALAD, KACHUMBER SALAD",
-			"PINDI CHOLEY (V)",
-			"ALOO JEERA (V)",
-			"MASALA CHAACH (D)",
+		"Apr 16 2021": [
+			"GREEN SALAD, LEMONADE",
+			"RAJMA MASALA (V)",
+			"PALAK CORN (V)",
+			"MIX RAITA (D)",
 			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 17 2021": [
+			"GREEN SALAD, CHANA CHAAT (V)",
+			"ALOO PARATHA (V)",
+			"CURD (D)",
+			"VEGETABLE PULAO (V)",
+			"JAGGERY, ACHAR, PAPAD",
+			"GULAB KI KHEER (D)"
+		],
+		"Apr 18 2021": [
+			"GREEN SALAD, LACCHA ONION",
+			"AMRITSARI CHOLEY (V)",
+			"KHATA MEETHA PETHA (V)",
+			"MASALA CHAACH (D)",
+			"JEERA RICE",
 			"BHATURE",
 			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
 		"timings": "04:45 PM - 06:15 PM",
-		"Apr 05 2021": [
-			"CLUB CHEESE SANDWICH (D)",
+		"Apr 12 2021": [
+			"ALOO BONDA, MINT CHUTNEY (V)",
 			"THANDAI (D)"
 		],
-		"Apr 06 2021": [
-			"PIZZA (D)",
+		"Apr 13 2021": [
+			"MIX PAKODA (V)",
+			"STRAWBERRY SHAKE (D)"
+		],
+		"Apr 14 2021": [
+			"VEG PUFF (V)",
+			"TEA (D), COFFEE(D)"
+		],
+		"Apr 15 2021": [
+			"SABUDANA TIKKI, SONTH CHUTNEY",
+			"ROOHAFZA (V)"
+		],
+		"Apr 16 2021": [
+			"FRENCH FRIES (V)",
+			"COLD COFFEE (D)"
+		],
+		"Apr 17 2021": [
+			"POPCORN (V)",
+			"BUTTERSCOTCH SHAKE (D)"
+		],
+		"Apr 18 2021": [
+			"CHOCOCHIP CUP CAKE (V)",
 			"BANANA SHAKE (D)"
-		],
-		"Apr 07 2021": [
-			"PAPDI CHAAT (D)",
-			"JAL JEERA (V)"
-		],
-		"Apr 08 2021": [
-			"PUMPKIN PIE  (V)",
-			"TEA (D), COFFEE (D)"
-		],
-		"Apr 09 2021": [
-			"TIKKI CHOLEY (V)",
-			"AAM PANNA (V)"
-		],
-		"Apr 10 2021": [
-			"MARBLE CAKE (V)",
-			"LEMONADE (V)"
-		],
-		"Apr 11 2021": [
-			"SAMOSA (V)",
-			"TEA (D), COFFEE (D)"
 		]
 	},
 	"dinner": {
 		"timings": "07:30 PM - 10:15 PM",
-		"Apr 05 2021": [
-			"GREEN SALAD, SPROUT SALAD (V)",
-			"NADRU KOFTA CURRY (V)",
-			"KARELA DO PYAZA (V)",
-			"YELLOW DAL TADKA (V)",
+		"Apr 12 2021": [
+			"GREEN SALAD, RUSSIAN SALAD (D)",
+			"PENNE ARRABIATA (D)",
+			"CHEESE GARLIC TOAST (D)",
+			"DAL PANCHMEL (V)",
 			"PLAIN RICE",
 			"TAWA ROTI",
 			"JAGGERY, ACHAR",
-			"SEVIYAN PAYASAM  (D)"
+			"FRUIT TRUFFLE PUDDING (D)"
 		],
-		"Apr 06 2021": [
-			"GREEN SALAD, SWEET CORN SALAD (V)",
-			"MASALA KHICHDI (V)",
-			"HING DHANIYA KI CHATPATE ALOO (V)",
-			"BOONDI RAITA (D)",
-			"TAWA ROTI",
-			"JAGGERY, ACHAR, PAPAD",
-			"FRUIT CUSTARD (D)"
-		],
-		"Apr 07 2021": [
-			"GREEN SALAD, CHANA CHAAT (V)",
-			"SPINACH CORN LASAGNE (D)",
-			"LAUKI  MASALA (V)",
-			"DAL HYDERABADI (V)",
-			"PLAIN RICE",
-			"TAWA ROTI",
-			"JAGGERY, ACHAR, PAPAD",
-			"JALEBI (V)"
-		],
-		"Apr 08 2021": [
-			"GREEN SALAD, KOREAN KIMCHI SALAD (V)",
-			"LEMON AND CORIANDER SOUP (V)",
-			"VEGETABLE THAI CURRY (V)",
-			"VEG DUMPLINGS IN SOYA GARLIC SAUCE  (V)",
-			"SINGAPORE NOODLES (V)",
-			"PLAIN RICE",
-			"BLUE BERRY CHEESE CAKE (D)"
-		],
-		"Apr 09 2021": [
-			"GREEN SALAD,  CHATPATA ALOO PEANUT CHAAT (P)",
-			"SOYA NUGGETS (V)",
-			"TINDA MASALA (V)",
+		"Apr 13 2021": [
+			"GREEN SALAD, GERMAN MUSTARD POTATO SALAD (V)",
+			"SAUTE VEG (V)",
+			"POTATO WADGES (V)",
 			"DAL RAJASTHANI (V)",
 			"PLAIN RICE",
 			"TAWA ROTI",
 			"JAGGERY, ACHAR",
-			"KESARIYA HALWA (V)"
+			"DEATH BY CHOCLATE (V)"
 		],
-		"Apr 10 2021": [
-			"GREEN SALAD, SIRKA ONION",
-			"CHICKEN DO PYAZA (N)",
-			"PANEER DO PYAZA (D)",
-			"BLACK MALKA DAL (V)",
+		"Apr 14 2021": [
+			"GREEN SALAD, TOSSED SALAD",
+			"MALAI KOFTA CURRY (D)",
+			"SAUTE BEANS(V)",
+			"DAL BUKHARA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR",
+			"PAYASAM (D)"
+		],
+		"Apr 15 2021": [
+			"KOREAN KIMCHI SALAD (V)",
+			"VEG IN HOT GARLICSAUCE (V)",
+			"HONEY CHILLI POTATO (V)",
+			"FRIED RICE (V)",
+			"HAKKA NOODLES (V)"
+		],
+		"Apr 16 2021": [
+			"GREEN SALAD, KOSAMBARI SALAD (V)",
+			"UTTAPAM(V)",
+			"CABBAGE FOOGATH(V)",
+			"VEG AVIAL (V)",
+			"SAMBAR (V)",
+			"LEMON RICE",
+			"ATTA DRY FRUIT LADOO (V)"
+		],
+		"Apr 17 2021": [
+			"GREEN SALAD, ACHARI ONION",
+			"CHICKEN CHETTINAD (N)",
+			"PANEER HYDERABADI (D)",
+			"DAL HYDERABADI (V)",
+			"ONION RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"Apr 18 2021": [
+			"GREEN SALAD, GREEK SALAD (V)",
+			"SPAGHETTI AOP (D)",
+			"DAL MAKHANI (D)",
+			"TAWA VEGETABLE (V)",
 			"JEERA RICE",
 			"TAWA ROTI",
-			"JAGGERY, ACHAR, PAPAD"
-		],
-		"Apr 11 2021": [
-			"GREEN SALAD, PACHADI SALAD",
-			"UTTAPAM (V)",
-			"VEG AVIAL (V)",
-			"VEG PORIYAL (V)",
-			"TOMATO RICE  (V)",
-			"SAMBAR (V)",
 			"JAGGERY, ACHAR",
-			"ICE CREAM (D)"
+			"GULAB JAMUN (V)"
 		]
+	},
+	"combo": {
+		"wk_15": {
+			"South Indian combos": [
+				"Dosa (masala or plain) with sambar and chutney",
+				"Curd rice"
+			],
+			"Continental combos": [
+				"Veg pasta pink sauce",
+				"Chicken pasta pink sauce",
+				"Veg pizza",
+				"Chicken pizza"
+			],
+			"North Indian combos": [
+				"Paneerdopyaza with rice or tandoori roti (2 pcs)",
+				"Egg curry (3 pcs) with rice or",
+				"tandoori roti (2 pcs)",
+				"Chickendopyaza with rice or",
+				"tandoori roti (2 pcs)"
+			]
+		}
 	}
 }
