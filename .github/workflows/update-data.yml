@@ -33,7 +33,7 @@ jobs:
       with:
         author_name: 'Ashoka Tech Min'
         message: 'Update Dining Menu'
-        ref: 'master'
         push: true
+        add: '.'
       env:
         GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
