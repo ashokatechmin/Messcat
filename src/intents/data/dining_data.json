@@ -210,6 +210,76 @@
 			"BANANA,CUT WATERMELON",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 10 2021": [
+			"CHOCOS",
+			"EGG BHURJI (E)",
+			"VADA SAMBAR (V)",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 11 2021": [
+			"MUESLI",
+			"BOILED EGG (E)",
+			"PAN CAKE (D)",
+			"HONEY, CHOCOLATE SAUCE",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 12 2021": [
+			"CORN FLAKES",
+			"FRIED EGG (E)",
+			"MASALA PEANUT POHA (P)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MUSKMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 13 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"MIX PARATHA (V)",
+			"CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT WATERMELON (V)",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 14 2021": [
+			"CORN FLAKES",
+			"BOILED EGG (E)",
+			"BESAN CHILLA (V)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MUSKMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 15 2021": [
+			"CHOCOS",
+			"EGG BHURJI (E)",
+			"PLAIN PARATHA",
+			"MASALA ALOO",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 16 2021": [
+			"CORNFLAKES",
+			"FRIED EGG (E)",
+			"VERMICELLI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,MUSKMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -391,12 +461,70 @@
 			"GULAB JAMUN (D)"
 		],
 		"May 09 2021": [
-			"GREEN SALAD, LACCHA ONION",
-			"AMRITSARI CHOLEY (V)",
-			"KHATTA MEETHA PETHA (V)",
-			"BUTTER MILK (D)",
+			"(D) - CONTAINS DAIRY PRODUCT (E) - CONTAINS EGG (P) - CONTAINS PEANUT (V) - VEGAN PREPARATIONS (N) - NON-VEG"
+		],
+		"May 10 2021": [
+			"GREEN SALAD, SIRKA ONION",
+			"HOMESTYLE CHICKEN (N)",
+			"SHAHI PANEER (D)",
+			"GREEN MOONG DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"May 11 2021": [
+			"GREEN SALAD,  TANG",
+			"RAJMA MASALA (V)",
+			"SAUTE VEGETABLES (V)",
+			"MASALA CURD (D)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"VANILLA ICE CREAM WITH HOT CHOCOLATE (D)"
+		],
+		"May 12 2021": [
+			"GREEN SALAD, LACHHA ONION",
+			"CHICKEN CHETTINAD (N)",
+			"PANEER BUTTER MASALA (D)",
+			"RED MALKA DAL (V)",
+			"STEAM RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"May 13 2021": [
+			"GREEN SALAD, RUSSIAN SALAD (D)",
+			"PUNJABI KADHI (D)",
+			"PALAK CORN (V)",
+			"MIX VEGETABLE  (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"May 14 2021": [
+			"GREEN SALAD, SPROUTS SALAD (V)",
+			"MALAI KOFTA CURRY (D)",
+			"PENNE ARRABIATA (D)",
+			"DAL MAKHANI (D)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"PHIRNI (D)"
+		],
+		"May 15 2021": [
+			"GREEN SALAD, KOSAMBARI SALAD (V)",
+			"PAO (V)",
+			"BHAJI (V)",
+			"DAL PANCHMEL (V)",
 			"JEERA RICE  (V)",
-			"TAWA ROTI  (V)",
+			"JAGGERY, ACHAR, PAPAD",
+			"GULAB JAMUN (D)"
+		],
+		"May 16 2021": [
+			"GREEN SALAD, LACCHA ONION",
+			"MATAR (V)",
+			"KULCHA (V)",
+			"MIX RAITA (D)",
+			"VEGETABLE PULAO",
 			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
@@ -485,6 +613,34 @@
 		"May 09 2021": [
 			"GOL GAPPE (V)",
 			"TEA (D), COFFEE (D)"
+		],
+		"May 10 2021": [
+			"BANANA WALNUT CAKE (V)",
+			"COLD COFFEE (D)"
+		],
+		"May 11 2021": [
+			"BURGER (V)",
+			"THANDAI (D)"
+		],
+		"May 12 2021": [
+			"CHEESE TOAST (D)",
+			"BANANA SHAKE (D)"
+		],
+		"May 13 2021": [
+			"COLESLAW SANDWICH (D)",
+			"COLD COFFEE (D)"
+		],
+		"May 14 2021": [
+			"MARBLE CAKE (V)",
+			"MANGO SHAKE (D)"
+		],
+		"May 15 2021": [
+			"FRENCH FRIES (V)",
+			"STRAWBERRY SHAKE (D)"
+		],
+		"May 16 2021": [
+			"BREAD PAKODA (V)",
+			"NIMBU PANI"
 		]
 	},
 	"dinner": {
@@ -683,6 +839,72 @@
 			"TAWA ROTI",
 			"JAGGERY,RICE",
 			"FRUIT CUSTARD (D)"
+		],
+		"May 10 2021": [
+			"GREEN SALAD, AMERICAN CORN SALAD (D)",
+			"ALOO BEANS (V)",
+			"HOMESTYLE MACARONI (D)",
+			"YELLOW DAL TADKA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR",
+			"FRUIT CREAM (D)"
+		],
+		"May 11 2021": [
+			"GREEN SALAD, RUSSIAN SALAD (D)",
+			"SOYA CHAAP MASALA (V)",
+			"LAUKI MASALA (V)",
+			"CHANA DAL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"May 12 2021": [
+			"GREEN SALAD,BEETROOT SALAD  (V)",
+			"VEGETABLE LASAGNE (D)",
+			"BAINGAN ALOO (V)",
+			"BLACK MALKA DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR",
+			"ICE CREAM (D)"
+		],
+		"May 13 2021": [
+			"THAI GLASS NOODLE SALAD",
+			"MANCHOW SOUP (V)`",
+			"VEGETABLE IN HOT GARLIC SAUCE (V)",
+			"GREEN THAI CURRY (V)",
+			"HAKKA NOODLES (V)",
+			"STEAMED RICE  (V)",
+			"DEATH BY CHOCOLATE  (V)"
+		],
+		"May 14 2021": [
+			"GREEN SALAD, THREE BEAN SALAD (V)",
+			"KUMBH ACHARI (V)",
+			"KURKURI BHINDI (V)",
+			"DAL HYDERABADI (V)",
+			"JEERA RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"May 15 2021": [
+			"GREEN SALAD, ACHARI ONION",
+			"EGG CURRY (E)",
+			"PANEER JALFREZI (D)",
+			"ARHAR KI DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"May 16 2021": [
+			"GREEN SALAD, PACHADI SALAD (V)",
+			"VEG AVIAL (V)",
+			"VEG PORIYAL (V)",
+			"SAMBAR (V)",
+			"ONION UTTAPAM (V)",
+			"LEMON RICE (V)",
+			"JAGGERY,ACHAR",
+			"PAYASAM (D)"
 		]
 	},
 	"combo": {
