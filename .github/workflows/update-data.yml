@@ -13,6 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+      with:
+        token: ${{secrets.GH_TOKEN}}
+        submodules: recursive
 
     - name: Node ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -20,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
     
     - name: Install Dependencies
-      run: yarn
+      run: npm i
     
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
