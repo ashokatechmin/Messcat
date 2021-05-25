@@ -34,10 +34,10 @@ const parseMessMenu = (filename) => {
 		new Date(date.getTime() + offsetDays*24*60*60*1000).toString().slice(4, 15)
 	)
 	/** get the menu for a specific option (breakfast, lunch, etc) */
-	const getMenu = (option) => {
-		const optionIdx = Object.keys(sheet[mealsIdx]).find(key => sheet[mealsIdx][key].toLowerCase().includes(option))
+	const getMenu = (optionIdx) => {
+		optionIdx = String.fromCharCode('A'.charCodeAt(0) + optionIdx)
 		if(!optionIdx) {
-			throw new Error(`could not find menu for "${option}"`)
+			throw new Error(`could not find menu for "${optionIdx}"`)
 		}
 		const timings = sheet[mealsIdx+1][optionIdx]
 
@@ -105,8 +105,8 @@ const parseMessMenu = (filename) => {
 	))
 	if(!mealsIdx) throw new Error('Did not find meals index')
 
-	const menuJSON = mealOptions.reduce((dict, option) => (
-		{ ...dict, [option]: getMenu(option) }
+	const menuJSON = mealOptions.reduce((dict, option, idx) => (
+		{ ...dict, [option]: getMenu(idx) }
 	), {})
 	// parse combo if there
 	if(comboSheet) {
