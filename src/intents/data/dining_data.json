@@ -385,6 +385,30 @@
 		],
 		"Jun 06 2021": [
 			"SUNDAY"
+		],
+		"Jun 13 2021": [
+			"INDICATIONS"
+		],
+		"Jun 14 2021": [
+			"MONDAY"
+		],
+		"Jun 15 2021": [
+			"TUESDAY"
+		],
+		"Jun 16 2021": [
+			"WEDNESDAY"
+		],
+		"Jun 17 2021": [
+			"THURSDAY"
+		],
+		"Jun 18 2021": [
+			"FRIDAY"
+		],
+		"Jun 19 2021": [
+			"SATURDAY"
+		],
+		"Jun 20 2021": [
+			"SUNDAY"
 		]
 	},
 	"lunch": {
@@ -829,6 +853,76 @@
 			"BANANA,WATERMELON",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 14 2021": [
+			"CHOCOS",
+			"FRIED EGG (E)",
+			"IDLI SAMBAR (V)",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 15 2021": [
+			"CORN FLAKES",
+			"MASALA OMELETTE (E)",
+			"VEG PEANUT MASALA POHA (P)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MANGO",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 16 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"PLAIN PARATHA (V)",
+			"MASALA ALOO (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MANGO",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 17 2021": [
+			"CORNFLAKES",
+			"SCRAMBLED EGG (E)",
+			"PANCAKE (D)",
+			"HONEY, CHOCOLATE (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 18 2021": [
+			"CHOCOS",
+			"FRIED EGG (E)",
+			"PAO (V)",
+			"BHAJI (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,MUSKMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 19 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"MIX VEG PARATHA (V)",
+			"CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, CUT MUSKMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Jun 20 2021": [
+			"CORNFLAKES",
+			"MASALA OMELETTE (E)",
+			"SUJI UPMA (V)",
+			"TOMATO SAUCE (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MANGO",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"snacks": {
@@ -1093,6 +1187,75 @@
 			"BUTTER MILK (D)",
 			"TAWA ROTI",
 			"JEERA RICE  (V)",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Jun 13 2021": [
+			"(D) - CONTAINS DAIRY PRODUCT (E) - CONTAINS EGG (P) - CONTAINS PEANUT (V) - VEGAN PREPARATIONS (N) - NON-VEG"
+		],
+		"Jun 14 2021": [
+			"GREEN SALAD, LACHHA ONION",
+			"CHICKEN BIRYANI (N)",
+			"PANEER BIRYANI (D)",
+			"DAL HYDERABADI (V)",
+			"BURANI RAITA (D)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Jun 15 2021": [
+			"KACHUMBER SALAD, CHANA CHAAT (V)",
+			"GUTTA CURRY (V)",
+			"AJWAINI ARABI (V)",
+			"DAL RAJASTHANI (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"SUJI KA HALWA (D)"
+		],
+		"Jun 16 2021": [
+			"GREEN SALAD, SIRKA ONION",
+			"HOMESTYLE CHICKEN (N)",
+			"HOMESTYLE MATAR PANEER (D)",
+			"MOONG DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Jun 17 2021": [
+			"GREEN SALAD, LACCHA ONION",
+			"KADHI PAKODA (D)",
+			"HOMESTYLE MACARONI (V)",
+			"SUBZ PANCHMEL (V)",
+			"STEAM RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"STRAWBERRY ICE CREAM (D)"
+		],
+		"Jun 18 2021": [
+			"GREEN SALAD,HAWAIAN SALAD (D)",
+			"MALAI KOFTA CURRY (D)",
+			"GRILLED VEGETABLES (V)",
+			"DAL HYDERABADI (V)",
+			"STEAM RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Jun 19 2021": [
+			"GREEN SALAD, SPROUTS SALAD",
+			"RAJMA MASALA (V)",
+			"ALOO CAPSICUM (V)",
+			"MAC 'N' CHEESE (D)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"COFFEE MOUSSE (D)"
+		],
+		"Jun 20 2021": [
+			"GREEN SALAD, LACCHA ONION",
+			"PINDI CHANA (V)",
+			"KHATTA MEETHA PETHA (V)",
+			"MASALA CHAACH (D)",
+			"POORI (V)",
+			"JEERA RICE",
 			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
@@ -1480,6 +1643,34 @@
 		"Jun 06 2021": [
 			"GOL GAPPE (V)",
 			"KHATTA MEETHA PANI"
+		],
+		"Jun 14 2021": [
+			"MAGGI (V)",
+			"MANGO SHAKE (D)"
+		],
+		"Jun 15 2021": [
+			"ALOO TIKKI CHAAT (D)",
+			"TANG"
+		],
+		"Jun 16 2021": [
+			"SMILEYS (V)",
+			"BUTTERSCOTCH SHAKE (D)"
+		],
+		"Jun 17 2021": [
+			"BANANA CAKE SLICE (V)",
+			"AAM PANNA"
+		],
+		"Jun 18 2021": [
+			"CHOCOLATE CUP CAKE",
+			"FRUIT PUNCH (D)"
+		],
+		"Jun 19 2021": [
+			"FRENCH FRIES (V)",
+			"ROOHAFZA"
+		],
+		"Jun 20 2021": [
+			"GOL GAPPE (V)",
+			"KHATA MEETHA PANI (V)"
 		]
 	},
 	"combo": {
