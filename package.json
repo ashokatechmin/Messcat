@@ -13,20 +13,21 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@adiwajshing/whatsapp-info-bot": "github:adiwajshing/WhatsAppInfoBot",
-    "@chatdaddy/authentication-utils": "github:chatdaddy/authentication-utils",
+    "@adiwajshing/whatsapp-info-bot": "git+https://github.com/adiwajshing/WhatsAppInfoBot",
+    "@chatdaddy/service-auth-client": "git+https://github.com/chatdaddy/service-auth-client.git",
     "convert-excel-to-json": "^1.7.0",
-    "dotenv": "^8.2.0",
-    "google-auth-library": "^7.0.2",
+    "dotenv": "^8.6.0",
+    "google-auth-library": "^7.5.0",
     "googleapis": "^67.1.1",
-    "mustache": "^4.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mustache": "^4.2.0",
     "node-fetch": "^2.6.1",
     "pdf.js-extract": "^0.1.4",
-    "pdf2json": "^1.2.0"
+    "pdf2json": "^1.2.3"
   },
   "devDependencies": {
     "serverless-dotenv": "^1.0.0-beta.2",
     "serverless-dotenv-plugin": "^3.9.0",
-    "serverless-offline": "^6.8.0"
+    "serverless-offline": "^6.9.0"
   }
 }
