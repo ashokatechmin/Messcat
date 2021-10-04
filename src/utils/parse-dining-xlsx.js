@@ -35,7 +35,7 @@ const parseMessMenu = (filename) => {
 	)
 	/** get the menu for a specific option (breakfast, lunch, etc) */
 	const getMenu = (optionIdx) => {
-		optionIdx = String.fromCharCode('A'.charCodeAt(0) + optionIdx)
+		optionIdx = String.fromCharCode('A'.charCodeAt(0) + optionIdx + 1)
 		if(!optionIdx) {
 			throw new Error(`could not find menu for "${optionIdx}"`)
 		}
@@ -43,12 +43,15 @@ const parseMessMenu = (filename) => {
 
 		let currentOffset = -1
 		const data = {}
-		for(let i = mealsIdx+2;i < sheet.length;i++) {
+
+		for(let i = mealsIdx+offsetIdx+2;i < sheet.length;i++) {
 			const row = sheet[i]
 			const firstColumn = row.A?.replace(/\s/g, '')
 			if(firstColumn && DAYS_OF_WEEK.includes(firstColumn.toLocaleLowerCase())) currentOffset += 1 // increase offset when the first column has a value, eg "MONDAY", "TUESDAY"
 			if(!row[optionIdx]) continue // if no row, exit
+			if(currentOffset < 0) continue // if haven't found day 1
 			if(currentOffset >= 7) break // break on more than a week's data
+			
 
 			const key = dateString(date, currentOffset)
 			data[key] = data[key] || []
@@ -103,6 +106,7 @@ const parseMessMenu = (filename) => {
 			item[key].toLowerCase().includes('meals')
 		))
 	))
+	const offsetIdx = sheet.slice(mealsIdx).findIndex(row => DAYS_OF_WEEK.includes(row.A?.replace(/\s/g, ''))) || 2
 	if(!mealsIdx) throw new Error('Did not find meals index')
 
 	const menuJSON = mealOptions.reduce((dict, option, idx) => (

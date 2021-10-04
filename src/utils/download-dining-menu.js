@@ -2,7 +2,13 @@ const {promises: fs} = require('fs')
 const { fetchLatestDiningMenu } = require('./fetch-dining-menus')
 const { parseMessMenu } = require('./parse-dining-xlsx')
 
-const menu = require('../intents/data/dining_data.json')
+let menu = { }
+try {
+	menu = require('../intents/data/dining_data.json')
+} catch {
+
+}
+
 
 const download = async() => {
 	const { messMenuFilename } = await fetchLatestDiningMenu()
