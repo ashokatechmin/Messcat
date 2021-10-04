@@ -23,7 +23,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
     
     - name: Install Dependencies
-      run: yarn
+      run: yarn --network-concurrency=1
     
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
