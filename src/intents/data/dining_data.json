@@ -105,141 +105,141 @@
 		],
 		"Oct 14 2021": [
 			"GREEN SALAD, KACHUMBER SALAD"
-			"KAALE CHANE (V) "
-			"ALOO GOBHI MASALA (V) "
-			"BUTTER MILK (D)"
-			"PLAIN RICE (V) "
-			"POORI (V) "
-			"JAGGERY, ACHAR, PAPAD"
-			"KESARIYA HALWA (D)"
+			"KAALE CHANE (V) ",
+			"ALOO GOBHI MASALA (V) ",
+			"BUTTER MILK (D)",
+			"PLAIN RICE (V) ",
+			"POORI (V) ",
+			"JAGGERY, ACHAR, PAPAD",
+			"KESARIYA HALWA (D)",
 		],
 		"Oct 15 2021": [
-			"GREEN SALAD,THREE BEAN SALAD (V)"
-			"SOYA CHAAP MASALA (V)"
-			"TURAI KI SABZI (V)"
-			"DAL MAKHANI (D)"
-			"PLAIN RICE (V) "
-			"TAWA ROTI, GARLIC BREAD"
-			"JAGGERY, ACHAR"
+			"GREEN SALAD,THREE BEAN SALAD (V)",
+			"SOYA CHAAP MASALA (V)",
+			"TURAI KI SABZI (V)",
+			"DAL MAKHANI (D)",
+			"PLAIN RICE (V) ",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
 		],
 		"Oct 16 2021": [
-			"GREEN SALAD, CHANA CHAAT (V)"
-			"PENNE ALFREDO (D)
-			"MUSHROOM MATAR (V) "
-			"DAL BALTIK (V)
-			"PLAIN RICE "
-			"TAWA ROTI "
-			"LEMON SOUFFLE (V)"
+			"GREEN SALAD, CHANA CHAAT (V)",
+			"PENNE ALFREDO (D)",
+			"MUSHROOM MATAR (V) ",
+			"DAL BALTIK (V)",
+			"PLAIN RICE ",
+			"TAWA ROTI ",
+			"LEMON SOUFFLE (V)",
 		],
 		"Oct 17 2021": [
-			"GREEN SALAD, LACCHA ONION SALAD"
-			"PALAK CORN (V)"
-			"ALOO BEANS (V)"
-			"DAL BUKHARA (V) "
-			"PLAIN RICE (V) "
-			"TAWA ROTI "
-			"JAGGERY, ACHAR, PAPAD"
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"PALAK CORN (V)",
+			"ALOO BEANS (V)",
+			"DAL BUKHARA (V) ",
+			"PLAIN RICE (V) ",
+			"TAWA ROTI ",
+			"JAGGERY, ACHAR, PAPAD",
 
 		]
 	},
 	"snacks": {
 		"timings": "04:45 PM - 06:15 PM",
 		"Oct 11 2021": [
-			"MARBLE CAKE (V)"
-			"BANANA SHAKE (D)"
+			"MARBLE CAKE (V)",
+			"BANANA SHAKE (D)",
 		],
 		"Oct 12 2021": [
-			"COLESLAW SANDWICH (D) "
-			"TEA (D), COFFEE (D)"
+			"COLESLAW SANDWICH (D) ",
+			"TEA (D), COFFEE (D)",
 		],
 		"Oct 12 2021": [
-			"DAHI BHALLA (D)"
-			"KHATTA MEETHA PAANI (V)"
+			"DAHI BHALLA (D)",
+			"KHATTA MEETHA PAANI (V)",
 		],
 		"Oct 14 2021": [
-			"MASALA IDLI (V)"
-			"ROOHAFZA "
+			"MASALA IDLI (V)",
+			"ROOHAFZA ",
 		],
 		"Oct 15 2021": [
-			"MIX PAKODA (V) "
-			"TEA (D), COFFEE (D)"
+			"MIX PAKODA (V) ",
+			"TEA (D), COFFEE (D)",
 		],
 		"Oct 16 2021": [
-			"VEG PUFF (V)"
-			"THANDAI (D)"
+			"VEG PUFF (V)",
+			"THANDAI (D)",
 		],
 		"Oct 17 2021": [
-			"FRENCH FRIES (V) "
-			"TEA (D), COFFEE (D)"
+			"FRENCH FRIES (V) ",
+			"TEA (D), COFFEE (D)",
 		]
 	},
 	"dinner": {
 		"timings": "07:30 PM - 10:15 PM",
 		"Oct 11 2021": [
 			"GREEN SALAD , TOSSED SALAD (V)",
-			"VEG ALA KING (D) "
-			"VEGETABLE KOFTA CURRY (V)"
-			"DAL PANCHMEL (V) "
-			"PLAIN RICE"
-			"TAWA ROTI, GARLIC BREAD"
-			"JAGGERY, ACHAR"
-			"SHAHI TUKDA (D) "
+			"VEG ALA KING (D) ",
+			"VEGETABLE KOFTA CURRY (V)",
+			"DAL PANCHMEL (V) ",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"SHAHI TUKDA (D) ",
 		],
 		"Oct 12 2021": [
-			"KOREAN KIMCHI SALAD (V) "
-			"HOT AND SOUR SOUP (V) "
-			"VEG MANCHURIAN (V)"
-			"HONEY CHILLI POTATO (V) "
-			"CHILLI GARLIC NOODLES (V) "
-			"FRIED RICE (V)"
+			"KOREAN KIMCHI SALAD (V) ",
+			"HOT AND SOUR SOUP (V) ",
+			"VEG MANCHURIAN (V)",
+			"HONEY CHILLI POTATO (V) ",
+			"CHILLI GARLIC NOODLES (V) ",
+			"FRIED RICE (V)",
 		],
 		"Oct 13 2021": [
-			"GREEN SALAD, HAWAIIAN SALAD (D)"
-			"PENNE ARRABIATA (D)"
-			"BHINDI MASALA (V) "
-			"ARHAR DAL (V) "
-			"PLAIN RICE (V)"
-			"TAWA ROTI "
-			"JAGGERY,ACHAR "
-			"RICE KHEER (D) "
+			"GREEN SALAD, HAWAIIAN SALAD (D)",
+			"PENNE ARRABIATA (D)",
+			"BHINDI MASALA (V) ",
+			"ARHAR DAL (V) ",
+			"PLAIN RICE (V)",
+			"TAWA ROTI ",
+			"JAGGERY,ACHAR ",
+			"RICE KHEER (D) ",
 		],
 		"Oct 14 2021": [
-			"GREEN SALAD, THREE BEAN SALAD (V)"
-			"MAC 'N' CHEESE(D)"
-			"MIX VEGETABLES (V) "
-			"DAL MAHARANI (V) "
-			"PLAIN RICE (V)"
-			"TAWA ROTI"
-			"JAGGERY, ACHAR, PAPAD"
+			"GREEN SALAD, THREE BEAN SALAD (V)",
+			"MAC 'N' CHEESE(D)",
+			"MIX VEGETABLES (V) ",
+			"DAL MAHARANI (V) ",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
 		],
 		"Oct 15 2021": [
-			"GREEN SALAD,RUSSIAN SALAD (D)"
-			"MALAI  KOFTA CURRY (D) "
-			"SUBZ MAKHANI (D)"
-			"DAL RAJASTHANI (V)"
-			"PEA PULAO (V)"
-			"TAWA ROTI, GARLIC BREAD"
-			"JAGGERY, ACHAR"
-			"COCONUT LADOO (V)"
+			"GREEN SALAD,RUSSIAN SALAD (D)",
+			"MALAI  KOFTA CURRY (D) ",
+			"SUBZ MAKHANI (D)",
+			"DAL RAJASTHANI (V)",
+			"PEA PULAO (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"COCONUT LADOO (V)",
 		],
 		"Oct 16 2021": [
-			"GREEN SALAD, SIRKA ONION"
-			"CHICKEN DUM PUKHT (N&D)"
-			"KADAI PANEER (D)"
-			"MOONG DAL (V) "
-			"PLAIN RICE (V) "
-			"TAWA ROTI"
-			"JAGGERY, ACHAR"
+			"GREEN SALAD, SIRKA ONION",
+			"CHICKEN DUM PUKHT (N&D)",
+			"KADAI PANEER (D)",
+			"MOONG DAL (V) ",
+			"PLAIN RICE (V) ",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR",
 		],
 		"Oct 17 2021": [
-			"GREEN SALAD, BEETROOT SALAD (V)"
-			"SAUTE VEGETABLES (V)"
-			"CABBAGE MATAR (V)"
-			"DAL TADKA (V)"
-			"PLAIN RICE"
-			"TAWA ROTI, GARLIC BREAD"
-			"JAGGERY, ACHAR"
-			"CHOCOLATE FUDGE CAKE (V) "
+			"GREEN SALAD, BEETROOT SALAD (V)",
+			"SAUTE VEGETABLES (V)",
+			"CABBAGE MATAR (V)",
+			"DAL TADKA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"CHOCOLATE FUDGE CAKE (V) ",
 		]
 	}
 }
