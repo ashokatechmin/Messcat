@@ -52,24 +52,23 @@
             "alternates": [
                 "sg",
                 "student government"
+                "7th"
+                "interim"
             ],
             "value": "Student Government: sg@ashoka.edu.in"
         },
-        "aniruddha jetha": "Aniruddha Jetha: aniruddha.jetha_ug21@ashoka.edu.in",
-        "ashutosh sharma": "Ashutosh Sharma: ashutosh.sharma_ug22@ashoka.edu.in",
-        "biplob kumar das": "Biplob Kumar Das: biplob.das_ug21@ashoka.edu.in",
-        "harshit kumar": "Harshit Kumar: harshit.kumar_ug22@ashoka.edu.in",
-        "jahnavi rudra": "Jahnavi Rudra: jahnavi.rudra_ug22@ashoka.edu.in",
-        "kesar majethia": "Kesar Majethia: kesar.majethia_ug21@ashoka.edu.in",
-        "niharika mehrotra": "Niharika Mehrotra: niharika.mehrotra_ug22@ashoka.edu.in",
-        "priyansh soni": "Priyansh Soni: priyansh.soni_ug21@ashoka.edu.in",
-        "sanjay sudarsan": "Sanjay Sudarsan: sanjay.sudarsan_ug22@ashoka.edu.in",
-        "shweta siddhu": "Shweta Siddhu: shweta.siddhu_ug22@ashoka.edu.in",
-        "varnika gangavalli": "Varnika Gangavalli: varnika.gangavalli_ug21@ashoka.edu.in",
+        "Neha Sheik: neha.sheik_ug23@ashoka.edu.in",
+        "Karan Lobana: karan.lobana_ug22@ashoka.edu.in",
+        "Bhavye Jain: bhavye.jain_ug23@ashoka.edu.in",
+        "Jai Desai: jai.desai_ug22@ashoka.edu.in",
+        "Nipun Jain: nipun.jain_ug23@ashoka.edu.in",
+        "Shreya Jain: shreya.jain_ug22@ashoka.edu.in",
+      
         "technology minister": {
             "alternates": [
                 "tech",
                 "tech minister"
+                "tech min"
             ],
             "value": "Bertrand Kwibuka (Technology Minister): bertrand.kwibuka_asp22@ashoka.edu.in"
         },
@@ -78,57 +77,68 @@
                 "environmental minister",
                 "env minister"
             ],
-            "value": "Anjali Dalmia (Environment Minister): anjali.dalmia_ug22@ashoka.edu.in"
+            "value": "Manasi Narula (Environmental Minister): manasi.narula_ug23@ashoka.edu.in"
         },
         "finance minister": {
             "alternates": [
                 "fin minister"
             ],
-            "value": "Arundhati Rajan (Finance Minister): arundhati.rajan_ug22@ashoka.edu.in"
+            "value": "Akhil Bhardwaj (Finance Minister): akhil.bhardwaj_ug22@ashoka.edu.in"
         },
         "minister for community well-being": {
             "alternates": [
                 "cwb minister",
                 "minister for community well being"
             ],
-            "value": "Bhavya Dixit (Minister for Community Well-Being): bhavya.dixit_ug21@ashoka.edu.in"
+            "value": "Stay tuned"
         },
         "cultural minister": {
             "alternates": [
                 "cul minister"
             ],
-            "value": "Harsha Mohan (Cultural Minister): harsha.potapragada_ug21@ashoka.edu.in"
+            "value": "Shreya (Cultural Minister): "
         },
         "academic affairs minister": {
             "alternates": [
                 "aa minister"
+                "academic affairs"
+                "academic affairs minister"
             ],
-            "value": "Pratiti (Academic Affairs Minister): pratiti_asp21@ashoka.edu.in"
+            "value": "Yasashvi Paarakh (Academic Affairs Minister): yasashvi.paarakh_ug23@ashoka.edu.in"
         },
         "campus life minister": {
             "alternates": [
                 "campus minister"
             ],
-            "value": "Rithupar Pathy (Campus Life Minister): rithupar.pathy_ug21@ashoka.edu.in"
+            "value": "Ananya Gupta (Campus Life Minister): ananya.gupta_ug22@ashoka.edu.in"
         },
         "parliamentary affairs minister": {
             "alternates": [
                 "pa minister"
             ],
-            "value": "Sharanya Narayanan (Parliamentary Affairs Minister): sharanya.narayanan_ug22@ashoka.edu.in"
+            "value": "Harsh Gupta (Parliamentary Affairs Minister): harsh.gupta_ug23@ashoka.edu.in"
         },
         "student government president": {
             "alternates": [
                 "sg president"
             ],
-            "value": "Priavi Joshi (President): priavi.joshi_ug21@ashoka.edu.in"
+            "value": " (President): stay tuned"
+        },
+         "sports minister": {
+            "alternates": [
+                "sports minister"
+                "sports"
+            ],
+            "value": "Rohan Manoj (Sports Minister): rohan.manoj_ug22@ashoka.edu.in"
         },
         "leader of opposition": {
             "alternates": [
                 "sg lo",
                 "lo"
+                "opposition"
+                "leader of oposition"
             ],
-            "value": "Gaurav Nandan Tripathi (Leader of the Opposition): gaurav.tripathi_ug20@ashoka.edu.in"
+            "value": " Stay tuned"
         }
     },
     "meta": {
