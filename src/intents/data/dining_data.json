@@ -1,7 +1,7 @@
 {
 	"breakfast": {
 		"timings": "08:00 AM - 10:30 AM",
-		"Oct 04 2021": [
+		"Oct 11 2021": [
 			"CHOCOS",
 			"BOILED EGG (E)",
 			"PANCAKE (D)",
@@ -11,7 +11,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 05 2021": [
+		"Oct 12 2021": [
 			"CORNFLAKES",
 			"MASALA OMELETTE (E)",
 			"IDLI SAMBAR (V)",
@@ -21,7 +21,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 06 2021": [
+		"Oct 13 2021": [
 			"MUESLI",
 			"EGG BHURJI (E)",
 			"MIX ALOO PARATHA (V)",
@@ -31,7 +31,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 07 2021": [
+		"Oct 14 2021": [
 			"CORNFLAKES",
 			"FRIED EGG (E)",
 			"VEG MASALA PEANUT POHA (P)",
@@ -41,7 +41,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 08 2021": [
+		"Oct 15 2021": [
 			"CHOCOS",
 			"BOILED EGG (E)",
 			"MATAR (V)",
@@ -51,7 +51,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 09 2021": [
+		"Oct 16 2021": [
 			"MUESLI",
 			"EGG BHURJI (E)",
 			"PLAIN PARATHA (V)",
@@ -61,7 +61,7 @@
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D)"
 		],
-		"Oct 10 2021": [
+		"Oct 17 2021": [
 			"CORNFLAKES",
 			"MASALA OMELETTE (E)",
 			"MOONG DAL CHILLA (D)",
@@ -74,7 +74,7 @@
 	},
 	"lunch": {
 		"timings": "12:15 PM - 02:30 PM",
-		"Oct 04 2021": [
+		"Oct 11 2021": [
 			"GREEN SALAD, SIRKA ONION",
 			"CHICKEN BIRYANI (N)",
 			"VEG PANEER BIRYANI (D)",
@@ -83,7 +83,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Oct 05 2021": [
+		"Oct 12 2021": [
 			"GREEN SALAD, GERMAN POTATO SALAD (D)",
 			"SINDI KADHI (D)",
 			"HING DHANIYE KE CHATPATE ALOO (V)",
@@ -92,7 +92,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Oct 06 2021": [
+		"Oct 13 2021": [
 			"GREEN SALAD, MASALA ONION",
 			"BUTTER CHICKEN (N&D)",
 			"PANEER LABABDAR (D)",
@@ -101,7 +101,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Oct 07 2021": [
+		"Oct 14 2021": [
 			"GREEN SALAD, TOSSED SALAD",
 			"PALAK KOFTA CURRY (V)",
 			"ALOO BAINGAN (V)",
@@ -110,7 +110,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR, PAPAD"
 		],
-		"Oct 08 2021": [
+		"Oct 15 2021": [
 			"GREEN SALAD, PASTA WITH MINTED YOGHURT (D)",
 			"MAC N CHEESE (D)",
 			"ALOO GOBHI (V)",
@@ -119,7 +119,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR"
 		],
-		"Oct 09 2021": [
+		"Oct 16 2021": [
 			"GREEN SALAD, BEETROOT SALAD (V)",
 			"TAWA VEG (V)",
 			"RAJMA MASALA (V)",
@@ -129,7 +129,7 @@
 			"JAGGERY, ACHAR",
 			"FRUIT TRIFLE PUDDING (D)"
 		],
-		"Oct 10 2021": [
+		"Oct 17 2021": [
 			"GREEN SALAD, LACCHA ONION SALAD",
 			"PINDI CHOLEY (V)",
 			"BUTTERMILK  (D)",
@@ -141,38 +141,38 @@
 	},
 	"snacks": {
 		"timings": "04:45 PM - 06:15 PM",
-		"Oct 04 2021": [
+		"Oct 11 2021": [
 			"STRAWBERRY SWISS ROLL (D)",
 			"BANANA SHAKE (D)"
 		],
-		"Oct 05 2021": [
+		"Oct 12 2021": [
 			"KATHI ROLL (D)",
 			"TEA (D), COFFEE (D)"
 		],
-		"Oct 06 2021": [
+		"Oct 12 2021": [
 			"GOL GAPPE (V)",
 			"KHATTA MEETHA PANI (V)"
 		],
-		"Oct 07 2021": [
+		"Oct 14 2021": [
 			"FRUIT CAKE SLICE (V)",
 			"TEA (D), COFFEE (D)"
 		],
-		"Oct 08 2021": [
+		"Oct 15 2021": [
 			"BURGER (V)",
 			"COLD COFFEE (D)"
 		],
-		"Oct 09 2021": [
+		"Oct 16 2021": [
 			"VEG MINT SANDWICH (V)",
 			"TEA (D), COFFEE (D)"
 		],
-		"Oct 10 2021": [
+		"Oct 17 2021": [
 			"BANANA CAKE (V)",
 			"TANG (V)"
 		]
 	},
 	"dinner": {
 		"timings": "07:30 PM - 10:15 PM",
-		"Oct 04 2021": [
+		"Oct 11 2021": [
 			"GREEN SALAD , MEXICAN CORN SALAD (V)",
 			"PENNE AOP (V)",
 			"ALOO CAPSICUM (V)",
@@ -182,7 +182,7 @@
 			"JAGGERY, ACHAR",
 			"BESAN LADOO (D)"
 		],
-		"Oct 05 2021": [
+		"Oct 12 2021": [
 			"GREEN SALAD , MEDITERANEAN SALAD (V)",
 			"MALAI KOFTA CURRY (D)",
 			"CHILLI SOYA NUGGETS (V)",
@@ -192,7 +192,7 @@
 			"JAGGERY, ACHAR",
 			"STRAWBERRY ICE CREAM (D)"
 		],
-		"Oct 06 2021": [
+		"Oct 13 2021": [
 			"GREEN SALAD, SPROUT SALAD (V)",
 			"VEG LASAGNE (D)",
 			"KURKURI BHINDI (V)",
@@ -202,7 +202,7 @@
 			"JAGGERY, ACHAR",
 			"BALUSHAHI (V)"
 		],
-		"Oct 07 2021": [
+		"Oct 14 2021": [
 			"GREEN SALAD,THREE BEAN SALAD (D)",
 			"THAI GREEN CURRY (D)",
 			"STEAM RICE",
@@ -212,7 +212,7 @@
 			"JAGGERY, ACHAR",
 			"FUDGE CAKE (V)"
 		],
-		"Oct 08 2021": [
+		"Oct 15 2021": [
 			"GREEN SALAD ,PACHADI SALAD (V)",
 			"VEG AVIAL (D)",
 			"PORIYAL (V)",
@@ -221,7 +221,7 @@
 			"LEMON RICE (V)",
 			"PAYASAM (D)"
 		],
-		"Oct 09 2021": [
+		"Oct 16 2021": [
 			"GREEN SALAD, ACHARI ONION",
 			"HYDERABADI MURGH KORMA (N)",
 			"PANEER BUTTER MASALA (D)",
@@ -230,7 +230,7 @@
 			"TAWA ROTI",
 			"JAGGERY, ACHAR"
 		],
-		"Oct 10 2021": [
+		"Oct 17 2021": [
 			"GREEN SALAD , ALOO CHAAT (V)",
 			"GATTA KI SABJI (D)",
 			"MIX VEGETABLES (V)",
