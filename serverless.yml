@@ -14,7 +14,7 @@ provider:
   region: ap-south-1
   apiName: messcat
   memorySize: 256 # 256mb
-  timeout: 60 # 60s
+  timeout: 30 # 60s
   lambdaHashingVersion: 20201221
 
 functions:

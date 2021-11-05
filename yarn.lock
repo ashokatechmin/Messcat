@@ -4,7 +4,7 @@
 
 "@adiwajshing/whatsapp-info-bot@git+https://github.com/adiwajshing/WhatsAppInfoBot":
   version "2.0.0"
-  resolved "git+https://github.com/adiwajshing/WhatsAppInfoBot#2f151a9e69eaf5abc4d4807f55f68e50ffbf7311"
+  resolved "git+https://github.com/adiwajshing/WhatsAppInfoBot#def595becf4d1fe614892d1d3557b6383087c614"
   dependencies:
     got "^11.8.1"
     he "^1.2.0"
@@ -18,6 +18,12 @@
     axios "^0.21.1"
   optionalDependencies:
     jsonwebtoken "^8.5.1"
+
+"@chatdaddy/service-im-client@git+https://github.com/chatdaddy/service-im-client.git":
+  version "0.1.0"
+  resolved "git+https://github.com/chatdaddy/service-im-client.git#cfc339cdc35135e0ccb0e6d8ea961aca1ff4540d"
+  dependencies:
+    axios "^0.21.1"
 
 "@hapi/accept@^3.2.4":
   version "3.2.4"

@@ -15,6 +15,7 @@
   "dependencies": {
     "@adiwajshing/whatsapp-info-bot": "git+https://github.com/adiwajshing/WhatsAppInfoBot",
     "@chatdaddy/service-auth-client": "git+https://github.com/chatdaddy/service-auth-client.git",
+    "@chatdaddy/service-im-client": "git+https://github.com/chatdaddy/service-im-client.git",
     "convert-excel-to-json": "^1.7.0",
     "dotenv": "^8.6.0",
     "google-auth-library": "^7.5.0",
