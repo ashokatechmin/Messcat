@@ -13,4 +13,4 @@ const responder = LanguageProcessor.then(processor => (
   )
 ))
 
-module.exports.hook = async (event) => (await responder)(event)
+module.exports.hook = async (event) => (await responder).handler(event)
