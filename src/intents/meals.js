@@ -108,11 +108,11 @@ module.exports = class {
 				const arr = this.mealsData["combo"][week]
 				let str
 				if (arr) {
-					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ")) ).join("\n")
+					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
 				} else {
 					str = "Data not available 😅"
 				}
-				return str.toTitleCase()
+				return str
 			}
 			
 			str = this.formattedString(option, dateKey)
