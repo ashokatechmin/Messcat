@@ -1,6 +1,7 @@
 const {promises: fs} = require('fs')
 const { fetchLatestDiningMenu } = require('./fetch-dining-menus')
 const { parseMessMenu } = require('./parse-dining-xlsx')
+const { parseComboDocx } = require('./parse-combo-docx')
 
 let menu = { }
 try {
@@ -9,16 +10,15 @@ try {
 
 }
 
-
 const download = async() => {
-	const { messMenuFilename } = await fetchLatestDiningMenu()
-	const messMenu = await parseMessMenu(messMenuFilename)
-
-	console.log(
-		'updated dining menu for ', 
-		Object.keys(messMenu.breakfast).filter(t => t != 'timings')[0]
-	)
-
+	const { messMenuFilename, comboMenuFilename } = await fetchLatestDiningMenu()
+	const messMenu = await parseMessMenu(messMenuFilename, comboMenuFilename)
+	// which date the menu was parsed for
+	const menuDate = Object.keys(messMenu.breakfast).filter(t => t != 'timings')[0]
+	// print which date menu was parsed for
+	// we one can be sure it worked
+	console.log('updated dining menu for ', menuDate)
+	// get all keys present in the old and new menu
 	const keys = Array.from(
 		new Set([
 			...Object.keys(menu),

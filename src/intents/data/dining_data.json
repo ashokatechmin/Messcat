@@ -490,6 +490,76 @@
 			"BANANA, MIX FRUITS",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 22 2021": [
+			"CHOCOS",
+			"MASALA OMELETTE (E)",
+			"VERMICELLI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, KINOO",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 23 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"PAV (V)",
+			"BHAJI (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PINEAPPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 24 2021": [
+			"CORN FLAKES",
+			"BOILED EGG (E)",
+			"UTTAPAM SAMBAR (V)",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, APPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 25 2021": [
+			"CORNFLAKES",
+			"EEG BHURJI (E)",
+			"BATHUA PARATHA (V)",
+			"TAMATAR ALOO KI SABZI (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PINEAPPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 26 2021": [
+			"CHOCOS",
+			"FRIED EGG (E)",
+			"VEG PEANUT MASALA POHA (P)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 27 2021": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"MIX PARATHA (V)",
+			"CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, ,APPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Nov 28 2021": [
+			"CORNFLAKES",
+			"BOILED EGG (E)",
+			"BESAN CHILLA (D)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -949,6 +1019,71 @@
 			"PLAIN RICE (V)",
 			"LUCHI (V)",
 			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Nov 22 2021": [
+			"GREEN SALAD, MASALA LACHHA ONION",
+			"CHICKEN CHANGEZI (N)",
+			"PANEER DO PYAZA (D)",
+			"MASOOR DAL (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Nov 23 2021": [
+			"GREEN SALAD, HAWAIIAN SALAD (D)",
+			"RAJMA MASALA (V)",
+			"HIND DHANIYE KE CHATPATE ALOO (V)",
+			"BOONDI RAITA (D)",
+			"TAWA ROTI",
+			"JEERA RICE (V)",
+			"JAGGERY, ACHAR, PAPAD",
+			"PHIRNI (D)"
+		],
+		"Nov 24 2021": [
+			"GREEN SALAD, SIRKA ONION (V)",
+			"TAWA CHICKEN (N)",
+			"PANEER JALFREZI (D)",
+			"BLACK MALKA DAL (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Nov 25 2021": [
+			"GREEN SALAD, KACHUMBER SALAD (V)",
+			"FUSILLI PINK SAUCE (D)",
+			"KEEMA SOYA MATAR (V)",
+			"DAL MAKHANI (D)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI,GARLIC BREAD",
+			"JAGGERY, ACHAR, PAPAD",
+			"CHOCOLATE ICE CREAM (D)"
+		],
+		"Nov 26 2021": [
+			"GREEN SALAD, RAW PAPAYA  SALAD (V)",
+			"VEG MANCHURIAN (V)",
+			"VEG HAKKA NOODLES (V)",
+			"GRILLED VEGETABLES (V)",
+			"HERB RICE (V)",
+			"GARLIC BREAD"
+		],
+		"Nov 27 2021": [
+			"GREEN SALAD, CHANA CHAAT (V)",
+			"SARSO KA SAAG (V)",
+			"HOMESTYLE MACARONI (V)",
+			"DAL BUKHARA (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"MOONG DAL HALWA (D)"
+		],
+		"Nov 28 2021": [
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"AMRITSARI CHOLEY ( V)",
+			"ALOO PALAK (V)",
+			"BUTTERMILK (D)",
+			"PLAIN RICE (V)",
+			"POORI  (V)",
+			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
@@ -1147,6 +1282,34 @@
 		],
 		"Nov 21 2021": [
 			"POPCORN (V)",
+			"COLD COFFEE (D)"
+		],
+		"Nov 22 2021": [
+			"MAGGI (V)",
+			"COLD COFFEE (D)"
+		],
+		"Nov 23 2021": [
+			"VEG CLUB SANDWICH (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Nov 24 2021": [
+			"POTATO SMILEY (V)",
+			"TEA (D),COFFEE (D)"
+		],
+		"Nov 25 2021": [
+			"SAMOSA (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Nov 26 2021": [
+			"KOTHMERI KEBAB (V)",
+			"TEA (D) , COFFEE (D)"
+		],
+		"Nov 27 2021": [
+			"GOL GAPPE (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Nov 28 2021": [
+			"VEG NUGGETS (V)",
 			"COLD COFFEE (D)"
 		]
 	},
@@ -1618,6 +1781,125 @@
 			"TAWA ROTI, GARLIC BREAD",
 			"JAGGERY, ACHAR",
 			"PAYASAM (D)"
+		],
+		"Nov 22 2021": [
+			"GREEN SALAD , TOSSED SALAD (V)",
+			"VEG ALA KING (D)",
+			"BHINDI MASALA (V)",
+			"DHABA DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"BESAN BARFI (V)"
+		],
+		"Nov 23 2021": [
+			"GREEN SALAD, GREEK SALAD (D)",
+			"ALOO SOYA MATAR (V)",
+			"MAC 'N'CHEESE (D)",
+			"YELLOW DAL TADKA (V)",
+			"ONION RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR"
+		],
+		"Nov 24 2021": [
+			"GREEN SALAD,MEXICAN CORN SALAD (V)",
+			"LAUKI KOFTA CURRY (V)",
+			"GOBHI ALOO MASALA (V)",
+			"CHANA URAD KI DAL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY,ACHAR",
+			"SHAHI TUKDA (D)"
+		],
+		"Nov 25 2021": [
+			"GREEN SALAD, THREE BEAN SALAD (V)",
+			"PALAK CORN (V)",
+			"CABBAGE MATAR (V)",
+			"DAL RAJASTHANI (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI,GARLIC BREAD",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Nov 26 2021": [
+			"GREEN SALAD,ALOO CHAAT ( V)",
+			"RATATOUILLE (V)",
+			"MIX VEGETABLE (V)",
+			"DAL PANCHMEL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"COCONUT LADOO (V)"
+		],
+		"Nov 27 2021": [
+			"GREEN SALAD, SIRKA ONION",
+			"CHICKEN KALIMIRCH (N&D)",
+			"PANEER DO PYAZA (D)",
+			"RED MALKA DAL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"Nov 28 2021": [
+			"GREEN SALAD, BEETROOT SALAD (V)",
+			"MATAR MUSHROOM (V)",
+			"PENNE ARRABIATA (D)",
+			"MOONG DAL TADKA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"RICE KHEER (V)"
 		]
+	},
+	"combo": {
+		"wk_46": {
+			"south indian combos": [
+				"dosa (masala or plain) with sambar and chutney",
+				"curd and rice"
+			],
+			"chinese combos": [
+				"veg manchurian with fried rice or noodles",
+				"chilli chicken with fried rice or noodles",
+				"chicken fried rice",
+				"chicken noodles"
+			],
+			"continental combos": [
+				"fusilli arrabiata veg",
+				"fusilli arrabiata chicken",
+				"fusilli alfredo veg",
+				"fusilli alfredo chicken",
+				"veg pizza",
+				"chicken pizza"
+			],
+			"north indian combos": [
+				"kadai paneer with rice or tandoori roti/ naan",
+				"chicken seekh kebab with rice or tandoori roti/naan",
+				"kadai chicken with rice or tandoori roti/naan"
+			]
+		},
+		"wk_47": {
+			"south indian combos": [
+				"dosa (masala or plain) with sambar and chutney",
+				"curd and rice"
+			],
+			"chinese combos": [
+				"veg manchurian with fried rice or noodles",
+				"chilli chicken with fried rice or noodles",
+				"chicken fried rice",
+				"chicken noodles"
+			],
+			"continental combos": [
+				"fusilli arrabiata veg",
+				"fusilli arrabiata chicken",
+				"fusilli alfredo veg",
+				"fusilli alfredo chicken",
+				"veg pizza",
+				"chicken pizza"
+			],
+			"north indian combos": [
+				"kadai paneer with rice or tandoori roti/ naan",
+				"chicken seekh kebab with rice or tandoori roti/naan",
+				"kadai chicken with rice or tandoori roti/naan"
+			]
+		}
 	}
 }

@@ -11,6 +11,7 @@ const { join } = require('path')
 
 const MENU_EMAIL_SUBJECT = 'menu'
 const MENU_MIMETYPE = 'sheet'
+const COMBO_MIMETYPE = 'officedocument.wordprocessingml.document'
 
 const auth = new google.auth.OAuth2(
 	process.env.GOOGLE_CLIENT_ID,
@@ -51,7 +52,8 @@ const fetchLatestDiningMenu = async() => {
 		id: message.id, 
 	})
 	return {
-		messMenuFilename: await getAttachment('Menu', MENU_MIMETYPE)
+		messMenuFilename: await getAttachment('menu', MENU_MIMETYPE),
+		comboMenuFilename: await getAttachment('combo', COMBO_MIMETYPE)
 	}
 }
 module.exports = {

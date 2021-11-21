@@ -21,6 +21,7 @@
     "google-auth-library": "^7.5.0",
     "googleapis": "^67.1.1",
     "jsonwebtoken": "^8.5.1",
+    "mammoth": "^1.4.19",
     "mustache": "^4.2.0",
     "node-fetch": "^2.6.1",
     "pdf.js-extract": "^0.1.4",

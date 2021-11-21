@@ -1,10 +1,11 @@
 const excelToJson = require('convert-excel-to-json')
 const DateUtils = require('./date-utils')
+const { parseComboDocx } = require('./parse-combo-docx')
 /**
  * Takes in path to the dining xlsx and parses it
  * @param {string} messPdfFile path to the mess xlsx
  */
-const parseMessMenu = (filename) => {
+const parseMessMenu = async(filename, comboDocxFile) => {
 	const DAYS_OF_WEEK = [
 		'monday',
 		'tuesday',
@@ -79,7 +80,7 @@ const parseMessMenu = (filename) => {
 					.trim()
 			)
 		}
-		const weekKey = `wk_${DateUtils.weekOfYear(date)}`
+		
 		return { [weekKey]: obj }
 	}
 	const mealOptions = [ 'breakfast', 'lunch', 'snacks', 'dinner' ]
@@ -100,6 +101,7 @@ const parseMessMenu = (filename) => {
 	// the full date
 	const fullDateStr = startDate + ' ' + endDate.split(' ').slice(-1)[0]
 	const date = parseDate(fullDateStr)
+	const weekKey = `wk_${DateUtils.weekOfYear(date)}`
 
 	const mealsIdx = sheet.findIndex(item => (
 		Object.keys(item).find(key => (
@@ -115,6 +117,10 @@ const parseMessMenu = (filename) => {
 	// parse combo if there
 	if(comboSheet) {
 		menuJSON.combo = getCombos()
+	} else if(comboDocxFile) {
+		const docx = await parseComboDocx(comboDocxFile)
+		menuJSON.combo = menuJSON.combo || { }
+		menuJSON.combo[weekKey] = docx
 	}
 	return menuJSON
 }
