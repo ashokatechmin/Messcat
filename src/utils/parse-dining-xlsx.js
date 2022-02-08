@@ -53,7 +53,6 @@ const parseMessMenu = async(filename, comboDocxFile) => {
 			if(currentOffset < 0) continue // if haven't found day 1
 			if(currentOffset >= 7) break // break on more than a week's data
 			
-
 			const key = dateString(date, currentOffset)
 			data[key] = data[key] || []
 			
