@@ -16,6 +16,7 @@ provider:
   memorySize: 256 # 256mb
   timeout: 30 # 60s
   lambdaHashingVersion: 20201221
+  versionFunctions: false
 
 functions:
   wa-hook:
