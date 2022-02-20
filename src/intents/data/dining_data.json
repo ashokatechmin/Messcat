@@ -770,6 +770,76 @@
 			"BANANA, MIX FRUITS",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 21 2022": [
+			"CORN FLAKES",
+			"BOILED EGG (E)",
+			"SUJI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 22 2022": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"CHOCOLATE PANCAKE (D)",
+			"HONEY , CHOCOLATE (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, APPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 23 2022": [
+			"CHOCOS",
+			"MASALA OMELETTE (E)",
+			"POORI (V)",
+			"ALOO BHAJI (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 24 2022": [
+			"CORNFLAKES",
+			"EGG BHURJI (E)",
+			"BESAN CHILLA (D)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 25 2022": [
+			"CHOCOS",
+			"BOILED EGG (E)",
+			"VADA SAMBHAR (V)",
+			"COCONUT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 26 2022": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"BHATHUA PARATHA (V)",
+			"PLAIN CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, APPLE",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Feb 27 2022": [
+			"CORNFLAKES",
+			"MASALA OMELETTE (E)",
+			"VEG PEANUT MASALA POHA (P)",
+			"MINT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -1492,6 +1562,71 @@
 			"PLAIN RICE (V)",
 			"BHATURAE (V)",
 			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Feb 21 2022": [
+			"GREEN SALAD, MASALA LACHHA ONION",
+			"CHICKEN MASALA (N)",
+			"PANEER BUTTER MASALA (D)",
+			"MASOOR DAL (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Feb 22 2022": [
+			"GREEN SALAD, HAWAIIAN SALAD (D)",
+			"LAUKI KOFTA CURRY (V)",
+			"MAC 'N'CHEESE (D)",
+			"DAL MAKHANI (D)",
+			"TAWA ROTI",
+			"JEERA RICE (V)",
+			"JAGGERY, ACHAR, PAPAD",
+			"BALUSHAHI (D)"
+		],
+		"Feb 23 2022": [
+			"GREEN SALAD, SIRKA ONION (D)",
+			"TAWA CHICKEN (N)",
+			"KHADAI PANEER (D)",
+			"BLACK MALKA DAL (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Feb 24 2022": [
+			"GREEN SALAD, ITALIAN PASTA SALAD (D)",
+			"HOMESTYLE  PENNE  PASTA (V)",
+			"HARE PYAZ AUR ALOO  (V)",
+			"RAJMA MASALA (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR, PAPAD",
+			"FUDGE CAKE (D)"
+		],
+		"Feb 25 2022": [
+			"GREEN SALAD, RAW PAPAYA  SALAD (V)",
+			"MANCHOW SOUP (V)",
+			"VEG MANCHURIAN (V)",
+			"VEG HAKKA NOODLES (V)",
+			"GRILLED VEGETABLES (V)",
+			"VEG FRIED RICE (V)"
+		],
+		"Feb 26 2022": [
+			"GREEN SALAD, CHANA CHAAT (V)",
+			"HOMESTYLE FUSSILI PASTA (V)",
+			"PALAK CORN (V)",
+			"DAL BUKHARA (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR, PAPAD",
+			"BESAN LADOO (D)"
+		],
+		"Feb 27 2022": [
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"AMRITSARI CHOLEY ( V)",
+			"ALOO JEERA (V)",
+			"CUCUMBER RAITA (D)",
+			"PLAIN RICE (V)",
+			"LUCCHI (V)",
+			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
@@ -1802,6 +1937,34 @@
 		],
 		"Dec 19 2021": [
 			"VEG NUGGETS (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Feb 21 2022": [
+			"CARROT CAKE (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Feb 22 2022": [
+			"BREAD PAKODA (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Feb 23 2022": [
+			"HARA BHARA KEBAB (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Feb 24 2022": [
+			"CHOCOLATE MUFFINS (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Feb 25 2022": [
+			"STRAWBERRY SWISS ROLL (V)",
+			"TEA (D) , COFFEE (D)"
+		],
+		"Feb 26 2022": [
+			"KOTHHMERI KEBAB (V)",
+			"TEA (D) , COFFEE (D)"
+		],
+		"Feb 27 2022": [
+			"VEG COLESLAW SANDWICH (D)",
 			"TEA (D), COFFEE (D)"
 		]
 	},
@@ -2539,6 +2702,73 @@
 			"VEGETABLE UTTAPAM (V)",
 			"JAGGERY, ACHAR",
 			"PAYASAM (D)"
+		],
+		"Feb 21 2022": [
+			"GREEN SALAD , TOSSED SALAD (V)",
+			"PENNE NAPOLITANA (D)",
+			"MIX VEGETABLE (V)",
+			"DHABA DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"PHIRNI (D)"
+		],
+		"Feb 22 2022": [
+			"GREEN SALAD,THREE BEANS SALAD (V)",
+			"GOBHI MASALA (V)",
+			"SOYA CHAAP MASALA (V)",
+			"DAL BALTIC (V)",
+			"STEAM RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR"
+		],
+		"Feb 23 2022": [
+			"GREEN SALAD, MEXICAN CORN SALAD (V)",
+			"RATATOUILLE (V)",
+			"CHILLI SOYA (V)",
+			"DAL PANCHMEL (V)",
+			"HERB RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY,ACHAR",
+			"SHAHI TUKDA (D)"
+		],
+		"Feb 24 2022": [
+			"GREEN SALAD, CHAN CHAAT (V)",
+			"BESAN KE GATTE (V)",
+			"ARBI MASALA (V)",
+			"CHANA DAL (D)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI (V)",
+			"JAGGERY, ACHAR"
+		],
+		"Feb 25 2022": [
+			"GREEN SALAD, ALOO CHAAT ( V)",
+			"CHEESE CORN LASAGNE (V)",
+			"MATAR MUSHROOM (V)",
+			"DAL PANCHMEL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"VANILLA ICE CREAM (D)"
+		],
+		"Feb 26 2022": [
+			"GREEN SALAD, SIRKA ONION",
+			"CHICKEN KALIMIRCH (N&D)",
+			"HOME STYLE MATAR PANEER (D)",
+			"MASOOOR DAL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"Feb 27 2022": [
+			"GREEN SALAD, BEETROOT SALAD (V)",
+			"CABBAGE MATAR (V)",
+			"HOMESTYLE MACRONI (D)",
+			"MOONG DAL TADKA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"RICE KHEER (V)"
 		]
 	},
 	"combo": {
