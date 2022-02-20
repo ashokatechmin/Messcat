@@ -94,6 +94,7 @@ const parseMessMenu = async(filename, comboDocxFile) => {
 									.replace(/([A-Z]{1}(?![A-Z])(?!$))/g, ' $1') // add spaces if no spaces exist
 									.replace(/[\s]{2,}/gi, ' ') // replace extra spaces
 									.replace(' - ', '-') // remove space
+									.replace(/r y/gi, 'ry')
 									.split('-')
 	startDate = startDate.split('(').slice(-1)[0]
 	endDate = endDate.split(')')[0]
