@@ -26,7 +26,7 @@ const fetchLatestDiningMenu = async() => {
 			item.mimeType.includes(mimetype)
 		))
 		if(!diningMenu) {
-			throw new Error('Could not find menu')
+			throw new Error(`Could not find "${filename}" menu`)
 		}
 		const { data: { data } } = await gmail.users.messages.attachments.get({
 			userId: 'me',
