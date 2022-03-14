@@ -4,3 +4,4 @@ node_modules
 .env
 .serverless
 respond.js
+local-data
