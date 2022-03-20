@@ -1,5 +1,5 @@
 const DateUtils = require('../utils/date-utils')
-const MealsData = require('./data/dining_data.json')
+const getLatestMenu = require('../utils/get-latest-menu')
 
 String.prototype.toTitleCase = function () {
 	var str2 = ""
@@ -35,11 +35,52 @@ const OUTLET_MENUS = {
 	}
 }
 
-module.exports = class {
-    constructor () {
-        this.keywords = ["menu", "what", "mess"]
-        this.entities = {
-            "lunch": "",
+module.exports = async() => {
+
+	const mealsData = await getLatestMenu()
+
+	const computeMealsAnswer = (options) => {
+		let date = DateUtils.dateWithTimeZone(new Date(), 5.5)
+		if (options.tomorrow) {
+			date = DateUtils.offsetting(date, 24)
+		}
+		let dateKey = DateUtils.dateString(date)
+
+		let str = ""
+		if (!options.meal || options.meal === "mess") {
+			str = mealOptions.map(option => "*" + option.toTitleCase() + "*\n" + formattedString(option, dateKey)).join("\n\n")
+		} else {
+			const option = options.meal.toLowerCase()
+			if (!mealsData[option]) {
+				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
+			}
+			if (option === "combo") {
+				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
+	
+				const arr = mealsData["combo"][week]
+				let str
+				if (arr) {
+					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
+				} else {
+					str = "Data not available 😅"
+				}
+				return str
+			}
+			
+			str = formattedString(option, dateKey)
+		}
+		return options.meal + " - " + dateKey + ":\n" + str
+	}
+
+	const formattedString = (mealOption, dateKey) => {
+		const arr = mealsData[mealOption][dateKey]
+		return arr ? " " + arr.join("\n ").toTitleCase() : "Data not available 😅"
+	}
+
+	return {
+		keywords: ["menu", "what", "mess"],
+		entities: {
+			"lunch": "",
             "dinner": "",
             "breakfast": "",
             "snacks": "",
@@ -50,9 +91,9 @@ module.exports = class {
 			...Object.keys(OUTLET_MENUS).reduce((dict, key) => ({
 				...dict, [key]: ''
 			}), { })
-        }
-        this.meta = {
-            userFacingName: ["mess", "menu"],
+		},
+		meta: {
+			userFacingName: ["mess", "menu"],
             description: "The menu for the mess and other outlets",
             examples: [
 				"what's for lunch", 
@@ -62,65 +103,23 @@ module.exports = class {
 				"what 4 breakfast tomorrow",
 				"dhaba menu"
 			]
-        }
-        this.mealsData = MealsData
-    }
-    /**
-     * Answer for the meals question
-     * @param {string[]} entities 
-     * @param {string} user 
-     */
-    answer (entities) {
-        const isTomorrow = entities.indexOf ("tomorrow") 
-        if (isTomorrow >= 0) {
-            entities.splice (isTomorrow, 1)
-        }
-		if(!entities.length) {
-			throw new Error('Not sure what you mean. Type "help" to know what I can do')
-		}
-        return entities.map (entity => {
-			if(OUTLET_MENUS[entity]) {
-				return OUTLET_MENUS[entity]
+		},
+		answer: (entities) => {
+			const isTomorrow = entities.indexOf ("tomorrow") 
+			if (isTomorrow >= 0) {
+				entities.splice (isTomorrow, 1)
 			}
-			return {
-				text: this.meals ({meal: entity, tomorrow: isTomorrow >= 0})
+			if(!entities.length) {
+				throw new Error('Not sure what you mean. Type "help" to know what I can do')
 			}
-		})
-    }
-    meals (options) {
-		let date = DateUtils.dateWithTimeZone(new Date(), 5.5)
-		if (options.tomorrow) {
-			date = DateUtils.offsetting(date, 24)
-		}
-		let dateKey = DateUtils.dateString(date)
-
-		let str = ""
-		if (!options.meal || options.meal === "mess") {
-			str = mealOptions.map(option => "*" + option.toTitleCase() + "*\n" + this.formattedString(option, dateKey)).join("\n\n")
-		} else {
-			const option = options.meal.toLowerCase()
-			if (!this.mealsData[option]) {
-				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
-			}
-			if (option === "combo") {
-				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
-	
-				const arr = this.mealsData["combo"][week]
-				let str
-				if (arr) {
-					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
-				} else {
-					str = "Data not available 😅"
+			return entities.map (entity => {
+				if(OUTLET_MENUS[entity]) {
+					return OUTLET_MENUS[entity]
 				}
-				return str
-			}
-			
-			str = this.formattedString(option, dateKey)
+				return {
+					text: computeMealsAnswer ({meal: entity, tomorrow: isTomorrow >= 0})
+				}
+			})
 		}
-		return options.meal + " - " + dateKey + ":\n" + str
-	}
-	formattedString (mealOption, dateKey) {
-		const arr = this.mealsData[mealOption][dateKey]
-		return arr ? " " + arr.join("\n ").toTitleCase() : "Data not available 😅"
 	}
 }

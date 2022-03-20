@@ -4,7 +4,7 @@ const { default: helpIntent } = require('@adiwajshing/whatsapp-info-bot/dist/exa
 const create = async() => {
 	const intents = [
 		await require('./corona')(),
-		new (require('./meals'))(),
+		await require('./meals')(),
 		
 		require('./f_all.json'),
 		require('./gratefulness.json'),
