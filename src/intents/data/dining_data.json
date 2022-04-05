@@ -1190,6 +1190,76 @@
 			"BANANA, PAPAYA",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 04 2022": [
+			"CORNFLAKES",
+			"BOILED EGG (E)",
+			"VERMICELLI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 05 2022": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"MATAR (V)",
+			"KULCHA (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 06 2022": [
+			"CORNFLAKES",
+			"MASALA OMELLETE (E)",
+			"VEGETABLE PEANUT POHA (V&P)",
+			"TOMATO CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 07 2022": [
+			"CORNFLAKES",
+			"BOILED EGG (E)",
+			"BESAN CHILLA (D)",
+			"TOMATO CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 08 2022": [
+			"CHOCOS",
+			"EGG BHURJI (E)",
+			"ALOO PYAZ PARATHA (V)",
+			"PLAIN CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 09 2022": [
+			"CHOCOS",
+			"MASALA OMELLETE (E)",
+			"HASH BROWN POTATO (D)",
+			"BAKED BEANS (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 10 2022": [
+			"MUESLI",
+			"FRIED EGG (E)",
+			"UTTAPAM,SAMBHAR (V)",
+			"COCONUT CHUTNEY (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -2304,10 +2374,75 @@
 			"PLAIN RICE (V)",
 			"AJWAINI POORI  (V)",
 			"ACHAR, PAPAD"
+		],
+		"Apr 04 2022": [
+			"GREEN SALAD, MASALA LACHHA ONION",
+			"CHICKEN MASALA (N&P)",
+			"MATAR PANEER (D&P)",
+			"RED MALKA DAL (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 05 2022": [
+			"GREEN SALAD, THREE BEAN SALAD (V)",
+			"PENNE NAPOLITANA (D)",
+			"MIX VEG (D)",
+			"KADHI PAKODA (D)",
+			"TAWA ROTI, GARLIC BREAD",
+			"PLAIN RICE (V)",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 06 2022": [
+			"GREEN SALAD, SIRKA ONION (V)",
+			"HANDI CHICKEN (N&P&D)",
+			"PANEER BUTTER MASALA (D&P)",
+			"DAL HYDERABADI (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 07 2022": [
+			"GREEN SALAD, PACHERI SALAD(V)",
+			"VEG PORIYAL (D)",
+			"SAMBHAR (V)",
+			"LEMON RICE (V)",
+			"IDLI (V)",
+			"JAGGERY, ACHAR",
+			"PAYASAM (D)"
+		],
+		"Apr 08 2022": [
+			"GREEN SALAD, GERMAN MUSTARD POTATO SALAD (D)",
+			"SPAGHETTI CONCASSE (D)",
+			"SOYA CHAAP MASALA (V)",
+			"BLACK MALKA DAL (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI,GARLIC BREAD",
+			"JAGGERY,ACHAR,PAPAD",
+			"KALA JAMUN (D)"
+		],
+		"Apr 09 2022": [
+			"GREEN SALAD, ITALIAN PASTA SALAD (D)",
+			"RAJMA MASALA (V)",
+			"SUBZ MAKHANI (D)",
+			"CURD (D)",
+			"STEAM RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"COCONUT LADOO (D)"
+		],
+		"Apr 10 2022": [
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"PINDI CHOLEY (V)",
+			"KHATTA MEETHA PETHA (V)",
+			"BUTTERMILK (D)",
+			"STEAM RICE (V)",
+			"BHATURE (D)",
+			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
-		"timings": "04:45 PM - 06:15 PM",
+		"timings": "04:45 PM - 06:30 PM",
 		"Oct 04 2021": [
 			"STRAWBERRY SWISS ROLL (D)",
 			"BANANA SHAKE (D)"
@@ -2783,10 +2918,38 @@
 		"Apr 03 2022": [
 			"CHEESE TOAST (D)",
 			"TEA (D), COFFEE (D)"
+		],
+		"Apr 04 2022": [
+			"CHOCOLATE CUP CAKE (D)",
+			"ROOAFZA (V)"
+		],
+		"Apr 05 2022": [
+			"VEG PUFF (D)",
+			"NIMBU PANI (V)"
+		],
+		"Apr 06 2022": [
+			"RAM LADOO (V)",
+			"TANG (V)"
+		],
+		"Apr 07 2022": [
+			"CHEESE NUGGETS (D)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Apr 08 2022": [
+			"SABUDANA TIKKI (V)",
+			"NIMBU PANI (V)"
+		],
+		"Apr 09 2022": [
+			"MASALA CORN (V)",
+			"AAM PANNA (V)"
+		],
+		"Apr 10 2022": [
+			"VEG CLUB SANDWICH (D)",
+			"TEA (D), COFFEE (D)"
 		]
 	},
 	"dinner": {
-		"timings": "07:30 PM - 10:15 PM",
+		"timings": "07:45 PM - 10:15 PM",
 		"Oct 04 2021": [
 			"GREEN SALAD , MEXICAN CORN SALAD (V)",
 			"PENNE AOP (V)",
@@ -3916,6 +4079,71 @@
 			"CORN FRIED RICE (V)",
 			"GARLIC NOODLES(V)",
 			"VANILLA ICE CREAM(D)"
+		],
+		"Apr 04 2022": [
+			"GREEN SALAD , MEDITERRANEAN SALAD (V)",
+			"MAC N CHEESE  (D)",
+			"ACHARI ALOO (V)",
+			"CHANA DAL (V)",
+			"VEG PULAO",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"FRUIT CUSTARD (D)"
+		],
+		"Apr 05 2022": [
+			"GREEN SALAD, BEETROOT SALAD (V)",
+			"PALAK ALOO (V)",
+			"TINDE KE KOFTE CURRY (V&P)",
+			"DAL MAKHANI (V)",
+			"JEERA RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR",
+			"SHAHI TUKDA (D)"
+		],
+		"Apr 06 2022": [
+			"GREEN SALAD, MEXICAN SALAD (V)",
+			"FUISILLI IN ALFREDO SAUCE (D)",
+			"TAWA VEGETABLES (V)",
+			"DAL MAKHANI (D)",
+			"PEA PULAO (V)",
+			"TAWA ROTI,GALIC BREAD",
+			"JAGGERY, ACHAR",
+			"HOT CHOCOLATE FUDGE (V)"
+		],
+		"Apr 07 2022": [
+			"GREEN SALAD,CHANA CHAT (V)",
+			"VEG RATATOUILLIE (V)",
+			"MALAI KOFTA CURRY (D&P)",
+			"DHABA DAL (D)",
+			"RAMPUR KI TEHRI RICE (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR"
+		],
+		"Apr 08 2022": [
+			"GREEN SALAD,MASALA ONION SALAD (D)",
+			"MASALA KHICHDI (V)",
+			"ROSEMARY POTATO (V)",
+			"CURD (D)",
+			"TAWA ROTI,GARLIC BREAD",
+			"JAGGERY,ACHAR"
+		],
+		"Apr 09 2022": [
+			"GREEN SALAD, SIRKA ONION",
+			"KHADAI CHICKEN (N&P)",
+			"PANEER BUTTER MASALA (D&P)",
+			"YELLOW MOONG DAL TADKA (V)",
+			"PLAIN RICE (V)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"Apr 10 2022": [
+			"RAW PAPAYA SALAD(P)",
+			"VEGETABLE SWEET CORN SOUP (V)",
+			"VEG MANCHURIAN (V)",
+			"SAUTEED VEGETABLES IN SESAME SAUCE (V)",
+			"VEG.FRIED RICE (V)",
+			"CHILLI GARLIC NOODLES(V)",
+			"STRAWBERRY ICE CREAM (D)"
 		]
 	},
 	"combo": {
