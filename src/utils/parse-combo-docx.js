@@ -16,7 +16,7 @@ const parseComboDocx = async(comboDocxFile) => {
 			.replace(/\s{2,}/g, s => s[0])
 			.trim()
 		if(!line) continue
-		if(line.includes('combo')) {
+		if(line.includes('combo') || line.includes('tks')) {
 			// if the previous key had no items
 			// remove it
 			if(!combo[key]?.length) {
