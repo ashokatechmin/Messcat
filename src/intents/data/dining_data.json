@@ -1400,6 +1400,76 @@
 			"BANANA,MIX FRUITS",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 25 2022": [
+			"CHOCOS",
+			"BOILED EGG (E)",
+			"IDLI, SAMBHAR",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 26 2022": [
+			"CORNFLAKES",
+			"FRIED EGG (E)",
+			"SUJI UPMA (D)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 27 2022": [
+			"CHOCOS",
+			"BOILED EGG(E)",
+			"VEG PEANUT POHA (P)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 28 2022": [
+			"HONEY ALMONDS FLAKES",
+			"EGG BHURJI (E)",
+			"STUFFED PARATHA (V)",
+			"CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 29 2022": [
+			"CHOCOS",
+			"FRIED EGG (E)",
+			"VERMECILLI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"Apr 30 2022": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"HASH BROWN POTATO(D)",
+			"BAKED BEANS(V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 01 2022": [
+			"CORNFLAKES",
+			"EGG BHURJI (E)",
+			"PAO (V)",
+			"BHAJI (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -2709,6 +2779,71 @@
 			"PLAIN RICE (V)",
 			"BHATURE",
 			"JAGGERY, ACHAR, PAPAD"
+		],
+		"Apr 25 2022": [
+			"GREEN SALAD, MASALA LACHHA ONION",
+			"CHICKEN DAHI WALA  (N&P&D)",
+			"PALAK PANEER (D)",
+			"YELLOW DAL TADKA (V)",
+			"JEERA RICE",
+			"TAWA ROTI",
+			"ACHAR, PAPAD"
+		],
+		"Apr 26 2022": [
+			"GREEN SALAD, HAWAIIN SALAD (D)",
+			"PENNE ARRABBIATA (D)",
+			"ACHARI BAIGAN (V)",
+			"PUNJABI KADHI (D)",
+			"TAWA ROTI, GARLIC BREAD",
+			"JEERA RICE",
+			"ACHAR, PAPAD"
+		],
+		"Apr 27 2022": [
+			"GREEN SALAD, SIRKA ONION",
+			"CHICKEN CHETTINAD (N&P)",
+			"MATAR PANEER (D)",
+			"GREEN MOONG TADKA (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"ACHAR, PAPAD"
+		],
+		"Apr 28 2022": [
+			"GREEN SALAD, AMERICAN CORN SALAD (V)",
+			"MAC & CHEESE (D)",
+			"SOYA CHAAP MASALA (D)",
+			"BLACK MALKA DAL (V)",
+			"JEERA RICE",
+			"TAWA ROTI,GARLIC BREAD",
+			"ACHAR ,PAPAD",
+			"GULAB GULKAND KI KHEER (D)"
+		],
+		"Apr 29 2022": [
+			"GREEN SALAD, ITALIAN PASTA SALAD (D)",
+			"LAUKI  KOFTA CURRY (D)",
+			"RAJMA MASALA (V)",
+			"CURD (D)",
+			"JEERA RICE",
+			"TAWA ROTI",
+			"ACHAR, PAPAD"
+		],
+		"Apr 30 2022": [
+			"GREEN SALAD, GERMAN MUSTARD POTATO (D)",
+			"FUISSILI PASTA IN PINK SAUCE (D)",
+			"HANDI VEG (D)",
+			"RED MALKA DAL (V)",
+			"JEERA RICE",
+			"TAWA ROTI",
+			"ACHAR, PAPAD",
+			"CHOCOLATE TRUFFLE CAKE (D)"
+		],
+		"May 01 2022": [
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"AMRITSARI CHOLEY (V)",
+			"KHATTA MEETHA PETHA (V)",
+			"BUTTERMILK (D)",
+			"PLAIN RICE",
+			"AJWAINI POORI",
+			"ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
@@ -3271,6 +3406,34 @@
 		],
 		"Apr 24 2022": [
 			"VEG CLUB SANDWICH (D)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Apr 25 2022": [
+			"MARBLE CAKE (V)",
+			"COLD COFFEE (D)"
+		],
+		"Apr 26 2022": [
+			"KOTHMERI KEBAB (V)",
+			"BANANA SHAKE (D)"
+		],
+		"Apr 27 2022": [
+			"BROWNIE(V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"Apr 28 2022": [
+			"VEG PUFF (V)",
+			"TANG"
+		],
+		"Apr 29 2022": [
+			"AMERICAN MASALA CORN (V)",
+			"LEMON WATER"
+		],
+		"Apr 30 2022": [
+			"BANANA CAKE (V)",
+			"TEA (D), COFFEE (D)"
+		],
+		"May 01 2022": [
+			"CHEESE TOAST (D)",
 			"TEA (D), COFFEE (D)"
 		]
 	},
@@ -4603,6 +4766,73 @@
 			"TAWA ROTI, GARLIC BREAD",
 			"JAGGERY, ACHAR",
 			"STRAWBERRY  ICE CREAM (D)"
+		],
+		"Apr 25 2022": [
+			"GREEN SALAD , THREE BEAN SALAD",
+			"TINDA MASALA (V)",
+			"DUM ALOO KASHMIRI (D)",
+			"DAL BUKHARA (D)",
+			"PLAIN RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"ACHAR",
+			"CHOCOLATE ICE CREAM (D)"
+		],
+		"Apr 26 2022": [
+			"GREEN SALAD, ALOO PEANUT CHAT",
+			"MANGOLIAN VEGETABLES (V)",
+			"SOYA KEEMA MATAR (V)",
+			"DAL TADKA (V)",
+			"VEGETABLE PULAO",
+			"TAWA ROTI",
+			"ACHAR",
+			"FRUIT CUSTARD  (D)"
+		],
+		"Apr 27 2022": [
+			"GREEN SALAD, RUSSIAN SALAD (D)",
+			"PALAK CORN (V)",
+			"SUBZ KORMA (D)",
+			"DHABA DAL (V)",
+			"ONION RICE",
+			"TAWA ROTI",
+			"ACHAR,PAPAD",
+			"SHAHI TUKDA (D)"
+		],
+		"Apr 28 2022": [
+			"GREEN SALAD, PACHARI SALAD (D&P)",
+			"VEG AVIAL (D)",
+			"VEG PORIYAL (V)",
+			"SAMBHAR",
+			"TOMATO RICE",
+			"VEGETABLE UTTAPAM (V)",
+			"COCONUT CHUTNEY (V)",
+			"ACHAR"
+		],
+		"Apr 29 2022": [
+			"GREEN SALAD, CHANA CHAT SALAD",
+			"PENNE SICILIANA (D)",
+			"CAPSICUM ALOO (V)",
+			"DAL MAKHANI (D)",
+			"JEERA RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"ACHAR,PAPAD",
+			"BUTTERSCOTCH ICE CREAM (D)"
+		],
+		"Apr 30 2022": [
+			"GREEN SALAD, SIRKA ONION",
+			"CHICKEN KALIMIRCH (N&D&P)",
+			"PANEER MAKHANI (D)",
+			"BLACK MASOOR DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"ACHAR,PAPAD"
+		],
+		"May 01 2022": [
+			"THAI PAPAYA SALAD (P)",
+			"POTATO WEDGES",
+			"CANTONESE STYLE VEG IN SWEET & SOUR (V)",
+			"VEG FRIED RICE",
+			"GARLIC CHILLI  NOODLES",
+			"STRAWBERRY ICE CREAM(D)"
 		]
 	},
 	"combo": {
@@ -4885,6 +5115,34 @@
 			]
 		},
 		"wk_16": {
+			"south indian combos": [
+				"dosa (masala or plain) with sambar and",
+				"chutney",
+				"curd and rice"
+			],
+			"chinese combos": [
+				"chilli paneer with fried rice or noodles",
+				"chilli chicken with fried rice or noodles",
+				"chicken fried rice",
+				"chicken noodles"
+			],
+			"continental combos": [
+				"penne veg in arrabbiata sauce",
+				"penne chicken in arrabbiata sauce",
+				"veg augratin with garlic bread",
+				"chicken augratin with garlic bread",
+				"veg pizza",
+				"chicken pizza"
+			],
+			"north indian combos (with rice or breads)": [
+				"kadhai chicken",
+				"seekh kebab curry",
+				"egg curry",
+				"kadhai paneer",
+				"rajma"
+			]
+		},
+		"wk_17": {
 			"south indian combos": [
 				"dosa (masala or plain) with sambar and",
 				"chutney",
