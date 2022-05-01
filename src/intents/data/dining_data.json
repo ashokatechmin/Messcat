@@ -1470,6 +1470,76 @@
 			"BANANA,SHARDA",
 			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
 			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 02 2022": [
+			"CHOCOS",
+			"BOILED EGG (E)",
+			"VERMICELLI UPMA (V)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, MIX FRUITS",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 03 2022": [
+			"MUESLI",
+			"EGG BHURJI (E)",
+			"MATAR (V)",
+			"KULCHA (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 04 2022": [
+			"CHOCOS",
+			"MASALA OMELLETE (E)",
+			"UTTAPAM,SAMBHAR (V)",
+			"COCONUT CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 05 2022": [
+			"CORNFLAKES",
+			"BOILED EGG (E)",
+			"BESAN CHILLA (D)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 06 2022": [
+			"CHOCOS",
+			"EGG BHURJI (E)",
+			"ALOO PYAZ PARATHA (V)",
+			"PLAIN CURD (D)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, SHARDA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 07 2022": [
+			"CORNFLAKES",
+			"BOILED EGG (E)",
+			"HASH BROWN POTATO (D)",
+			"BAKED BEANS (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA,PAPAYA",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
+		],
+		"May 08 2022": [
+			"MUESLI",
+			"FRIED EGG (E)",
+			"VEGETABLE PEANUT POHA (P)",
+			"TOMATO CHUTNEY (V)",
+			"BREAD, BUTTER (D), JAM",
+			"BANANA, WATERMELON",
+			"MILK- HOT & COLD (D), TEA (D), COFFEE (D)",
+			"PORRIDGE (D), BOURNVITA"
 		]
 	},
 	"lunch": {
@@ -2844,10 +2914,73 @@
 			"PLAIN RICE",
 			"AJWAINI POORI",
 			"ACHAR, PAPAD"
+		],
+		"May 02 2022": [
+			"GREEN SALAD,THANDA JALJERRA",
+			"MURGH AFTAB KASHMIRI (N&P&D)",
+			"MATAR PANEER (D&P)",
+			"CHANA DAL (V)",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"May 03 2022": [
+			"GREEN SALAD, SHARBAT",
+			"VEG PORIYAL (V)",
+			"SAMBHAR (V)",
+			"LEMON RICE",
+			"IDLI (V)",
+			"JAGGERY, ACHAR",
+			"PAYASAM (D)"
+		],
+		"May 04 2022": [
+			"GREEN SALAD, SIRKA ONION (V)",
+			"CHICKEN BIRYANI (N&D)",
+			"PANEER AND VEG BIRYANI (D)",
+			"BURANI RAITA (D)",
+			"MIRCHI KA SALAN (D&P)",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD"
+		],
+		"May 05 2022": [
+			"GREEN SALAD,THANDA NIMBU PANI",
+			"MASALA KHICHDI (V)",
+			"HING DHANIYA KE CHATPATE ALOO (V)",
+			"CURD (D)",
+			"TAWA ROTI",
+			"JAGGERY,ACHAR"
+		],
+		"May 06 2022": [
+			"GREEN SALAD, THANDA JALJERRA",
+			"SPAGHETTI AOP (V)",
+			"SOYA CHAAP MASALA (D)",
+			"BLACK MALKA DAL (V)",
+			"JEERA RICE",
+			"TAWA ROTI,GARLIC BREAD",
+			"JAGGERY,ACHAR,PAPAD"
+		],
+		"May 07 2022": [
+			"GREEN SALAD, JALJEERA",
+			"RAJMA MASALA (V)",
+			"BEANS ALOO (V)",
+			"CURD (D)",
+			"STEAM RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR, PAPAD",
+			"PAAN ICE CREAM (D)"
+		],
+		"May 08 2022": [
+			"GREEN SALAD, LACCHA ONION SALAD",
+			"PINDI CHOLEY (V)",
+			"KHATTA MEETHA PETHA (V)",
+			"BUTTERMILK (D)",
+			"STEAM RICE",
+			"BHATURAE (D)",
+			"JAGGERY, ACHAR, PAPAD"
 		]
 	},
 	"snacks": {
-		"timings": "04:45 PM - 06:15 PM",
+		"timings": "04:45 PM - 06:30 PM",
 		"Oct 04 2021": [
 			"STRAWBERRY SWISS ROLL (D)",
 			"BANANA SHAKE (D)"
@@ -3435,10 +3568,38 @@
 		"May 01 2022": [
 			"CHEESE TOAST (D)",
 			"TEA (D), COFFEE (D)"
+		],
+		"May 02 2022": [
+			"BANANA CAKE (D)",
+			"NIMBU PANI (V)"
+		],
+		"May 03 2022": [
+			"VEG PUFF (D)",
+			"TEA (D), COFFEE (D)"
+		],
+		"May 04 2022": [
+			"SMILEY (V)",
+			"TANG (V)"
+		],
+		"May 05 2022": [
+			"VEG PIZZA (D)",
+			"BANANA SHAKE (D)"
+		],
+		"May 06 2022": [
+			"BHEL PURI (V&P)",
+			"NIMBU PANI (V)"
+		],
+		"May 07 2022": [
+			"FRENCH FRIES (V)",
+			"AAM PANNA (V)"
+		],
+		"May 08 2022": [
+			"VEG NUGGETS (D)",
+			"TEA (D), COFFEE (D)"
 		]
 	},
 	"dinner": {
-		"timings": "07:30 PM - 10:15 PM",
+		"timings": "07:45 PM - 10:15 PM",
 		"Oct 04 2021": [
 			"GREEN SALAD , MEXICAN CORN SALAD (V)",
 			"PENNE AOP (V)",
@@ -4833,6 +4994,72 @@
 			"VEG FRIED RICE",
 			"GARLIC CHILLI  NOODLES",
 			"STRAWBERRY ICE CREAM(D)"
+		],
+		"May 02 2022": [
+			"GREEN SALAD , MEDITERRANEAN SALAD",
+			"FUISILLI IN ALFREDO SAUCE (D)",
+			"ACHARI ALOO (V)",
+			"RED MALKA DAL (V)",
+			"VEG PULAO",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"FRUIT CUSTARD (D)"
+		],
+		"May 03 2022": [
+			"GREEN SALAD, BEETROOT SALAD",
+			"PALAK CORN (V)",
+			"TINDE KE KOFTE CURRY (P)",
+			"DAL MAKHANI (D)",
+			"VEG PULAO",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"May 04 2022": [
+			"GREEN SALAD, MEXICAN SALAD",
+			"SAUTE VEGETABLES (V)",
+			"SOYA KEEMA MATAR(V)",
+			"LAL MASOOR DAL (V)",
+			"JEERA RICE",
+			"TAWA ROTI,GALIC BREAD",
+			"JAGGERY, ACHAR",
+			"RASAGULLA (D)"
+		],
+		"May 05 2022": [
+			"GREEN SALAD,CHANA CHAT",
+			"BAKED VEGETABLES (D)",
+			"MALAI KOFTA CURRY (D&P)",
+			"DHABA DAL (V)",
+			"RAMPUR KI TEHRI RICE",
+			"TAWA ROTI, GARLIC BREAD",
+			"JAGGERY, ACHAR",
+			"SHAHI TUKDA (D)"
+		],
+		"May 06 2022": [
+			"GREEN SALAD, THREE BEAN SALAD",
+			"PENNE NAPOLITANA (D)",
+			"MIX VEG (V)",
+			"ARHAR DAL TADKA (V)",
+			"TAWA ROTI, GARLIC BREAD",
+			"PEAS PULAO (V)",
+			"JAGGERY, ACHAR, PAPAD",
+			"KALA JAMUN (D)"
+		],
+		"May 07 2022": [
+			"GREEN SALAD, SIRKA ONION",
+			"HOMESTYLE CHICKEN CURRY (N&P&D)",
+			"PANEER MAKHANI (D&P)",
+			"GREEN MOONG DAL TADKA",
+			"PLAIN RICE",
+			"TAWA ROTI",
+			"JAGGERY, ACHAR"
+		],
+		"May 08 2022": [
+			"RAW PAPAYA SALAD(P)",
+			"VEG MANCHURIAN(V)",
+			"SAUTEED VEGETABLES IN SESAME SAUCE (V)",
+			"VEG.FRIED RICE",
+			"CHILLI GARLIC NOODLES",
+			"STRAWBERRY ICE CREAM (D)"
 		]
 	},
 	"combo": {
@@ -5143,6 +5370,34 @@
 			]
 		},
 		"wk_17": {
+			"south indian combos": [
+				"dosa (masala or plain) with sambar and",
+				"chutney",
+				"curd and rice"
+			],
+			"chinese combos": [
+				"chilli paneer with fried rice or noodles",
+				"chilli chicken with fried rice or noodles",
+				"chicken fried rice",
+				"chicken noodles"
+			],
+			"continental combos": [
+				"penne veg in arrabbiata sauce",
+				"penne chicken in arrabbiata sauce",
+				"veg augratin with garlic bread",
+				"chicken augratin with garlic bread",
+				"veg pizza",
+				"chicken pizza"
+			],
+			"north indian combos (with rice or breads)": [
+				"kadhai chicken",
+				"seekh kebab curry",
+				"egg curry",
+				"kadhai paneer",
+				"rajma"
+			]
+		},
+		"wk_18": {
 			"south indian combos": [
 				"dosa (masala or plain) with sambar and",
 				"chutney",
