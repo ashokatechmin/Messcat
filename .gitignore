@@ -5,3 +5,7 @@ node_modules
 .serverless
 respond.js
 local-data
+*.log
+
+# Compiled ts files
+src/utils/parse-dining.js

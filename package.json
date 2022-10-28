@@ -5,10 +5,12 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node src/intents --chat",
+    "test:dining": "tsc && node src/utils/parse-dining ./testmenu.pdf",
     "fetch:dining": "node src/utils/download-dining-menu",
     "fetch:dining-local": "node src/utils/do-dining-menu-local",
     "start": "serverless offline start --httpPort 8000 --skipCacheInvalidation",
-    "deploy": "sls deploy"
+    "deploy": "sls deploy",
+    "postinstall": "tsc"
   },
   "keywords": [],
   "author": "",
@@ -25,13 +27,17 @@
     "mammoth": "^1.4.19",
     "mustache": "^4.2.0",
     "node-fetch": "^2.6.1",
+    "pdf-parse": "^1.1.1",
     "pdf.js-extract": "^0.1.4",
     "pdf2json": "^1.2.3",
     "pump": "^3.0.0"
   },
   "devDependencies": {
+    "@types/node": "^18.11.7",
+    "@types/pdf-parse": "^1.1.1",
     "serverless": "^2.65.0",
     "serverless-dotenv-plugin": "^3.9.0",
-    "serverless-offline": "^6.9.0"
+    "serverless-offline": "^6.9.0",
+    "typescript": "^4.8.4"
   }
 }
