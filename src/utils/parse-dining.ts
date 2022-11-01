@@ -1,27 +1,24 @@
 import { readFile } from "fs/promises";
 import pdf from "pdf-parse"
 
-async function ParsePDF(path: string)
-{
-    const data = await readFile(path);
-    const doc = await pdf(data);
-
-    console.log(doc.info);
-    console.log(doc.text);
+type MessMenu = {
+    start: Date,
+    end: Date,
+    days: {breakfast: string, lunch: string, dinner: string}[]
 }
 
-async function ParseXlsx(path: string)
+async function ParseXlsx(path: string): Promise<MessMenu>
 {
-
+    return {
+        start: new Date(),
+        end: new Date(),
+        days: []
+    };
 }
 
 export default async function ParseDiningMenu(path: string) 
 {
-    if (path.endsWith(".pdf"))
-    {
-        return await ParsePDF(path);
-    }
-    else if (path.endsWith(".xlsx"))
+    if (path.endsWith(".xlsx"))
     {
         return await ParseXlsx(path);
     }
