@@ -1,5 +1,5 @@
 import { readFile } from "fs/promises";
-import pdf from "pdf-parse"
+import xl from "exceljs";
 
 type MessMenu = {
     start: Date,
@@ -9,6 +9,17 @@ type MessMenu = {
 
 async function ParseXlsx(path: string): Promise<MessMenu>
 {
+    const wb = new xl.Workbook();
+    await wb.xlsx.readFile(path);
+
+    const menu = wb.worksheets[0];
+    const title = menu.name;
+
+    menu.eachRow((row, n) => {
+        if (n < 4) return;
+        if (row.hasValues) console.log(row.values);
+    });
+
     return {
         start: new Date(),
         end: new Date(),
