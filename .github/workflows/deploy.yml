@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -29,7 +31,7 @@ jobs:
       run: yarn global add serverless
 
     - name: Install Dependencies
-      run: yarn install
+      run: yarn --network-concurrency=1
 
     - name: Serverless AWS authentication
       run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
