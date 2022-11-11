@@ -11,6 +11,9 @@ local-data
 menu.json
 .vscode/
 
+# Sensitive shell scripts
+fetch-types.sh
+
 # Compiled ts files
 src/utils/parse-dining.js
 src/utils/fetch-dining.js
