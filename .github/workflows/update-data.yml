@@ -12,10 +12,7 @@ jobs:
         node-version: [14.x]
 
     steps:
-    - uses: actions/checkout@v2
-      with:
-        token: ${{secrets.GH_TOKEN}}
-        submodules: recursive
+    - uses: actions/checkout@v3
 
     - name: Node ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -27,25 +24,9 @@ jobs:
     
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
+    
+    - name: Append auxiliary env variables
+      run: 'echo -e "\n" && echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
 
     - name: Update Dining Menu
       run: yarn fetch:dining
-    
-    - name: Commit Changes
-      uses: EndBug/add-and-commit@v4.4.0
-      with:
-        author_name: 'Ashoka Tech Min'
-        message: 'Update Dining Menu'
-        push: true
-        add: '.'
-      env:
-        GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-    
-    - name: Install Serverless
-      run: npm i -g serverless
-
-    - name: Serverless AWS authentication
-      run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
-
-    - name: Deploy Lambda functions
-      run: sls deploy

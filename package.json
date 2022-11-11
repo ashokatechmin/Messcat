@@ -5,9 +5,9 @@
   "main": "src/index.js",
   "scripts": {
     "test": "node src/intents --chat",
-    "test:dining": "tsc && node src/utils/parse-dining ./testmenu.pdf",
-    "fetch:dining": "node src/utils/download-dining-menu",
-    "fetch:dining-local": "node src/utils/do-dining-menu-local",
+    "test:dining": "tsc && env-cmd -f ./.env.local node src/utils/fetch-dining",
+    "fetch:dining": "node src/utils/fetch-dining",
+    "fetch:dining-local": "",
     "start": "serverless offline start --httpPort 8000 --skipCacheInvalidation",
     "deploy": "sls deploy",
     "postinstall": "tsc"
@@ -19,8 +19,10 @@
     "@adiwajshing/whatsapp-info-bot": "git+https://github.com/adiwajshing/WhatsAppInfoBot",
     "@chatdaddy/service-auth-client": "git+https://github.com/chatdaddy/service-auth-client.git",
     "@chatdaddy/service-im-client": "git+https://github.com/chatdaddy/service-im-client.git",
+    "@supabase/supabase-js": "^2.0.6",
     "convert-excel-to-json": "^1.7.0",
     "dotenv": "^8.6.0",
+    "exceljs": "^4.3.0",
     "google-auth-library": "^7.5.0",
     "googleapis": "^67.1.1",
     "jsonwebtoken": "^8.5.1",

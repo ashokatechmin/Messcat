@@ -2,10 +2,13 @@
 .DS_Store
 node_modules
 .env
+.env.local
 .serverless
 respond.js
 local-data
 *.log
+*.xlsx
 
 # Compiled ts files
 src/utils/parse-dining.js
+src/utils/fetch-dining.js
