@@ -21,8 +21,13 @@ async function ParseXlsx(path: string): Promise<MessMenu>
 
     const menu = wb.worksheets[0];
     const title = menu.name;
-
-    const bfast = menu.getRows(4, 7).map(row => row.values), lunch = menu.getRows(13, 7).map(row => row.values), snacks = menu.getRows(22, 4).map(row => row.values), dinner = menu.getRows(28, 7).map(row => row.values);
+    
+    const meals: {[k in Meal]: xl.CellValue[][]} = {
+        Breakfast: menu.getRows(4, 8).map(row => row.values) as xl.CellValue[][],
+        Lunch: menu.getRows(13, 8).map(row => row.values) as xl.CellValue[][],
+        Snacks: menu.getRows(22, 5).map(row => row.values) as xl.CellValue[][],
+        Dinner: menu.getRows(28, 8).map(row => row.values) as xl.CellValue[][]
+    }
 
     const startString = title.split("Menu ")[1].split("-")[0].trim().replace(/(th)|(st)|(rd)/g, "");
     const startDate = new Date(Date.parse(startString));
@@ -30,11 +35,45 @@ async function ParseXlsx(path: string): Promise<MessMenu>
     const endDate = new Date(startDate);
     endDate.setDate(startDate.getDate() + 6)
 
-    return {
+    const days: MessMenu["days"] =  Array.from(new Array(7), (_, i) => ({
+        Breakfast: [],
+        Lunch: [],
+        Snacks: [],
+        Dinner: []
+    }));
+
+    // console.log(meals.Breakfast.map(row => row.map(item => item === undefined ? "none" : item)));
+    console.log(meals.Breakfast)
+
+    Object.keys(meals).forEach(meal => {
+        const key = meal as Meal;
+
+        meals[key].forEach((row) => {
+            for (let i = 0; i < 7; i++)
+            {
+                const name = row[i + 3] as string ?? "";
+
+                if (name.length > 0)
+                {
+                    const split = name.split(",").map(s => s.trim()).filter(s => s.length > 0).map(s => s.split("(")[0].trim()).map(item => ({
+                        category: row[2] as string,
+                        name: item,
+                        meal: key
+                    }));
+
+                    days[i][key].push(...split);
+                }
+            }
+        });
+    });
+
+    const res: MessMenu = {
         start: startDate,
         end: endDate,
-        days: []
+        days: days
     };
+
+    return res;
 }
 
 export default async function ParseDiningMenu(path: string) 

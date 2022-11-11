@@ -8,6 +8,8 @@ respond.js
 local-data
 *.log
 *.xlsx
+menu.json
+.vscode/
 
 # Compiled ts files
 src/utils/parse-dining.js

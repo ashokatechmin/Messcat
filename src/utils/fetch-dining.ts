@@ -43,9 +43,16 @@ async function GetMenu()
     return `./${menu.filename}`;
 }
 
-(async () => {
-    const menu = await GetMenu();
-    const parsed = await ParseDiningMenu(menu);
-    fs.rm(menu);
-    console.log(parsed);
-})();
+if (process.argv.length < 3)
+{
+    (async () => {
+        const menu = await GetMenu();
+        const parsed = await ParseDiningMenu(menu);
+        fs.rm(menu);
+    })();
+}
+else
+{
+    const menu = process.argv[2];
+    ParseDiningMenu(menu).then(parsed => fs.writeFile("./menu.json", JSON.stringify(parsed)));
+}
