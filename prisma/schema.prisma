@@ -1,0 +1,31 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model MessItem {
+  id         Int         @id @default(autoincrement())
+  createdAt  DateTime    @default(now())
+  lastSeen   DateTime    @default(now())
+  name       String
+  count      Int         @default(0)
+  breakfasts DailyMenu[] @relation("Breakfast")
+  lunches    DailyMenu[] @relation("Lunch")
+  snacks     DailyMenu[] @relation("Snacks")
+  dinners    DailyMenu[] @relation("Dinner")
+}
+
+model DailyMenu {
+  id        Int        @id @default(autoincrement())
+  createdAt DateTime   @default(now())
+  lastSeen  DateTime   @default(now())
+  date      DateTime
+  breakfast MessItem[] @relation("Breakfast")
+  lunch     MessItem[] @relation("Lunch")
+  snacks    MessItem[] @relation("Snacks")
+  dinner    MessItem[] @relation("Dinner")
+}
