@@ -58,6 +58,8 @@ async function GetMenu()
         },
     });
 
+    // TODO: Wrap asyncs in try until success
+
     const execDate = new Date();
 
     await prisma.messItem.updateMany({

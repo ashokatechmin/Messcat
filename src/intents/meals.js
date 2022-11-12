@@ -1,5 +1,8 @@
 const DateUtils = require('../utils/date-utils')
 const getLatestMenu = require('../utils/get-latest-menu')
+const PrismaClient = require("@prisma/client").PrismaClient;
+
+const prisma = new PrismaClient();
 
 String.prototype.toTitleCase = function () {
 	var str2 = ""
@@ -38,6 +41,67 @@ const OUTLET_MENUS = {
 module.exports = async() => {
 
 	const mealsData = await getLatestMenu()
+
+	const computeMealAnswer = async (options) => {
+		let date = new Date();
+		date.setHours(0); date.setMinutes(0); date.setSeconds(0); date.setMilliseconds(0);
+		
+		if (options.tomorrow) {
+			date.setDate(date.getDate() + 1);
+		}
+
+		let str = "";
+		if (!options.meal || options.meal === "mess")
+		{
+			const menu = await prisma.dailyMenu.findFirstOrThrow({
+				where: {
+					date
+				},
+				include: {
+					lunch: true,
+					dinner: true,
+					snacks: true,
+					breakfast: true
+				}
+			});
+		}
+		else
+		{
+			const option = options.meal.toLowerCase()
+			if (![...mealOptions, "combo"].includes(option)) {
+				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
+			}
+			
+			if (option === "combo") {
+				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
+	
+				const arr = mealsData["combo"][week]
+				let str
+				if (arr) {
+					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
+				} else {
+					str = "Data not available 😅"
+				}
+				return str
+			}
+
+			const menu = await prisma.dailyMenu.findFirstOrThrow({
+				where: {
+					date
+				},
+				include: {
+					lunch: option == "lunch",
+					dinner: option == "dinner",
+					snacks: option == "snacks",
+					breakfast: option == "breakfast"
+				}
+			});
+
+			str = menu[option].map(item => item.name.toTitleCase()).join("\n");
+		}
+
+		return `${options.meal} - ${date.toLocaleDateString()}:\n${str}`;
+	}
 
 	const computeMealsAnswer = (options) => {
 		let date = DateUtils.dateWithTimeZone(new Date(), 5.5)
@@ -104,7 +168,7 @@ module.exports = async() => {
 				"dhaba menu"
 			]
 		},
-		answer: (entities) => {
+		answer: async (entities) => {
 			const isTomorrow = entities.indexOf ("tomorrow") 
 			if (isTomorrow >= 0) {
 				entities.splice (isTomorrow, 1)
@@ -112,14 +176,16 @@ module.exports = async() => {
 			if(!entities.length) {
 				throw new Error('Not sure what you mean. Type "help" to know what I can do')
 			}
-			return entities.map (entity => {
+
+			return await Promise.all(entities.map(async (entity) => {
 				if(OUTLET_MENUS[entity]) {
 					return OUTLET_MENUS[entity]
 				}
+				
 				return {
-					text: computeMealsAnswer ({meal: entity, tomorrow: isTomorrow >= 0})
+					text: await computeMealAnswer({meal: entity, tomorrow: isTomorrow >= 0})
 				}
-			})
+			}));
 		}
 	}
 }
