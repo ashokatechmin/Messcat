@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
   
 jobs:
-  deploy:
+  fetch:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -21,6 +21,9 @@ jobs:
     
     - name: Install Dependencies
       run: yarn --network-concurrency=1
+
+    - name: Compile typescript
+      run: tsc
     
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'

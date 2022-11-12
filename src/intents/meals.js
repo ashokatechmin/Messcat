@@ -186,7 +186,7 @@ module.exports = async() => {
 					text: await computeMealAnswer({meal: entity, tomorrow: isTomorrow >= 0})
 				}
 			})).catch(reason => {
-				throw new Error(reason);
+				throw new Error("Data not available 😅");
 			});
 		}
 	}
