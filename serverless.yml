@@ -3,6 +3,15 @@ service: messcat
 frameworkVersion: '2'
 useDotenv: true
 
+package:
+  exclude:
+    - node_modules/prisma/**
+    - node_modules/googleapis/**
+    - node_modules/.prisma/**
+    - node_modules/@types/**
+    - src/**/*.ts
+
+
 plugins:
   - serverless-offline
   - serverless-dotenv-plugin

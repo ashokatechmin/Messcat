@@ -11,6 +11,7 @@ local-data
 menu.json
 .vscode/
 menu.xlsx
+demo/
 
 # Compiled ts files
 src/utils/parse-dining.js
