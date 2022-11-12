@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - master
+  workflow_dispatch:
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -12,10 +14,13 @@ jobs:
         node-version: [14.x]
 
     steps:
-    - uses: actions/checkout@v2
+    - uses:  webfactory/ssh-agent@v0.7.0
       with:
-        token: ${{secrets.GH_TOKEN}}
-        submodules: recursive
+        ssh-private-key: ${{ secrets.DEPLOY_KEY }}
+
+    - uses: actions/checkout@v3
+      with:
+        submodules: true
 
     - name: Node ${{ matrix.node-version }}
       uses: actions/setup-node@v1
@@ -23,10 +28,10 @@ jobs:
           node-version: ${{ matrix.node-version }}
 
     - name: Install Serverless
-      run: npm i -g serverless
+      run: yarn global add serverless
 
     - name: Install Dependencies
-      run: npm i
+      run: yarn --network-concurrency=1
 
     - name: Serverless AWS authentication
       run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
