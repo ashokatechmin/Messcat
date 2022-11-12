@@ -185,7 +185,9 @@ module.exports = async() => {
 				return {
 					text: await computeMealAnswer({meal: entity, tomorrow: isTomorrow >= 0})
 				}
-			}));
+			})).catch(reason => {
+				throw new Error(reason);
+			});
 		}
 	}
 }
