@@ -3,11 +3,11 @@ service: messcat
 frameworkVersion: '2'
 useDotenv: true
 
+// TODO: Make this work please
 package:
   exclude:
     - node_modules/prisma/**
     - node_modules/googleapis/**
-    - node_modules/.prisma/**
     - node_modules/@types/**
     - src/**/*.ts
 
