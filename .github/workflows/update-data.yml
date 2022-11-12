@@ -32,4 +32,4 @@ jobs:
       run: 'echo -e "\n" && echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
 
     - name: Update Dining Menu
-      run: yarn fetch:dining
+      run: env-cmd yarn fetch:dining
