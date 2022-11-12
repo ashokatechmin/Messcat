@@ -1,7 +1,7 @@
 import fs from "fs/promises";
 import { google } from "googleapis";
-import { SupabaseClient } from "@supabase/supabase-js";
-import ParseDiningMenu from "./parse-dining";
+import { PrismaClient } from "@prisma/client";
+import ParseDiningMenu, { FindUniqueItems } from "./parse-dining";
 
 const auth = new google.auth.OAuth2(
 	process.env.MESSCAT_GCLIENT,
@@ -43,16 +43,92 @@ async function GetMenu()
     return `./${menu.filename}`;
 }
 
-if (process.argv.length < 3)
-{
-    (async () => {
-        const menu = await GetMenu();
-        const parsed = await ParseDiningMenu(menu);
-        fs.rm(menu);
-    })();
-}
-else
-{
-    const menu = process.argv[2];
-    ParseDiningMenu(menu).then(parsed => fs.writeFile("./menu.json", JSON.stringify(parsed)));
-}
+(async () => {
+    const menu = process.argv.length < 3 ? await GetMenu() : process.argv[2];
+    const parsed = await ParseDiningMenu(menu);
+    const uniqueMessItems = FindUniqueItems(parsed);
+    if (process.argv.length < 3) fs.rm(menu);
+    const prisma = new PrismaClient();
+
+    const existingItems = await prisma.messItem.findMany({
+        where: {
+            name: {
+                in: uniqueMessItems.map(item => item.name)
+            }
+        },
+    });
+
+    const execDate = new Date();
+
+    await prisma.messItem.updateMany({
+        data: {
+            count: {increment: 1},
+            lastSeen: execDate,
+        },
+        where: {
+            name: {
+                in: existingItems.map(item => item.name)
+            }
+        }
+    });
+
+    const newItems = uniqueMessItems.filter(item => !existingItems.some(existing => existing.name == item.name));
+
+    await prisma.messItem.createMany({
+        data: newItems.map(item => ({name: item.name, count: 1, lastSeen: execDate})),
+        skipDuplicates: true,
+    });
+
+    for (let i = 0, date = parsed.start; i < 7; i++, date.setDate(date.getDate() + 1))
+    {
+        const bfItems = (await prisma.messItem.findMany({
+            where: {
+                name: {
+                    in: parsed.days[i].Breakfast.map(item => item.name)
+                }
+            }
+        })).map(item => ({id: item.id}));
+
+        const lnItems = (await prisma.messItem.findMany({
+            where: {
+                name: {
+                    in: parsed.days[i].Lunch.map(item => item.name)
+                }
+            }
+        })).map(item => ({id: item.id}));
+
+        const snItems = (await prisma.messItem.findMany({
+            where: {
+                name: {
+                    in: parsed.days[i].Snacks.map(item => item.name)
+                }
+            }
+        })).map(item => ({id: item.id}));
+
+        const dnItems = (await prisma.messItem.findMany({
+            where: {
+                name: {
+                    in: parsed.days[i].Dinner.map(item => item.name)
+                }
+            }
+        })).map(item => ({id: item.id}));
+
+        await prisma.dailyMenu.create({
+            data: {
+                date,
+                breakfast: {
+                    connect: bfItems,
+                },
+                lunch: {
+                    connect: lnItems,
+                },
+                snacks: {
+                    connect: snItems,
+                },
+                dinner: {
+                    connect: dnItems,
+                }
+            }
+        })
+    }
+})();

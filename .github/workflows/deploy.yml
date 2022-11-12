@@ -34,5 +34,14 @@ jobs:
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
 
+    - name: Append auxiliary env variables
+      run: 'echo -e "\n" && echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
+
+    - name: Database migrations and generate db types
+      run: 'npx prisma db migrate deploy && npx prisma generate'
+
+    - name: Compile typescript
+      run: 'tsc'
+
     - name: Deploy Lambda functions
       run: sls deploy
