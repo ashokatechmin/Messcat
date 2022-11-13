@@ -13,14 +13,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Node ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-          node-version: ${{ matrix.node-version }}
     
     - name: Install Dependencies
-      run: yarn --network-concurrency=1
+      run: yarn
 
     - name: Compile typescript
       run: tsc

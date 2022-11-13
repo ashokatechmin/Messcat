@@ -22,16 +22,11 @@ jobs:
       with:
         submodules: true
 
-    - name: Node ${{ matrix.node-version }}
-      uses: actions/setup-node@v1
-      with:
-          node-version: ${{ matrix.node-version }}
-
     - name: Install Serverless
       run: yarn global add serverless
 
     - name: Install Dependencies
-      run: yarn --network-concurrency=1
+      run: yarn
 
     - name: Serverless AWS authentication
       run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}

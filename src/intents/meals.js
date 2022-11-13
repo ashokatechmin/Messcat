@@ -38,12 +38,14 @@ const OUTLET_MENUS = {
 	}
 }
 
+const locale = "en-IN";
+
 module.exports = async() => {
 
 	const mealsData = await getLatestMenu()
 
 	const computeMealAnswer = async (options) => {
-		let date = new Date();
+		let date = DateUtils.dateWithTimeZone(new Date(), 5.5);
 		date.setHours(0); date.setMinutes(0); date.setSeconds(0); date.setMilliseconds(0);
 		
 		if (options.tomorrow) {
@@ -63,7 +65,18 @@ module.exports = async() => {
 					snacks: true,
 					breakfast: true
 				}
-			});
+			}).catch(() => {str = "Data not available 😅"});
+
+			if (str === "") 
+			{
+				str = ["breakfast", "lunch", "snacks", "dinner"].map(meal => {
+					return `${meal.toTitleCase()} - ${menu[meal].map(item => item.name.toTitleCase()).join("\n")}`;
+				}).join("\n\n");
+
+				str = `Mess Menu - ${date.toLocaleDateString(locale)}:\n${str}`;
+				
+				return str;
+			}
 		}
 		else
 		{
@@ -95,50 +108,12 @@ module.exports = async() => {
 					snacks: option == "snacks",
 					breakfast: option == "breakfast"
 				}
-			});
+			}).catch(() => {str = "Data not available 😅"});
 
-			str = menu[option].map(item => item.name.toTitleCase()).join("\n");
+			if (str === "") str = menu[option].map(item => item.name.toTitleCase()).join("\n");
 		}
 
-		return `${options.meal} - ${date.toLocaleDateString()}:\n${str}`;
-	}
-
-	const computeMealsAnswer = (options) => {
-		let date = DateUtils.dateWithTimeZone(new Date(), 5.5)
-		if (options.tomorrow) {
-			date = DateUtils.offsetting(date, 24)
-		}
-		let dateKey = DateUtils.dateString(date)
-
-		let str = ""
-		if (!options.meal || options.meal === "mess") {
-			str = mealOptions.map(option => "*" + option.toTitleCase() + "*\n" + formattedString(option, dateKey)).join("\n\n")
-		} else {
-			const option = options.meal.toLowerCase()
-			if (!mealsData[option]) {
-				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
-			}
-			if (option === "combo") {
-				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
-	
-				const arr = mealsData["combo"][week]
-				let str
-				if (arr) {
-					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
-				} else {
-					str = "Data not available 😅"
-				}
-				return str
-			}
-			
-			str = formattedString(option, dateKey)
-		}
-		return options.meal + " - " + dateKey + ":\n" + str
-	}
-
-	const formattedString = (mealOption, dateKey) => {
-		const arr = mealsData[mealOption][dateKey]
-		return arr ? " " + arr.join("\n ").toTitleCase() : "Data not available 😅"
+		return `${options.meal?.toTitleCase()} - ${date.toLocaleDateString(locale)}:\n${str}`;
 	}
 
 	return {
@@ -185,9 +160,7 @@ module.exports = async() => {
 				return {
 					text: await computeMealAnswer({meal: entity, tomorrow: isTomorrow >= 0})
 				}
-			})).catch(reason => {
-				throw new Error("Data not available 😅");
-			});
+			}));
 		}
 	}
 }
