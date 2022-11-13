@@ -29,7 +29,7 @@ jobs:
       run: 'echo -e "${{secrets.ENV}}" > .env'
     
     - name: Append auxiliary env variables
-      run: 'echo -e "\n" && echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
+      run: 'echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
 
     - name: Update Dining Menu
-      run: env-cmd yarn fetch:dining
+      run: yarn fetch:dining

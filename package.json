@@ -6,7 +6,7 @@
   "scripts": {
     "test": "env-cmd node src/intents --chat",
     "test:dining": "tsc && env-cmd node src/utils/fetch-dining",
-    "fetch:dining": "node src/utils/fetch-dining",
+    "fetch:dining": "env-cmd node src/utils/fetch-dining",
     "fetch:dining-local": "",
     "start": "serverless offline start --httpPort 8000 --skipCacheInvalidation"
   },
