@@ -8,7 +8,9 @@ package:
     - node_modules/prisma/**
     - node_modules/@types/**
     - node_modules/.cache/**
-    - src/**/*.ts
+    - ./**/*.ts
+    - node_modules/@prisma/engines/introspection-*
+    - node_modules/@prisma/engines/migration-*
 
 
 plugins:

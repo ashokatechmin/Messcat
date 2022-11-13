@@ -22,15 +22,16 @@
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
+    "@serverless/cli": "^1.6.0",
     "@types/node": "^18.11.7",
     "@types/pdf-parse": "^1.1.1",
     "env-cmd": "^10.1.0",
+    "exceljs": "^4.3.0",
+    "googleapis": "^67.1.1",
     "prisma": "^4.6.1",
     "serverless": "^2.65.0",
     "serverless-dotenv-plugin": "^3.9.0",
     "serverless-offline": "^6.9.0",
-    "exceljs": "^4.3.0",
-    "googleapis": "^67.1.1",
     "typescript": "^4.8.4"
   }
 }

@@ -70,7 +70,7 @@ module.exports = async() => {
 			if (str === "") 
 			{
 				str = ["breakfast", "lunch", "snacks", "dinner"].map(meal => {
-					return `${meal.toTitleCase()} - ${menu[meal].map(item => item.name.toTitleCase()).join("\n")}`;
+					return `  ${meal.toTitleCase()}:\n${menu[meal].map(item => item.name.toTitleCase()).join("\n")}`;
 				}).join("\n\n");
 
 				str = `Mess Menu - ${date.toLocaleDateString(locale)}:\n${str}`;
