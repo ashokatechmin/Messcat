@@ -117,7 +117,7 @@ module.exports = async() => {
 	}
 
 	return {
-		keywords: ["menu", "what", "mess"],
+		keywords: ["menu", "what", "mess", "food"],
 		entities: {
 			"lunch": "",
             "dinner": "",
