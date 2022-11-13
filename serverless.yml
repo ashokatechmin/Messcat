@@ -9,6 +9,8 @@ package:
     - node_modules/prisma/**
     - node_modules/googleapis/**
     - node_modules/@types/**
+    - node_modules/.cache/**
+    - node_modules/exceljs/**
     - src/**/*.ts
 
 
