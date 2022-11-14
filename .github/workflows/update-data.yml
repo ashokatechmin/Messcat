@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v3
     
     - name: Install Typescript
-      run: yarn add --global typescript
+      run: yarn global add typescript
 
     - name: Install Dependencies
       run: yarn --network-concurrency 1
