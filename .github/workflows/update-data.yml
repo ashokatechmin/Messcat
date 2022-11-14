@@ -19,6 +19,7 @@ jobs:
         timeout_minutes: 3
         max_attempts: 3
         command: yarn --network-concurrency 1
+        on_retry_command: yarn cache clean && rm ./yarn.lock
 
     - name: Database migrations and generate db types
       run: 'npx prisma migrate deploy && npx prisma generate'
