@@ -22,6 +22,9 @@ jobs:
       with:
         submodules: true
 
+    - name: Nuke Yarn
+      run: yarn config set registry https://registry.npmjs.org && rm ./yarn.lock
+
     - name: Install Dependencies
       run: yarn --network-concurrency 1
 
