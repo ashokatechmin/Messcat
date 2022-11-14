@@ -22,12 +22,8 @@ jobs:
       with:
         submodules: true
 
-    - uses: nick-fields/retry@v2
-      with:
-        timeout_minutes: 3
-        max_attempts: 3
-        command: yarn --network-concurrency 1
-        on_retry_command: yarn cache clean && rm ./yarn.lock
+    - name: Install Dependencies
+      run: yarn --network-concurrency 1
 
     - name: Serverless AWS authentication
       run: yarn run sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
