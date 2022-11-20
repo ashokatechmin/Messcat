@@ -12,9 +12,9 @@ const create = async() => {
 		require('./helpline.json'),
 		require('./timings.json'),
 	]
-	const credsIntent = require('./messcat-secrets/creds.json')
-	if(credsIntent) intents.push(credsIntent)
-	else console.log('could not find creds intent')
+	// const credsIntent = require('./messcat-secrets/creds.json')
+	// if(credsIntent) intents.push(credsIntent)
+	// else console.log('could not find creds intent')
 
 	intents.push(
 		helpIntent(intents)
