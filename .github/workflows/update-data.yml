@@ -20,17 +20,17 @@ jobs:
     - name: Install Dependencies
       run: yarn --network-concurrency 1
 
-    - name: Database migrations and generate db types
-      run: 'npx prisma migrate deploy && npx prisma generate'
-
-    - name: Compile typescript
-      run: tsc
-    
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
     
     - name: Append auxiliary env variables
       run: 'echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
 
+    - name: Database migrations and generate db types
+      run: 'npx prisma migrate deploy && npx prisma generate'
+
+    - name: Compile typescript
+      run: tsc
+    
     - name: Update Dining Menu
       run: yarn fetch:dining
