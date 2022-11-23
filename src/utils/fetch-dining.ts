@@ -3,51 +3,40 @@ import { google } from "googleapis";
 import { PrismaClient } from "@prisma/client";
 import ParseDiningMenu, { FindUniqueItems } from "./parse-dining";
 
-const auth = new google.auth.OAuth2(
-	process.env.MESSCAT_GCLIENT,
-	process.env.MESSCAT_GSECRET,
-)
-
-auth.setCredentials({
-    refresh_token: process.env.MESSCAT_GREFRESH,
+const drive = google.drive({
+    version: "v3",
+    auth: process.env.MESSCAT_GDRIVE
 });
-
-const MENU_MIMETYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet'
 
 async function GetMenu()
 {
-    const gmail = google.gmail({ version: 'v1', auth });
-    const result = await gmail.users.messages.list({ userId: 'me', q: `from: dining@ashoka.edu.in`, maxResults: 1 });
+    const id = process.env.MENU_ID;
+    if (id === undefined) throw new Error("MENU_ID is not defined");
 
-    if (result.data.messages.length == 0)
-    {
-        throw new Error("No messages found");
-    }
+    const file = await drive.files.get({
+        fileId: id,
+        alt: "media",
+    }, { responseType: "blob"});
 
-    const mail = await (await gmail.users.messages.get({userId: 'me', id: result.data.messages[0].id})).data;
-    const attachedMenus = mail.payload.parts.filter(part => part.mimeType == MENU_MIMETYPE);
-    
-    if (attachedMenus.length == 0)
-    {
-        throw new Error("No menus found");
-    }       
+    const data = (file.data as unknown) as Blob;
 
-    let menu = attachedMenus[attachedMenus.length - 1];
-    const menuAttachment = await gmail.users.messages.attachments.get({ userId: 'me', messageId: mail.id, id: menu.body.attachmentId });
+    if (file.status !== 200) return;
+    await fs.writeFile("menu.xlsx", Buffer.from(await data.arrayBuffer()));
 
-    const buffer = Buffer.from(menuAttachment.data.data, 'base64');
-    await fs.writeFile(`./${menu.filename}`, buffer);
-
-    console.log(`downloaded file to ./${menu.filename}`)
-
-    return `./${menu.filename}`;
+    return "menu.xlsx";
 }
 
 (async () => {
-    const menu = process.argv.length < 3 ? await GetMenu() : process.argv[2];
+    if (process.argv.length >= 3) process.env.MENU_ID = process.argv[2];
+    const menu = await GetMenu();
+    if (menu == undefined) throw new Error("Menu file not found");
     const parsed = await ParseDiningMenu(menu);
+    if (process.argv.length >= 3)
+    {
+        await fs.rm(menu);
+    }
+
     const uniqueMessItems = FindUniqueItems(parsed);
-    if (process.argv.length < 3) fs.rm(menu);
     const prisma = new PrismaClient();
 
     const existingItems = await prisma.messItem.findMany({
@@ -83,6 +72,11 @@ async function GetMenu()
 
     for (let i = 0, date = parsed.start; i < 7; i++, date.setDate(date.getDate() + 1))
     {
+        if ((await prisma.dailyMenu.findFirst({where: {date}})) !== undefined)
+        {
+            throw new Error("Menu already exists for date " + date);
+        }
+
         const bfItems = (await prisma.messItem.findMany({
             where: {
                 name: {

@@ -2,7 +2,8 @@ name: Update Data
 on:
   schedule:
     - cron: "0 23 * * SUN" # At 11:00 PM, only on Sunday
-  workflow_dispatch:
+  repository_dispatch:
+    - types: [dining_data]
   
 jobs:
   fetch:
@@ -31,6 +32,12 @@ jobs:
     
     - name: Append auxiliary env variables
       run: 'echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
+
+    - name: Append menu id
+      run: 'echo -e "MENU_ID=${{github.event.client_payload.id}}" >> .env'
+
+    - name: Echo env file
+      run: 'cat .env'
 
     - name: Database migrations and generate db types
       run: 'npx prisma migrate deploy && npx prisma generate'
