@@ -1,9 +1,7 @@
 name: Update Data
 on:
-  schedule:
-    - cron: "0 23 * * SUN" # At 11:00 PM, only on Sunday
   repository_dispatch:
-    - types: [dining_data]
+    types: [dining_data]
   
 jobs:
   fetch:
