@@ -72,7 +72,7 @@ async function GetMenu()
 
     for (let i = 0, date = parsed.start; i < 7; i++, date.setDate(date.getDate() + 1))
     {
-        if ((await prisma.dailyMenu.findFirst({where: {date}})) !== undefined)
+        if ((await prisma.dailyMenu.findFirst({where: {date}})) != undefined)
         {
             throw new Error("Menu already exists for date " + date);
         }
