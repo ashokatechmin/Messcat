@@ -27,17 +27,25 @@ async function GetMenu()
 }
 
 (async () => {
+    const prisma = new PrismaClient();
+
     if (process.argv.length >= 3) process.env.MENU_ID = process.argv[2];
     const menu = await GetMenu();
     if (menu == undefined) throw new Error("Menu file not found");
     const parsed = await ParseDiningMenu(menu);
+
+    if ((await prisma.dailyMenu.findFirst({where: {date: parsed.start}})) != undefined)
+    {
+        console.log(`Menus already exist for week ${parsed.start.toDateString()} - ${parsed.end.toDateString()}`);
+        return;
+    }
+
     if (process.argv.length >= 3)
     {
         await fs.rm(menu);
     }
 
     const uniqueMessItems = FindUniqueItems(parsed);
-    const prisma = new PrismaClient();
 
     const existingItems = await prisma.messItem.findMany({
         where: {
@@ -46,8 +54,6 @@ async function GetMenu()
             }
         },
     });
-
-    // TODO: Wrap asyncs in try until success
 
     const execDate = new Date();
 
@@ -76,7 +82,7 @@ async function GetMenu()
         {
             throw new Error("Menu already exists for date " + date);
         }
-
+        
         const bfItems = (await prisma.messItem.findMany({
             where: {
                 name: {
