@@ -42,17 +42,19 @@ async function ParseXlsx(path: string): Promise<MessMenu>
         Dinner: []
     }));
 
+    const exclude = ["-"];
+
     Object.keys(meals).forEach(meal => {
         const key = meal as Meal;
 
         meals[key].forEach((row) => {
             for (let i = 0; i < 7; i++)
             {
-                const name = row[i + 3] as string ?? "";
+                const name = (row[i + 3] as string ?? "").trim();
 
-                if (name.length > 0)
+                if (name.length > 0 && !exclude.includes(name))
                 {
-                    const split = name.split(",").map(s => s.trim()).filter(s => s.length > 0).map(s => s.split("(")[0].trim()).map(item => ({
+                    const split = name.split(",").map(s => s.trim()).filter(s => s.length > 0 && !exclude.includes(name)).map(s => s.split("(")[0].trim()).map(item => ({
                         category: row[2] as string,
                         name: item,
                         meal: key
@@ -73,13 +75,15 @@ async function ParseXlsx(path: string): Promise<MessMenu>
     return res;
 }
 
-export function FindUniqueItems(menu: MessMenu): MessItem[]
+export function FindUniqueItems(menu: MessMenu): Map<string, number>
 {
     const items = new Array<MessItem>();
+    const counts = new Map<string, number>();
 
     menu.days.forEach(day => {
         Object.keys(day).forEach(meal => {
             day[meal as Meal].forEach(item => {
+                counts.set(item.name, (counts.get(item.name) ?? 0) + 1);
                 if (items.findIndex(i => i.name === item.name) === -1)
                 {
                     items.push(item);
@@ -88,7 +92,7 @@ export function FindUniqueItems(menu: MessMenu): MessItem[]
         });
     });
 
-    return items;
+    return new Map(items.map(item => [item.name, counts.get(item.name) ?? 0]));
 }
 
 export default async function ParseDiningMenu(path: string) 

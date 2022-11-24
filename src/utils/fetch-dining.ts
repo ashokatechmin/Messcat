@@ -1,6 +1,6 @@
 import fs from "fs/promises";
 import { google } from "googleapis";
-import { PrismaClient } from "@prisma/client";
+import { MessItem, Prisma, PrismaClient } from "@prisma/client";
 import ParseDiningMenu, { FindUniqueItems } from "./parse-dining";
 
 const drive = google.drive({
@@ -34,46 +34,45 @@ async function GetMenu()
     if (menu == undefined) throw new Error("Menu file not found");
     const parsed = await ParseDiningMenu(menu);
 
+    if (process.argv.length >= 3)
+    {
+        await fs.rm(menu);
+    }
+
+    const itemCounts = FindUniqueItems(parsed);
+    const itemNames = Array.from(itemCounts.keys());
+    console.log(itemCounts);
+
     if ((await prisma.dailyMenu.findFirst({where: {date: parsed.start}})) != undefined)
     {
         console.log(`Menus already exist for week ${parsed.start.toDateString()} - ${parsed.end.toDateString()}`);
         return;
     }
 
-    if (process.argv.length >= 3)
-    {
-        await fs.rm(menu);
-    }
-
-    const uniqueMessItems = FindUniqueItems(parsed);
-
     const existingItems = await prisma.messItem.findMany({
         where: {
             name: {
-                in: uniqueMessItems.map(item => item.name)
+                in: itemNames
             }
         },
     });
 
     const execDate = new Date();
 
-    await prisma.messItem.updateMany({
+    const updatesToExistingItems = existingItems.map(item => prisma.messItem.update({
+        where: {id: item.id},
         data: {
-            count: {increment: 1},
             lastSeen: execDate,
-        },
-        where: {
-            name: {
-                in: existingItems.map(item => item.name)
-            }
+            count: itemCounts.get(item.name) ?? 0
         }
-    });
+    }));
 
-    const newItems = uniqueMessItems.filter(item => !existingItems.some(existing => existing.name == item.name));
+    await prisma.$transaction(updatesToExistingItems);
+
+    const newItemNames = itemNames.filter(item => !existingItems.some(existing => existing.name == item));
 
     await prisma.messItem.createMany({
-        data: newItems.map(item => ({name: item.name, count: 1, lastSeen: execDate})),
-        skipDuplicates: true,
+        data: newItemNames.map(item => ({name: item, count: itemCounts.get(item) ?? 0, lastSeen: execDate})),
     });
 
     for (let i = 0, date = parsed.start; i < 7; i++, date.setDate(date.getDate() + 1))
