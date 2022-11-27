@@ -11,26 +11,17 @@
     "entities": {
         "maintenance": "Landline: 01302300429\nMobile: 8199977074",
         "security": "Main gate 1:\n\tLandline: 01302300151\n\tMobile: 8199977071\nMain gate 2:\n\tLandline: 01302300152\n\tMobile: 8199977072",
-        "admin": "Landline: 01302300000\nMobile: 8222930514",
         "it": "Landline: 01302300314\nMobile: 7082000418",
         "infirmary": "Landline: 01302300550\nMobile: 8199977073",
         "acwb": "7082000421",
         "housekeeping": "Landline: 01302300203\nMobile: 8685922791",
         "transport": "Landline: 01302300201\nMobile: 8222930501",
-        "catering": "Landline: 01302300666\nMobile: 9582113911",
-        "food outlet": {
+        "jahangirpuri metro guard": {
             "alternates": [
-                "catering and food outlet"
-            ],
-            "value": "Landline: 01302300666\nMobile: 9582113911"
-        },
-        "jahangirpuri": {
-            "alternates": [
-                "jahangirpuri guard"
+                "jahangirpuri guard", "shuttle guard"
             ],
             "value": "8222930509"
         },
-        "shuttle guard": "8222930509",
         "dhaba": "8059410499",
         "thc": "8199991183",
         "hunger cycle": "8199991183",
@@ -55,17 +46,6 @@
             ],
             "value": "Student Government: sg@ashoka.edu.in"
         },
-        "aniruddha jetha": "Aniruddha Jetha: aniruddha.jetha_ug21@ashoka.edu.in",
-        "ashutosh sharma": "Ashutosh Sharma: ashutosh.sharma_ug22@ashoka.edu.in",
-        "biplob kumar das": "Biplob Kumar Das: biplob.das_ug21@ashoka.edu.in",
-        "harshit kumar": "Harshit Kumar: harshit.kumar_ug22@ashoka.edu.in",
-        "jahnavi rudra": "Jahnavi Rudra: jahnavi.rudra_ug22@ashoka.edu.in",
-        "kesar majethia": "Kesar Majethia: kesar.majethia_ug21@ashoka.edu.in",
-        "niharika mehrotra": "Niharika Mehrotra: niharika.mehrotra_ug22@ashoka.edu.in",
-        "priyansh soni": "Priyansh Soni: priyansh.soni_ug21@ashoka.edu.in",
-        "sanjay sudarsan": "Sanjay Sudarsan: sanjay.sudarsan_ug22@ashoka.edu.in",
-        "shweta siddhu": "Shweta Siddhu: shweta.siddhu_ug22@ashoka.edu.in",
-        "varnika gangavalli": "Varnika Gangavalli: varnika.gangavalli_ug21@ashoka.edu.in",
         "technology minister": {
             "alternates": [
                 "tech",
