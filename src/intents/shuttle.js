@@ -77,12 +77,12 @@ module.exports = async () => {
 			}
 
 			return Object.entries(data).map(([key, value]) => {
-				return `${key}:\n${value.map(thing => {
+				return `${key}${key[0] === "P" ? "" : ":"}\n${value.map(thing => {
 					const hours = Math.floor(thing / 100);
 					const minutes = thing % 100;
 
 					return `${hours % 13 + (hours > 12 ? 1 : 0)}:${minutes.toString().padStart(2, "0")} ${hours >= 12 ? "PM" : "AM"}`;
-				}).join("\n")}\n`;
+				}).join(",\t")}\n`;
 			});
 		}
 	}
