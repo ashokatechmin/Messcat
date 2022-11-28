@@ -10,24 +10,29 @@
     "answer": "{{entity.key}}'s contact:\n{{entity.value}}",
     "entities": {
         "maintenance": "Landline: 01302300429\nMobile: 8199977074",
-        "security": "Main gate 1:\n\tLandline: 01302300151\n\tMobile: 8199977071\nMain gate 2:\n\tLandline: 01302300152\n\tMobile: 8199977072",
+        "security": "Main gate 1:\n\tLandline: 01302300151\n\tMobile: 8199977071\nMain gate 2:\n\tLandline: 01302300151\n\tMobile: 8199977072",
         "it": "Landline: 01302300314\nMobile: 7082000418",
         "infirmary": "Landline: 01302300550\nMobile: 8199977073",
         "acwb": "7082000421",
-        "housekeeping": "Landline: 01302300203\nMobile: 8685922791",
-        "transport": "Landline: 01302300201\nMobile: 8222930501",
+        "housekeeping": "Landline: 01302300428\nMobile: 7496967703",
+        "transportation": "Mobile: 8222930514",
         "jahangirpuri metro guard": {
             "alternates": [
                 "jahangirpuri guard", "shuttle guard"
             ],
             "value": "8222930509"
         },
-        "dhaba": "8059410499",
-        "thc": "8199991183",
-        "hunger cycle": "8199991183",
-        "dosai": "8860672020\n9585707847",
-        "fuel zone": "8901315903",
-        "chicago pizza": "8396863518",
+        "dhaba": "8059410499 (delivery available)",
+        "thc": {
+            "alternates": [
+                "hunger cycle"
+            ],
+            "value": "8199991183 (delivery available)"
+        },
+        "dosai": "8929163185\n9250201547 (delivery available)",
+        "fuel zone": "9992324902",
+        "chicago pizza": "8396863518 (delivery available until 10:30PM)",
+        "amul": "9354831493",
         "document centre": "Pawan Kumar: 7206106609",
         "salon": {
             "alternates": [
@@ -36,8 +41,11 @@
             ],
             "value": "9953058779\n9953935976"
         },
-        "rh3 warden": "Thompson: 7011787382",
-        "rh4 warden": "Roshan: 7082000589",
+        "rh1 warden": "Chaman: 8529743805\nFernandez: 9673064000",
+        "rh2 warden": "Chanda Thakur: 8847301956 or 9896099764",
+        "rh3 warden": "Thompson: 7082000570",
+        "rh4 warden": "Roshan: 8930155522",
+        "rh5 warden": "Sushma Saini: 7082000575",
         "sunita bansal": "7082000403",
         "hor": {
             "alternates": [
@@ -46,70 +54,72 @@
             ],
             "value": "Student Government: sg@ashoka.edu.in"
         },
-        "technology minister": {
+        "technology ministry": {
             "alternates": [
                 "tech",
-                "tech minister"
+                "tech minister", "tech min"
             ],
-            "value": "Bertrand Kwibuka (Technology Minister): bertrand.kwibuka_asp22@ashoka.edu.in"
+            "value": "Ministry of Technology <technology.ministry@ashoka.edu.in>"
         },
-        "environment minister": {
+        "environment ministry": {
             "alternates": [
-                "environmental minister",
-                "env minister"
+                "environmental ministry",
+                "environment", "env min"
             ],
-            "value": "Anjali Dalmia (Environment Minister): anjali.dalmia_ug22@ashoka.edu.in"
+            "value": "Environment Ministry <environmentministry@ashoka.edu.in>"
         },
-        "finance minister": {
+        "finance ministry": {
             "alternates": [
-                "fin minister"
+                "fin min", "finance"
             ],
-            "value": "Arundhati Rajan (Finance Minister): arundhati.rajan_ug22@ashoka.edu.in"
+            "value": "Finance Ministry <finance.ministry@ashoka.edu.in>"
         },
-        "minister for community well-being": {
+        "ministry of community well-being": {
             "alternates": [
                 "cwb minister",
-                "minister for community well being"
+                "ministry for community well being",
+                "cwb"
             ],
-            "value": "Bhavya Dixit (Minister for Community Well-Being): bhavya.dixit_ug21@ashoka.edu.in"
+            "value": "Ministry of Community Well Being <cwb.ministry@ashoka.edu.in>"
         },
-        "cultural minister": {
+        "cultural ministry": {
             "alternates": [
-                "cul minister"
+                "culture", "culmin"
             ],
-            "value": "Harsha Mohan (Cultural Minister): harsha.potapragada_ug21@ashoka.edu.in"
+            "value": "Cultural Ministry <culturalministry@ashoka.edu.in>"
         },
-        "academic affairs minister": {
+        "academic affairs ministry": {
             "alternates": [
-                "aa minister"
+                "aa ministry", "maa"
             ],
-            "value": "Pratiti (Academic Affairs Minister): pratiti_asp21@ashoka.edu.in"
+            "value": "Ministry of Academic Affairs <academicaffairs.ministry@ashoka.edu.in>"
         },
-        "campus life minister": {
+        "campus life ministry": {
             "alternates": [
-                "campus minister"
+                "campus ministry"
             ],
-            "value": "Rithupar Pathy (Campus Life Minister): rithupar.pathy_ug21@ashoka.edu.in"
+            "value": "Campus Life Ministry <campus.life@ashoka.edu.in>"
         },
-        "parliamentary affairs minister": {
+        "parliamentary affairs ministry": {
             "alternates": [
-                "pa minister"
+                "pa", "parliament"
             ],
-            "value": "Sharanya Narayanan (Parliamentary Affairs Minister): sharanya.narayanan_ug22@ashoka.edu.in"
+            "value": "Parliamentary Affairs Ministry <parliamentaryaffairs@ashoka.edu.in>"
         },
         "student government president": {
             "alternates": [
-                "sg president"
+                "sg president", "president"
             ],
-            "value": "Priavi Joshi (President): priavi.joshi_ug21@ashoka.edu.in"
+            "value": "Neha Sheik <neha.sheik_ug23@ashoka.edu.in>"
         },
         "leader of opposition": {
             "alternates": [
                 "sg lo",
                 "lo"
             ],
-            "value": "Gaurav Nandan Tripathi (Leader of the Opposition): gaurav.tripathi_ug20@ashoka.edu.in"
-        }
+            "value": "Rochan Mohapatra <rochan.mohapatra_ug23@ashoka.edu.in>"
+        },
+        "sports ministry": "Sports Ministry <sports.ministry@ashoka.edu.in>"
     },
     "meta": {
         "userFacingName": [
