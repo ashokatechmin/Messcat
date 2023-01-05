@@ -65,7 +65,10 @@ module.exports = async() => {
 					snacks: true,
 					breakfast: true
 				}
-			}).catch(() => {str = "Data not available 😅"});
+			}).catch(e => {
+				str = "Data not available 😅"
+				console.error(e);
+			});
 
 			if (str === "") 
 			{
@@ -108,7 +111,10 @@ module.exports = async() => {
 					snacks: option == "snacks",
 					breakfast: option == "breakfast"
 				}
-			}).catch(() => {str = "Data not available 😅"});
+			}).catch((e) => {
+				console.error(e);
+				str = "Data not available 😅"
+			});
 
 			if (str === "") str = menu[option].map(item => item.name.toTitleCase()).join("\n");
 		}
