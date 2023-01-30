@@ -59,7 +59,7 @@ async function GetMenu()
             where: {id: item.id},
             data: {
                 lastSeen: execDate,
-                count: itemCounts.get(item.name) ?? 0
+                count: itemCounts.get(item.name) + item.count ?? 0
             }
         }));
 

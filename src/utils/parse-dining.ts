@@ -36,6 +36,9 @@ async function ParseXlsx(path: string): Promise<MessMenu[]>
         startDate.setFullYear(new Date().getFullYear());
         const endDate = new Date(startDate);
         endDate.setDate(startDate.getDate() + 6)
+        
+        if (endDate.getFullYear() !== startDate.getFullYear())
+            startDate.setFullYear(startDate.getFullYear() - 1);
     
         const days: MessMenu["days"] =  Array.from(new Array(7), (_, i) => ({
             Breakfast: [],
