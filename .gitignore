@@ -5,6 +5,8 @@ node_modules
 .env.local
 .serverless
 respond.js
+login.js
+creds.json
 local-data
 *.log
 *.xlsx
