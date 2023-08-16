@@ -5,6 +5,7 @@
   "main": "src/index.js",
   "scripts": {
     "test": "env-cmd node src/intents --chat",
+    "build": "tsc",
     "fetch:dining": "env-cmd node src/utils/fetch-dining",
     "start": "serverless offline start --httpPort 8000 --skipCacheInvalidation"
   },
@@ -13,23 +14,21 @@
   "license": "ISC",
   "dependencies": {
     "@adiwajshing/whatsapp-info-bot": "git+https://github.com/adiwajshing/WhatsAppInfoBot",
-    "@chatdaddy/service-auth-client": "git+https://github.com/chatdaddy/service-auth-client.git",
-    "@chatdaddy/service-im-client": "git+https://github.com/chatdaddy/service-im-client.git",
     "@prisma/client": "^4.6.1",
     "mustache": "^4.2.0",
     "node-fetch": "^2.6.1"
   },
   "devDependencies": {
     "@google-cloud/local-auth": "^3.0.0",
-    "@serverless/cli": "^1.6.0",
+    "@serverless/cli": "^2.0.25",
     "@types/node": "^18.11.7",
     "@types/pdf-parse": "^1.1.1",
     "env-cmd": "^10.1.0",
     "exceljs": "^4.3.0",
     "googleapis": "^67.1.1",
     "prisma": "^4.6.1",
-    "serverless": "^2.65.0",
+    "serverless": "^3.34.0",
     "serverless-dotenv-plugin": "^3.9.0",
-    "serverless-offline": "^6.9.0"
+    "serverless-offline": "^12.0.4"
   }
 }

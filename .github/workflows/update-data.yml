@@ -1,7 +1,7 @@
 name: Update Data
 on:
-  repository_dispatch:
-    types: [dining_data]
+  schedule:
+    - cron: "0 */6 * * *"
   
 jobs:
   fetch:
@@ -19,29 +19,22 @@ jobs:
       with:
         submodules: true
     
-    - name: Install Typescript
-      run: yarn global add typescript
+    - name: Install Typescript & serverless
+      run: |
+        npm i -g typescript
+        npm i -g serverless
 
     - name: Install Dependencies
-      run: yarn --network-concurrency 1
+      run: npm i
 
     - name: Copy production env
-      run: 'echo -e "${{secrets.ENV}}" > .env'
-    
-    - name: Append auxiliary env variables
-      run: 'echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
-
-    - name: Append menu id
-      run: 'echo -e "MENU_ID=${{github.event.client_payload.id}}" >> .env'
-
-    - name: Echo env file
-      run: 'cat .env'
+      run: echo -e "${{secrets.ENV}}" > .env
 
     - name: Database migrations and generate db types
-      run: 'npx prisma migrate deploy && npx prisma generate'
+      run: npx prisma migrate deploy && npx prisma generate
 
     - name: Compile typescript
       run: tsc
     
     - name: Update Dining Menu
-      run: yarn fetch:dining
+      run: npm run fetch:dining

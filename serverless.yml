@@ -1,6 +1,6 @@
 service: messcat
 
-frameworkVersion: '2'
+frameworkVersion: '3'
 useDotenv: true
 
 package:

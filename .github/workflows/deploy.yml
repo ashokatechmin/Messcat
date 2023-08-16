@@ -22,20 +22,19 @@ jobs:
       with:
         submodules: true
 
-    - name: Install Typescript
-      run: yarn global add typescript
+    - name: Install Typescript & serverless
+      run: |
+        npm i -g typescript
+        npm i -g serverless
 
     - name: Install Dependencies
-      run: yarn --network-concurrency 1
+      run: npm i
 
     - name: Serverless AWS authentication
-      run: yarn run sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
+      run: sls config credentials --provider aws --key ${{ secrets.ACCESS_KEY_ID }} --secret ${{ secrets.SECRET_ACCESS_KEY }}
 
     - name: Copy production env
       run: 'echo -e "${{secrets.ENV}}" > .env'
-
-    - name: Append auxiliary env variables
-      run: 'echo -e "${{secrets.MESSCAT_GOOGLE}}" >> .env'
 
     - name: Database migrations and generate db types
       run: 'npx prisma migrate deploy && npx prisma generate'
@@ -44,4 +43,4 @@ jobs:
       run: 'tsc'
 
     - name: Deploy Lambda functions
-      run: yarn run sls deploy
+      run: sls deploy
