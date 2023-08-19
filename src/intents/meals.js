@@ -1,5 +1,4 @@
 const DateUtils = require('../utils/date-utils')
-const getLatestMenu = require('../utils/get-latest-menu')
 const PrismaClient = require("@prisma/client").PrismaClient;
 
 const prisma = new PrismaClient();
@@ -41,9 +40,6 @@ const OUTLET_MENUS = {
 const locale = "en-IN";
 
 module.exports = async() => {
-
-	const mealsData = await getLatestMenu()
-
 	const computeMealAnswer = async (options) => {
 		let date = DateUtils.dateWithTimeZone(new Date(), 5.5);
 		date.setHours(0); date.setMinutes(0); date.setSeconds(0); date.setMilliseconds(0);
