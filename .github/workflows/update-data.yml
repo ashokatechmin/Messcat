@@ -1,8 +1,7 @@
 name: Update Data
 on:
-  workflow_dispatch:
-  schedule:
-    - cron: "0 */6 * * *"
+  repository_dispatch:
+    types: [dining_data]
   
 jobs:
   fetch:
@@ -29,7 +28,10 @@ jobs:
       run: npm i
 
     - name: Copy production env
-      run: echo -e "${{secrets.ENV}}" > .env
+      run: | 
+        echo -e "${{secrets.ENV}}" > .env 
+        echo -e "MENU_ID=${{github.event.client_payload.id}}" >> .env
+        echo -e "MENU_YEAR=${{github.event.client_payload.year}}" >> .env
 
     - name: Database migrations and generate db types
       run: npx prisma migrate deploy && npx prisma generate

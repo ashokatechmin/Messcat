@@ -2,9 +2,10 @@ const { createLanguageProcessor } = require('@adiwajshing/whatsapp-info-bot')
 const { default: helpIntent } = require('@adiwajshing/whatsapp-info-bot/dist/example/intents/help')
 
 const create = async() => {
+	// TODO: update and reintroduce shuttles intent
 	const intents = [
 		await require('./meals')(),
-		await require("./shuttle")(),
+		// await require("./shuttle")(),
 		
 		require('./f_all.json'),
 		require('./gratefulness.json'),

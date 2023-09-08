@@ -14,27 +14,27 @@ String.prototype.toTitleCase = function () {
 
 const mealOptions = [ "breakfast", "lunch", "snacks", "dinner" ]
 const OUTLET_MENUS = {
-	'dhaba': {
-		document: {
-			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/i6V%2FQ%2BJTK4%2FmeKV9puT1UczWmCVVQaCKpwR73bJXspk%3D',
-			mimetype: 'application/pdf',
-			name: 'dhaba-menu.pdf'
-		}
-	},
-	'asg': {
-		document: {
-			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/xCqevivWF7VTp0qTy%2FuPJjfbpsmAg6A5dSgHjjIZx0w%3D',
-			mimetype: 'application/pdf',
-			name: 'asg-menu.pdf'
-		}
-	},
-	'fuel zone': {
-		document: {
-			url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/Iq9rMPglXt6VlkBbV3dtXfLftJQBsWw5IqKXgqXeWdg%3D',
-			mimetype: 'application/pdf',
-			name: 'fuel-zone-menu.pdf'
-		}
-	}
+	// 'dhaba': {
+	// 	document: {
+	// 		url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/i6V%2FQ%2BJTK4%2FmeKV9puT1UczWmCVVQaCKpwR73bJXspk%3D',
+	// 		mimetype: 'application/pdf',
+	// 		name: 'dhaba-menu.pdf'
+	// 	}
+	// },
+	// 'asg': {
+	// 	document: {
+	// 		url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/xCqevivWF7VTp0qTy%2FuPJjfbpsmAg6A5dSgHjjIZx0w%3D',
+	// 		mimetype: 'application/pdf',
+	// 		name: 'asg-menu.pdf'
+	// 	}
+	// },
+	// 'fuel zone': {
+	// 	document: {
+	// 		url: 'https://chatdaddy-media-store.s3.ap-east-1.amazonaws.com/Iq9rMPglXt6VlkBbV3dtXfLftJQBsWw5IqKXgqXeWdg%3D',
+	// 		mimetype: 'application/pdf',
+	// 		name: 'fuel-zone-menu.pdf'
+	// 	}
+	// }
 }
 
 const locale = "en-IN";
@@ -80,22 +80,24 @@ module.exports = async() => {
 		else
 		{
 			const option = options.meal.toLowerCase()
-			if (![...mealOptions, "combo"].includes(option)) {
+			if (![...mealOptions/*, "combo"*/].includes(option)) {
 				throw new Error("Unknown Option: " + option + "; You can ask for " + mealOptions.join(", "))
 			}
 			
-			if (option === "combo") {
-				let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
+			//TODO: reintroduce static documents, for outlets & VOW Spice
+
+			// if (option === "combo") {
+			// 	let week = "wk_" + DateUtils.weekOfYear( date, 1 ).toString()
 	
-				const arr = mealsData["combo"][week]
-				let str
-				if (arr) {
-					str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
-				} else {
-					str = "Data not available 😅"
-				}
-				return str
-			}
+			// 	const arr = mealsData["combo"][week]
+			// 	let str
+			// 	if (arr) {
+			// 		str = Object.keys(arr).map ( key => ("*" + key.toTitleCase() + ":*\n  " + arr[key].join("\n  ").toTitleCase()) ).join("\n")
+			// 	} else {
+			// 		str = "Data not available 😅"
+			// 	}
+			// 	return str
+			// }
 
 			const menu = await prisma.dailyMenu.findFirstOrThrow({
 				where: {

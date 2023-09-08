@@ -1,54 +1,47 @@
 import fs from "fs/promises";
 import { google } from "googleapis";
 import { PrismaClient } from "@prisma/client";
-import ParseDiningMenu, { FindUniqueItems } from "./parse-dining";
+import ParseDiningMenu, { FindUniqueItemsWithCounts } from "./parse-dining";
 
-const auth = new google.auth.OAuth2({
-    clientId: process.env.OAUTH_CLIENT_ID,
-    clientSecret: process.env.OAUTH_SECRET,
+const drive = google.drive({
+    version: "v3",
+    auth: process.env.MESSCAT_GDRIVE
 });
 
-auth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH });
-
-const gmail = google.gmail({
-    version: "v1",
-    auth
-});
-
-const MENU_MIMETYPE = 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet';
-
-async function GetMenu()
+async function GetMenu(): Promise<[string, number] | undefined>
 {
-    const {data: {messages: [message]}} = await gmail.users.messages.list({
-        userId: "me",
-        q: `has:attachment to:technology.ministry@ashoka.edu.in`,
-        maxResults: 1
-    });
+    const id = process.env.MENU_ID;
+    const year = parseInt(process.env.MENU_YEAR);
+    if (id === undefined || year === undefined || Number.isNaN(year)) throw new Error(`Missing parameters: id: ${id}, year: ${year}`);
 
-    if (message == undefined) throw new Error("No menu found");
+    const file = await drive.files.get({
+        fileId: id,
+        alt: "media",
+    }, { responseType: "blob"});
 
-    const {data: {payload: {parts}}} = await gmail.users.messages.get({ userId: "me", id: message.id });
-    const menu = parts.find(part => part.mimeType == MENU_MIMETYPE);
-    if (menu == undefined) throw new Error("No matching attachment found");
+    const data = (file.data as unknown) as Blob;
 
-    const {data: {data}} = await gmail.users.messages.attachments.get({ userId: "me", messageId: message.id, id: menu.body.attachmentId });
-    const buf = Buffer.from(data, 'base64');
+    if (file.status !== 200) return;
+    await fs.writeFile("menu.xlsx", Buffer.from(await data.arrayBuffer()));
 
-    const menuPath = "menu.xlsx"
-    await fs.writeFile(menuPath, buf);
-
-    return menuPath;
+    return ["menu.xlsx", year];
 }
 
 (async () => {
-    
-    const menu = await GetMenu();
     const prisma = new PrismaClient();
-    const parsed = await ParseDiningMenu(menu);
-    await fs.rm(menu);
+
+    if (process.argv.length >= 3) 
+    {
+        process.env.MENU_ID = process.argv[2];
+        process.env.MENU_YEAR = new Date().getFullYear().toString();
+    }
+
+    const menu = await GetMenu();
+    if (menu == undefined) throw new Error("Menu file not found");
+    const parsed = await ParseDiningMenu(...menu);
 
     parsed.forEach(async weekMenu => {
-        const itemCounts = FindUniqueItems(weekMenu);
+        const itemCounts = FindUniqueItemsWithCounts(weekMenu);
         const itemNames = Array.from(itemCounts.keys());
         console.log(itemCounts);
 
