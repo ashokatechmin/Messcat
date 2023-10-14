@@ -70,7 +70,16 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
             meals[key].forEach((row) => {
                 for (let i = 0; i < 7; i++)
                 {
-                    const name = (row[i + 2] as string ?? "").trim();
+                    let name: string = "";
+                    const thing = row[i + 2];
+
+                    if (typeof thing == "object") {
+                        if ("richText" in thing) {
+                            name = thing.richText.map(t => t.text).join("");
+                        }
+                    } else if (typeof thing == "string") {
+                        name = thing;
+                    }
     
                     if (name.length > 0 && !exclude.includes(name))
                     {
