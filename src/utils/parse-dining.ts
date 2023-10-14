@@ -35,8 +35,7 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
     wb.worksheets.forEach(menu => {
         if (!isMenuSheet(menu))
         {
-            console.error("Sheet is not a menu sheet");
-            return;
+            throw new Error("Sheet is not a menu sheet");
         }
 
         const meals: {[k in Meal]: xl.CellValue[][]} = {
