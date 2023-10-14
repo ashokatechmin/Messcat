@@ -83,7 +83,7 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
     
                     if (name.length > 0 && !exclude.includes(name))
                     {
-                        const split = name.split(",").flatMap(s => s.split("/")).map(s => s.trim()).filter(s => s.length > 0 && !exclude.includes(name)).map(s => s.split("(")[0].trim()).map(item => ({
+                        const split = name.split(",").flatMap(s => s.split("/")).map(s => s.trim()).filter(s => s.length > 0 && !exclude.includes(name)).map(item => ({
                             category: row[1] as string,
                             name: item,
                             meal: key
