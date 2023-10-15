@@ -1,5 +1,7 @@
 import xl from "exceljs";
+import { writeFile } from "fs/promises";
 import { argv } from "process";
+import { start } from "repl";
 
 type Meal = "Breakfast" | "Lunch" | "Snacks" | "Dinner";
 
@@ -15,14 +17,18 @@ type MessMenu = {
     days: {[k in Meal]: MessItem[]}[]
 }
 
-// Check (using format specific indicators) whether the sheet is a menu sheet. This should be the case unless they decide to randomly change the format again, in which case we refuse to parse potentially incorrect data.
+// Check (using format specific indicators) whether the sheet is a menu sheet. This should be the case unless they decide to randomly change the format
+// again, in which case we refuse to parse potentially incorrect data.
 function isMenuSheet(menu: xl.Worksheet) {
-    const first = menu.getCell(1, 1);
-    const [day, date] = [menu.getCell(2, 1), menu.getCell(3, 1)]
+    const [day, date] = [menu.getCell(1, 1), menu.getCell(2, 1)]
+    const [bfast, lunch, snacks, dinner] = [menu.getCell(3, 1), menu.getCell(19, 1), menu.getCell(32, 1), menu.getCell(37, 1)]
 
-    if (!first.isMerged) return false;
     if (day.value.toString().trim() != "DAY" || date.value.toString().trim() != "DATE") return false;
-    
+    if (bfast.value.toString().split(" ")[0].trim() != "BREAKFAST") return false;
+    if (lunch.value.toString().split(" ")[0].trim() != "LUNCH") return false;
+    if (snacks.value.toString().split(" ")[0].trim() != "SNACKS") return false;
+    if (dinner.value.toString().split(" ")[0].trim() != "DINNER") return false;
+
     return true;
 }
 
@@ -39,15 +45,21 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
         }
 
         const meals: {[k in Meal]: xl.CellValue[][]} = {
-            Breakfast: menu.getRows(5, 12).map(row => row.values) as xl.CellValue[][],
-            Lunch: menu.getRows(18, 12).map(row => row.values) as xl.CellValue[][],
-            Snacks: menu.getRows(31, 4).map(row => row.values) as xl.CellValue[][],
-            Dinner: menu.getRows(36, 10).map(row => row.values) as xl.CellValue[][]
+            Breakfast: menu.getRows(4, 15).map(row => row.values) as xl.CellValue[][],
+            Lunch: menu.getRows(20, 12).map(row => row.values) as xl.CellValue[][],
+            Snacks: menu.getRows(33, 4).map(row => row.values) as xl.CellValue[][],
+            Dinner: menu.getRows(38, 11).map(row => row.values) as xl.CellValue[][]
         }
     
-        const firstDate = menu.getCell(3, 2).value as string;
+        const firstDate = menu.getCell(2, 2).value as string;
         const startString = firstDate.trim().replace(/(\d)((rd)|(st)|(th)|(nd))/g, "$1") + ` ${year}`;
-        const startDate = new Date(Date.parse(startString));
+        const startTimestamp = Date.parse(startString);
+        if (Number.isNaN(startTimestamp))
+        {
+            throw new Error("Invalid date");
+        }
+
+        const startDate = new Date(startTimestamp);
         startDate.setFullYear(new Date().getFullYear());
         const endDate = new Date(startDate);
         endDate.setDate(startDate.getDate() + 6)
@@ -134,7 +146,7 @@ export default async function ParseDiningMenu(path: string, year: number)
 }
 
 if (argv.length >= 3) {
-    ParseDiningMenu(argv[2], new Date().getFullYear()).then((thing) => {
-        console.log(JSON.stringify(thing));        
+    ParseDiningMenu(argv[2], new Date().getFullYear()).then(async (thing) => {
+        await writeFile("menu.json", JSON.stringify(thing, null, 4));
     });
 }
