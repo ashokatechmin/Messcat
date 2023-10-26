@@ -51,16 +51,26 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
             Dinner: menu.getRows(38, 11).map(row => row.values) as xl.CellValue[][]
         }
     
-        const firstDate = menu.getCell(2, 2).value as string;
-        const startString = firstDate.trim().replace(/(\d)((rd)|(st)|(th)|(nd))/g, "$1") + ` ${year}`;
-        const startTimestamp = Date.parse(startString);
+        let startTimestamp;
+
+        let dateCell = menu.getCell(2, 2);
+
+        if (typeof dateCell.value == "object") {
+            startTimestamp = (dateCell.value as Date).getTime();
+        } else {
+            let firstDate = menu.getCell(2, 2).value as string;
+            firstDate = firstDate.trim().replace(/(\d)((rd)|(st)|(th)|(nd))/g, "$1");
+            firstDate = /(\d{1,2})-?([A-Za-z]+)/.exec(firstDate).slice(1, 3).join("-") + ` ${year}`;
+            startTimestamp = Date.parse(firstDate);
+        }
+        
         if (Number.isNaN(startTimestamp))
         {
             throw new Error("Invalid date");
         }
 
         const startDate = new Date(startTimestamp);
-        startDate.setFullYear(new Date().getFullYear());
+        console.log(startDate.toDateString());
         const endDate = new Date(startDate);
         endDate.setDate(startDate.getDate() + 6)
         
