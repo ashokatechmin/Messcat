@@ -17,11 +17,13 @@ type MessMenu = {
     days: {[k in Meal]: MessItem[]}[]
 }
 
+const rowOffset = 1;
+
 // Check (using format specific indicators) whether the sheet is a menu sheet. This should be the case unless they decide to randomly change the format
 // again, in which case we refuse to parse potentially incorrect data.
 function isMenuSheet(menu: xl.Worksheet) {
-    const [day, date] = [menu.getCell(1, 1), menu.getCell(2, 1)]
-    const [bfast, lunch, snacks, dinner] = [menu.getCell(3, 1), menu.getCell(19, 1), menu.getCell(32, 1), menu.getCell(37, 1)]
+    const [day, date] = [menu.getCell(1 + rowOffset, 1), menu.getCell(2 + rowOffset, 1)]
+    const [bfast, lunch, snacks, dinner] = [menu.getCell(3 + rowOffset, 1), menu.getCell(19 + rowOffset, 1), menu.getCell(32 + rowOffset, 1), menu.getCell(37 + rowOffset, 1)]
 
     if (day.value.toString().trim() != "DAY" || date.value.toString().trim() != "DATE") return false;
     if (bfast.value.toString().split(" ")[0].trim() != "BREAKFAST") return false;
@@ -45,10 +47,10 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
         }
 
         const meals: {[k in Meal]: xl.CellValue[][]} = {
-            Breakfast: menu.getRows(4, 15).map(row => row.values) as xl.CellValue[][],
-            Lunch: menu.getRows(20, 12).map(row => row.values) as xl.CellValue[][],
-            Snacks: menu.getRows(33, 4).map(row => row.values) as xl.CellValue[][],
-            Dinner: menu.getRows(38, 11).map(row => row.values) as xl.CellValue[][]
+            Breakfast: menu.getRows(4 + rowOffset, 15).map(row => row.values) as xl.CellValue[][],
+            Lunch: menu.getRows(20 + rowOffset, 12).map(row => row.values) as xl.CellValue[][],
+            Snacks: menu.getRows(33 + rowOffset, 4).map(row => row.values) as xl.CellValue[][],
+            Dinner: menu.getRows(38 + rowOffset, 11).map(row => row.values) as xl.CellValue[][]
         }
     
         let startTimestamp;
