@@ -17,15 +17,21 @@ type MessMenu = {
     days: {[k in Meal]: MessItem[]}[]
 }
 
-const rowOffset = 1;
+let rowOffset = 0;
 
 // Check (using format specific indicators) whether the sheet is a menu sheet. This should be the case unless they decide to randomly change the format
 // again, in which case we refuse to parse potentially incorrect data.
-function isMenuSheet(menu: xl.Worksheet) {
+function isMenuSheet(menu: xl.Worksheet): boolean {
     const [day, date] = [menu.getCell(1 + rowOffset, 1), menu.getCell(2 + rowOffset, 1)]
     const [bfast, lunch, snacks, dinner] = [menu.getCell(3 + rowOffset, 1), menu.getCell(19 + rowOffset, 1), menu.getCell(32 + rowOffset, 1), menu.getCell(37 + rowOffset, 1)]
 
-    if (day.value.toString().trim() != "DAY" || date.value.toString().trim() != "DATE") return false;
+    if (day.value.toString().trim() != "DAY" || date.value.toString().trim() != "DATE") {
+        if (rowOffset > 3) return false;
+        
+        console.log("increased row offset");
+        rowOffset += 1;
+        return isMenuSheet(menu);
+    };
     if (bfast.value.toString().split(" ")[0].trim() != "BREAKFAST") return false;
     if (lunch.value.toString().split(" ")[0].trim() != "LUNCH") return false;
     if (snacks.value.toString().split(" ")[0].trim() != "SNACKS") return false;
@@ -55,14 +61,14 @@ async function ParseXlsx(path: string, year: number): Promise<MessMenu[]>
     
         let startTimestamp;
 
-        let dateCell = menu.getCell(2, 2);
+        let dateCell = menu.getCell(2 + rowOffset, 2);
 
         if (typeof dateCell.value == "object") {
             startTimestamp = (dateCell.value as Date).getTime();
         } else {
-            let firstDate = menu.getCell(2, 2).value as string;
+            let firstDate = dateCell.value as string;
             firstDate = firstDate.trim().replace(/(\d)((rd)|(st)|(th)|(nd))/g, "$1");
-            firstDate = /(\d{1,2})-?([A-Za-z]+)/.exec(firstDate).slice(1, 3).join("-") + ` ${year}`;
+            firstDate = /(\d{1,2})[\- ]?([A-Za-z]+)/.exec(firstDate).slice(1, 3).join("-") + ` ${year}`;
             startTimestamp = Date.parse(firstDate);
         }
         
