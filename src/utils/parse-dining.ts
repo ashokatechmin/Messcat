@@ -25,7 +25,7 @@ function isMenuSheet(menu: xl.Worksheet): boolean {
     const [day, date] = [menu.getCell(1 + rowOffset, 1), menu.getCell(2 + rowOffset, 1)]
     const [bfast, lunch, snacks, dinner] = [menu.getCell(3 + rowOffset, 1), menu.getCell(19 + rowOffset, 1), menu.getCell(32 + rowOffset, 1), menu.getCell(37 + rowOffset, 1)]
 
-    if (day.value.toString().trim() != "DAY" || date.value.toString().trim() != "DATE") {
+    if (day.value?.toString().trim() != "DAY" || date.value?.toString().trim() != "DATE") {
         if (rowOffset > 3) return false;
         
         console.log("increased row offset");
